@@ -1,0 +1,1388 @@
+[
+  {
+    "type": "product",
+    "source_file": "products/ancillary-equipment/index.html",
+    "slug": "ancillary-equipment",
+    "category_breadcrumb": "Products · Plant support",
+    "title": "Ancillary Equipment",
+    "lead": "Everything a turnkey line needs around the main machines — boilers, cyclones, airlocks, magnets and ducting from one supplier.",
+    "tags": [
+      "Complete-plant scope"
+    ],
+    "body_paragraphs": [
+      "Turnkey means the unglamorous equipment arrives too: steam boilers for conditioning, cyclones and airlocks for aspiration, magnets protecting dies and rolls, and the ducting that ties the dust system together.",
+      "Specifying it all from one works means every flange, height and airflow is already coordinated before anything ships."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "Steam boilers for conditioning",
+      "Cyclones, airlocks and aspiration ducting",
+      "Magnets ahead of critical machines",
+      "Coordinated as part of the turnkey scope"
+    ],
+    "hero_image": "/assets/img/illus-ancillary.svg",
+    "hero_image_alt": "Ancillary Equipment",
+    "spec_table": [
+      {
+        "label": "Scope",
+        "value": "Boilers · cyclones · airlocks · magnets · ducting"
+      },
+      {
+        "label": "Role",
+        "value": "Aspiration, steam & protection systems"
+      },
+      {
+        "label": "Supply",
+        "value": "Part of turnkey delivery"
+      }
+    ],
+    "related": [
+      {
+        "name": "Feed Pellet Mill",
+        "tag": "SZLH · Ø350–768 MM",
+        "link": "../pelleting/feed-pellet-mill/index.html"
+      },
+      {
+        "name": "Hammer Mill",
+        "tag": "SMSP · 2–35 T/H",
+        "link": "../grinding/hammer-mill/index.html"
+      },
+      {
+        "name": "Storage Tanks",
+        "tag": "1–100 T CAPACITY",
+        "link": "../fabrication/storage-tanks/index.html"
+      }
+    ],
+    "meta_title": "Ancillary Equipment — AUX | SEMZON Engineering",
+    "meta_description": "Everything a turnkey line needs around the main machines — boilers, cyclones, airlocks, magnets and ducting from one supplier.",
+    "canonical": "https://www.semzoneng.com/products/ancillary-equipment/"
+  },
+  {
+    "type": "product",
+    "source_file": "products/automation/plc-control-panels/index.html",
+    "slug": "plc-control-panels",
+    "category_breadcrumb": "Products · Automation",
+    "title": "PLC & Control Panels",
+    "lead": "From a single batching panel to full-line automation — SEMZON builds the electrical brain of the plant in-house.",
+    "tags": [
+      "Batching to full line",
+      "Retrofit-ready"
+    ],
+    "body_paragraphs": [
+      "SEMZON designs and wires PLC and MCC panels for every stage of the plant: batching and mixing first, then grinding, pelleting, cooling and packing brought under one operator screen.",
+      "Because panels are built in the same works as the machines, retrofitting automation into a running mill — ours or anyone's — is a routine job, not a science project."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "Batching-only to full-line scope",
+      "MCC and PLC panels built in-house",
+      "Touchscreen operation and recipe storage",
+      "Retrofits into existing mills",
+      "Commissioning and operator training included"
+    ],
+    "hero_image": "/assets/img/automation-plc-panel-01.webp",
+    "hero_image_alt": "PLC & Control Panels",
+    "spec_table": [
+      {
+        "label": "Scope",
+        "value": "Batching → full-line control"
+      },
+      {
+        "label": "Panels",
+        "value": "PLC + MCC, in-house build"
+      },
+      {
+        "label": "HMI",
+        "value": "Touchscreen, recipe storage"
+      },
+      {
+        "label": "Service",
+        "value": "Retrofit & training available"
+      }
+    ],
+    "related": [
+      {
+        "name": "Automatic Liquid Adding",
+        "tag": "AUTO-DOSING",
+        "link": "../../mixing/liquid-adding/index.html"
+      },
+      {
+        "name": "Rotary Distributor",
+        "tag": "MULTI-BIN ROUTING",
+        "link": "../../conveying/rotary-distributor/index.html"
+      },
+      {
+        "name": "Packing Scales",
+        "tag": "25/50 KG BAGS",
+        "link": "../../packing/packing-scales/index.html"
+      }
+    ],
+    "meta_title": "PLC & Control Panels — PLC | SEMZON Engineering",
+    "meta_description": "From a single batching panel to full-line automation — SEMZON builds the electrical brain of the plant in-house.",
+    "canonical": "https://www.semzoneng.com/products/automation/plc-control-panels/"
+  },
+  {
+    "type": "product",
+    "source_file": "products/cleaning/drum-cleaner/index.html",
+    "slug": "drum-cleaner",
+    "category_breadcrumb": "Products · Cleaning",
+    "title": "Drum Cleaner",
+    "lead": "A rotating drum screen that scalps meals and ground materials, catching lumps, string and foreign matter ahead of batching.",
+    "tags": [
+      "Rotary scalping",
+      "Stage 01 · Cleaning"
+    ],
+    "body_paragraphs": [
+      "The rotary drum cleaner handles meals, ground grain and bulk ingredients that need gentle, continuous scalping rather than aggressive screening. Material passes through the rotating perforated drum; clean product falls through while oversize discharges at the end.",
+      "It is specified on SEMZON lines wherever soybean meal, canola and by-products enter the process."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "Continuous rotary scalping of meals and ground material",
+      "Gentle action, low power demand",
+      "Easy drum access for screen cleaning",
+      "Dust-tight housing with aspiration connection"
+    ],
+    "hero_image": "/assets/img/illus-drum-cleaner.svg",
+    "hero_image_alt": "Drum Cleaner",
+    "spec_table": [
+      {
+        "label": "Type",
+        "value": "Rotary drum screen"
+      },
+      {
+        "label": "Duty",
+        "value": "Meals, ground grain, by-products"
+      },
+      {
+        "label": "Position",
+        "value": "Stage 01 — intake & cleaning"
+      }
+    ],
+    "related": [
+      {
+        "name": "Maize Pre-Cleaner",
+        "tag": "CP SERIES · INTAKE",
+        "link": "../maize-pre-cleaner/index.html"
+      },
+      {
+        "name": "Vibration Screener",
+        "tag": "SFJH · GRADING",
+        "link": "../../screening/vibration-screener/index.html"
+      },
+      {
+        "name": "Ribbon Mixer",
+        "tag": "SMHY · CV ≤ 5%",
+        "link": "../../mixing/ribbon-mixer/index.html"
+      }
+    ],
+    "meta_title": "Drum Cleaner — ROTARY | SEMZON Engineering",
+    "meta_description": "A rotating drum screen that scalps meals and ground materials, catching lumps, string and foreign matter ahead of batching.",
+    "canonical": "https://www.semzoneng.com/products/cleaning/drum-cleaner/"
+  },
+  {
+    "type": "product",
+    "source_file": "products/cleaning/maize-pre-cleaner/index.html",
+    "slug": "maize-pre-cleaner",
+    "category_breadcrumb": "Products · Cleaning",
+    "title": "Maize Pre-Cleaner",
+    "lead": "First defence for the whole plant — cobs, stones, string and oversize trash are pulled out before raw maize touches a machine.",
+    "tags": [
+      "Intake duty",
+      "Stage 01 · Cleaning"
+    ],
+    "body_paragraphs": [
+      "The CP pre-cleaner scalps incoming maize and grain at intake rates matched to your dumping pit and elevator, protecting hammer mills, conveyors and pellet dies from tramp material.",
+      "Combined with drum cleaning and magnets it forms the Stage 01 cleaning section of every SEMZON feed line."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "High-capacity intake scalping",
+      "Removes cobs, stones, string and oversize trash",
+      "Protects grinding and pelleting equipment downstream",
+      "Low-maintenance screen access"
+    ],
+    "hero_image": "/assets/img/cleaning-maize-pre-cleaner-cp-01.webp",
+    "hero_image_alt": "Maize Pre-Cleaner",
+    "spec_table": [
+      {
+        "label": "Series",
+        "value": "CP"
+      },
+      {
+        "label": "Duty",
+        "value": "Raw maize & grain intake"
+      },
+      {
+        "label": "Function",
+        "value": "Scalping / pre-cleaning"
+      },
+      {
+        "label": "Position",
+        "value": "Stage 01 — intake & cleaning"
+      }
+    ],
+    "related": [
+      {
+        "name": "Drum Cleaner",
+        "tag": "ROTARY DRUM · INTAKE",
+        "link": "../drum-cleaner/index.html"
+      },
+      {
+        "name": "Hammer Mill",
+        "tag": "SMSP · 2–35 T/H",
+        "link": "../../grinding/hammer-mill/index.html"
+      },
+      {
+        "name": "Bucket Elevator",
+        "tag": "VERTICAL LIFT",
+        "link": "../../conveying/bucket-elevator/index.html"
+      }
+    ],
+    "meta_title": "Maize Pre-Cleaner — CP | SEMZON Engineering",
+    "meta_description": "First defence for the whole plant — cobs, stones, string and oversize trash are pulled out before raw maize touches a machine.",
+    "canonical": "https://www.semzoneng.com/products/cleaning/maize-pre-cleaner/"
+  },
+  {
+    "type": "product",
+    "source_file": "products/cleaning/pellet-cleaner/index.html",
+    "slug": "pellet-cleaner",
+    "category_breadcrumb": "Products · Cleaning",
+    "title": "Pellet Cleaner",
+    "lead": "Separates fines and broken pellets from finished product before packing, so only uniform pellets reach the bag.",
+    "tags": [
+      "Finished-pellet duty",
+      "Stage 05 · Screening"
+    ],
+    "body_paragraphs": [
+      "Positioned after cooling, the pellet cleaner strips fines and fragments from the finished pellet stream and returns them for re-pelleting, protecting pellet durability numbers and bag appearance.",
+      "It works alongside the SSLG crumbler and SFJH screener in the Stage 05 screening section of the line."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "Removes fines and broken pellets before packing",
+      "Recovered fines returned for re-pelleting",
+      "Improves pellet durability index at dispatch",
+      "Simple screen change for pellet diameter"
+    ],
+    "hero_image": "/assets/img/cleaning-pellet-cleaner-01.webp",
+    "hero_image_alt": "Pellet Cleaner",
+    "spec_table": [
+      {
+        "label": "Duty",
+        "value": "Finished pellets & crumbs"
+      },
+      {
+        "label": "Function",
+        "value": "Fines separation / cleaning"
+      },
+      {
+        "label": "Position",
+        "value": "Stage 05 — cooling & screening"
+      }
+    ],
+    "related": [
+      {
+        "name": "Pellet Crumbler",
+        "tag": "SSLG · CRUMBS",
+        "link": "../../screening/crumbler/index.html"
+      },
+      {
+        "name": "Vibration Screener",
+        "tag": "SFJH · GRADING",
+        "link": "../../screening/vibration-screener/index.html"
+      },
+      {
+        "name": "Packing Scales",
+        "tag": "25/50 KG BAGS",
+        "link": "../../packing/packing-scales/index.html"
+      }
+    ],
+    "meta_title": "Pellet Cleaner — FINES | SEMZON Engineering",
+    "meta_description": "Separates fines and broken pellets from finished product before packing, so only uniform pellets reach the bag.",
+    "canonical": "https://www.semzoneng.com/products/cleaning/pellet-cleaner/"
+  },
+  {
+    "type": "product",
+    "source_file": "products/conveying/bucket-elevator/index.html",
+    "slug": "bucket-elevator",
+    "category_breadcrumb": "Products · Conveying",
+    "title": "Bucket Elevator",
+    "lead": "Vertical lifting matched to your line rate and headroom — the workhorse that moves material between every stage of the plant.",
+    "tags": [
+      "Line-matched capacity",
+      "All stages"
+    ],
+    "body_paragraphs": [
+      "SEMZON bucket elevators lift grain, meal and pellets between process floors at capacities matched to the line, with belt speeds and bucket pitch selected per material.",
+      "Explosion-relief options, inspection doors and boot cleanout are detailed to keep maintenance simple and the elevator leg safe."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "Capacities matched to line rate",
+      "Heights engineered to your building",
+      "Belt and bucket selection per material",
+      "Inspection and cleanout access as standard"
+    ],
+    "hero_image": "/assets/img/conveying-bucket-elevator-01.webp",
+    "hero_image_alt": "Bucket Elevator",
+    "spec_table": [
+      {
+        "label": "Type",
+        "value": "Belt & bucket elevator"
+      },
+      {
+        "label": "Duty",
+        "value": "Grain · meal · pellets"
+      },
+      {
+        "label": "Sizing",
+        "value": "To line capacity & headroom"
+      }
+    ],
+    "related": [
+      {
+        "name": "Chain, Screw & Trough Conveyors",
+        "tag": "HORIZONTAL TRANSPORT",
+        "link": "../conveyors/index.html"
+      },
+      {
+        "name": "Rotary Distributor",
+        "tag": "MULTI-BIN ROUTING",
+        "link": "../rotary-distributor/index.html"
+      },
+      {
+        "name": "Packing Scales",
+        "tag": "25/50 KG BAGS",
+        "link": "../../packing/packing-scales/index.html"
+      }
+    ],
+    "meta_title": "Bucket Elevator — TDTG | SEMZON Engineering",
+    "meta_description": "Vertical lifting matched to your line rate and headroom — the workhorse that moves material between every stage of the plant.",
+    "canonical": "https://www.semzoneng.com/products/conveying/bucket-elevator/"
+  },
+  {
+    "type": "product",
+    "source_file": "products/conveying/conveyors/index.html",
+    "slug": "conveyors",
+    "category_breadcrumb": "Products · Conveying",
+    "title": "Chain, Screw & Trough Conveyors",
+    "lead": "Horizontal and inclined transport — drag chain, screw and trough conveyors fabricated to the exact runs your layout needs.",
+    "tags": [
+      "Dust-tight options",
+      "All stages"
+    ],
+    "body_paragraphs": [
+      "Every SEMZON line is tied together with conveyors fabricated in our own works: en-masse drag chains for gentle high-capacity runs, screws for metering and inclines, troughs where simplicity wins.",
+      "Dust-tight covers, intermediate discharge gates and wear liners are specified per duty."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "Drag chain, screw and trough types",
+      "Fabricated to your layout runs",
+      "Dust-tight covers and discharge gates",
+      "Wear liners for abrasive duties"
+    ],
+    "hero_image": "/assets/img/illus-conveyors.svg",
+    "hero_image_alt": "Chain, Screw & Trough Conveyors",
+    "spec_table": [
+      {
+        "label": "Types",
+        "value": "Drag chain · screw · trough"
+      },
+      {
+        "label": "Duty",
+        "value": "Grain, meal, pellets"
+      },
+      {
+        "label": "Build",
+        "value": "Fabricated per layout in Lahore"
+      }
+    ],
+    "related": [
+      {
+        "name": "Bucket Elevator",
+        "tag": "VERTICAL LIFT",
+        "link": "../bucket-elevator/index.html"
+      },
+      {
+        "name": "Rotary Distributor",
+        "tag": "MULTI-BIN ROUTING",
+        "link": "../rotary-distributor/index.html"
+      },
+      {
+        "name": "Ancillary Equipment",
+        "tag": "BOILERS · CYCLONES · MAGNETS",
+        "link": "../../ancillary-equipment/index.html"
+      }
+    ],
+    "meta_title": "Chain, Screw & Trough Conveyors — CONVEY | SEMZON Engineering",
+    "meta_description": "Horizontal and inclined transport — drag chain, screw and trough conveyors fabricated to the exact runs your layout needs.",
+    "canonical": "https://www.semzoneng.com/products/conveying/conveyors/"
+  },
+  {
+    "type": "product",
+    "source_file": "products/conveying/rotary-distributor/index.html",
+    "slug": "rotary-distributor",
+    "category_breadcrumb": "Products · Conveying",
+    "title": "Rotary Distributor",
+    "lead": "One inlet, many bins — motorised rotary routing that sends material to any silo or bin the recipe calls for.",
+    "tags": [
+      "Bin routing",
+      "Stage 01–06"
+    ],
+    "body_paragraphs": [
+      "The rotary distributor swings a motorised inner spout across multiple outlet ports, routing incoming material to the selected bin under PLC control.",
+      "It removes manual slide-gate juggling above batching bins and finished-product silos alike."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "Single inlet to multiple outlets",
+      "Motorised, PLC-selectable routing",
+      "Position feedback for verified delivery",
+      "Dust-tight housing"
+    ],
+    "hero_image": "/assets/img/conveying-rotary-distributor-01.webp",
+    "hero_image_alt": "Rotary Distributor",
+    "spec_table": [
+      {
+        "label": "Function",
+        "value": "One-to-many bin routing"
+      },
+      {
+        "label": "Control",
+        "value": "Motorised · PLC selected"
+      },
+      {
+        "label": "Position",
+        "value": "Above batching / storage bins"
+      }
+    ],
+    "related": [
+      {
+        "name": "Bucket Elevator",
+        "tag": "VERTICAL LIFT",
+        "link": "../bucket-elevator/index.html"
+      },
+      {
+        "name": "PLC & Control Panels",
+        "tag": "BATCHING → FULL LINE",
+        "link": "../../automation/plc-control-panels/index.html"
+      },
+      {
+        "name": "Chain, Screw & Trough Conveyors",
+        "tag": "HORIZONTAL TRANSPORT",
+        "link": "../conveyors/index.html"
+      }
+    ],
+    "meta_title": "Rotary Distributor — ROUTE | SEMZON Engineering",
+    "meta_description": "One inlet, many bins — motorised rotary routing that sends material to any silo or bin the recipe calls for.",
+    "canonical": "https://www.semzoneng.com/products/conveying/rotary-distributor/"
+  },
+  {
+    "type": "product",
+    "source_file": "products/cooling-drying/counterflow-cooler/index.html",
+    "slug": "counterflow-cooler",
+    "category_breadcrumb": "Products · Cooling & drying",
+    "title": "Counterflow Cooler",
+    "lead": "Counterflow air against a settling pellet bed — hot pellets leave within 3–5 °C of ambient, hard, dry and ready to screen.",
+    "tags": [
+      "6–30 t/h",
+      "Ambient +3–5 °C",
+      "Stage 05 · Cooling"
+    ],
+    "body_paragraphs": [
+      "The SKLN cooler draws ambient air upward through a descending bed of hot pellets, so the coolest air always meets the coolest product. Pellets exit within 3–5 °C of ambient with moisture flashed off, protecting durability and safe storage.",
+      "Level sensors and a slide-gate discharge keep bed depth — and cooling time — constant regardless of line rate from 6 to 30 t/h."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "Capacities 6–30 t/h",
+      "Product to within +3–5 °C of ambient",
+      "Counterflow principle protects pellet quality",
+      "Automatic bed-level control",
+      "Octagonal bin, no dead corners"
+    ],
+    "hero_image": "/assets/img/cooling-counterflow-cooler-skln-cut.webp",
+    "hero_image_alt": "Counterflow Cooler",
+    "spec_table": [
+      {
+        "label": "Series",
+        "value": "SKLN"
+      },
+      {
+        "label": "Capacity",
+        "value": "6–30 t/h"
+      },
+      {
+        "label": "Outlet temp",
+        "value": "Ambient +3–5 °C"
+      },
+      {
+        "label": "Principle",
+        "value": "Counterflow air / gravity bed"
+      },
+      {
+        "label": "Discharge",
+        "value": "Slide-gate, level-controlled"
+      }
+    ],
+    "related": [
+      {
+        "name": "Belt Dryer",
+        "tag": "SHGW · MULTI-LAYER",
+        "link": "../dryer/index.html"
+      },
+      {
+        "name": "Pellet Crumbler",
+        "tag": "SSLG · CRUMBS",
+        "link": "../../screening/crumbler/index.html"
+      },
+      {
+        "name": "Feed Pellet Mill",
+        "tag": "SZLH · Ø350–768 MM",
+        "link": "../../pelleting/feed-pellet-mill/index.html"
+      }
+    ],
+    "meta_title": "Counterflow Cooler — SKLN | SEMZON Engineering",
+    "meta_description": "Counterflow air against a settling pellet bed — hot pellets leave within 3–5 °C of ambient, hard, dry and ready to screen.",
+    "canonical": "https://www.semzoneng.com/products/cooling-drying/counterflow-cooler/"
+  },
+  {
+    "type": "product",
+    "source_file": "products/cooling-drying/dryer/index.html",
+    "slug": "dryer",
+    "category_breadcrumb": "Products · Cooling & drying",
+    "title": "Belt Dryer",
+    "lead": "Multi-layer belt drying that takes extruded feed down to safe moisture gently and evenly — the partner machine to every extruder.",
+    "tags": [
+      "Extruded aqua feed",
+      "Stage 05 · Drying"
+    ],
+    "body_paragraphs": [
+      "The SHGW belt dryer carries extruded pellets across stacked mesh belts through controlled hot-air zones, drying to target moisture without case-hardening or breaking the product.",
+      "Steam and gas heating options match the utilities available at your site."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "Multi-layer belt design, even residence time",
+      "Zone-controlled hot air",
+      "Steam or gas heating options",
+      "Gentle handling of expanded product"
+    ],
+    "hero_image": "/assets/img/cooling-dryer-shgw-01.webp",
+    "hero_image_alt": "Belt Dryer",
+    "spec_table": [
+      {
+        "label": "Series",
+        "value": "SHGW"
+      },
+      {
+        "label": "Type",
+        "value": "Multi-layer belt dryer"
+      },
+      {
+        "label": "Duty",
+        "value": "Extruded aqua & pet feed"
+      },
+      {
+        "label": "Heating",
+        "value": "Steam / gas options"
+      }
+    ],
+    "related": [
+      {
+        "name": "Fish Feed Extruder",
+        "tag": "SMHS · WET EXTRUSION",
+        "link": "../../extrusion/fish-feed-extruder/index.html"
+      },
+      {
+        "name": "Counterflow Cooler",
+        "tag": "SKLN · 6–30 T/H",
+        "link": "../counterflow-cooler/index.html"
+      },
+      {
+        "name": "Vibration Screener",
+        "tag": "SFJH · GRADING",
+        "link": "../../screening/vibration-screener/index.html"
+      }
+    ],
+    "meta_title": "Belt Dryer — SHGW | SEMZON Engineering",
+    "meta_description": "Multi-layer belt drying that takes extruded feed down to safe moisture gently and evenly — the partner machine to every extruder.",
+    "canonical": "https://www.semzoneng.com/products/cooling-drying/dryer/"
+  },
+  {
+    "type": "product",
+    "source_file": "products/extrusion/dry-extruder/index.html",
+    "slug": "dry-extruder",
+    "category_breadcrumb": "Products · Extrusion",
+    "title": "Dry Extruder",
+    "lead": "Friction-cooked extrusion without a boiler — the straightforward route to full-fat soya and small-line pet food.",
+    "tags": [
+      "Full-fat soya",
+      "No boiler needed",
+      "Stage 04 · Extrusion"
+    ],
+    "body_paragraphs": [
+      "The SPHG dry extruder generates its cooking heat through barrel friction alone, so plants without steam can still produce full-fat extruded soya and simple pet rations.",
+      "It suits smaller operations and ingredient pre-treatment inside larger SEMZON lines."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "No steam boiler required",
+      "Full-fat soya processing",
+      "Compact footprint for small lines",
+      "Simple operation and maintenance"
+    ],
+    "hero_image": "/assets/img/extrusion-dry-extruder-sphg-01.webp",
+    "hero_image_alt": "Dry Extruder",
+    "spec_table": [
+      {
+        "label": "Series",
+        "value": "SPHG"
+      },
+      {
+        "label": "Process",
+        "value": "Dry (friction) extrusion"
+      },
+      {
+        "label": "Products",
+        "value": "Full-fat soya · pet food"
+      },
+      {
+        "label": "Utilities",
+        "value": "Electric drive only"
+      }
+    ],
+    "related": [
+      {
+        "name": "Fish Feed Extruder",
+        "tag": "SMHS · WET EXTRUSION",
+        "link": "../fish-feed-extruder/index.html"
+      },
+      {
+        "name": "Hammer Mill",
+        "tag": "SMSP · 2–35 T/H",
+        "link": "../../grinding/hammer-mill/index.html"
+      },
+      {
+        "name": "Ribbon Mixer",
+        "tag": "SMHY · CV ≤ 5%",
+        "link": "../../mixing/ribbon-mixer/index.html"
+      }
+    ],
+    "meta_title": "Dry Extruder — SPHG | SEMZON Engineering",
+    "meta_description": "Friction-cooked extrusion without a boiler — the straightforward route to full-fat soya and small-line pet food.",
+    "canonical": "https://www.semzoneng.com/products/extrusion/dry-extruder/"
+  },
+  {
+    "type": "product",
+    "source_file": "products/extrusion/fish-feed-extruder/index.html",
+    "slug": "fish-feed-extruder",
+    "category_breadcrumb": "Products · Extrusion",
+    "title": "Fish Feed Extruder",
+    "lead": "Wet extrusion for floating and sinking aqua feed and pet food — cooked, expanded and shaped in one conditioned pass.",
+    "tags": [
+      "Floating & sinking",
+      "Aqua & pet",
+      "Stage 04 · Extrusion"
+    ],
+    "body_paragraphs": [
+      "The SMHS wet extruder steam-conditions the ration, then cooks and expands it through the barrel and die, producing floating or sinking pellets by recipe and die selection. Starch gelatinisation improves water stability and digestibility for fish, shrimp and pets.",
+      "Paired with the SHGW dryer and coating equipment it forms the core of SEMZON aqua and pet feed lines from 2 to 20 t/h."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "Floating and sinking product from one machine",
+      "Steam pre-conditioning for cook and stability",
+      "Die sets for species and pellet sizes",
+      "Pairs with SHGW belt dryer and coater"
+    ],
+    "hero_image": "/assets/img/extrusion-fish-feed-extruder-smhs-01.webp",
+    "hero_image_alt": "Fish Feed Extruder",
+    "spec_table": [
+      {
+        "label": "Series",
+        "value": "SMHS"
+      },
+      {
+        "label": "Process",
+        "value": "Wet extrusion"
+      },
+      {
+        "label": "Products",
+        "value": "Floating / sinking aqua feed · pet food"
+      },
+      {
+        "label": "Line range",
+        "value": "2–20 t/h aqua & pet lines"
+      }
+    ],
+    "related": [
+      {
+        "name": "Dry Extruder",
+        "tag": "SPHG · DRY EXTRUSION",
+        "link": "../dry-extruder/index.html"
+      },
+      {
+        "name": "Belt Dryer",
+        "tag": "SHGW · MULTI-LAYER",
+        "link": "../../cooling-drying/dryer/index.html"
+      },
+      {
+        "name": "Feed Pellet Mill",
+        "tag": "SZLH · Ø350–768 MM",
+        "link": "../../pelleting/feed-pellet-mill/index.html"
+      }
+    ],
+    "meta_title": "Fish Feed Extruder — SMHS | SEMZON Engineering",
+    "meta_description": "Wet extrusion for floating and sinking aqua feed and pet food — cooked, expanded and shaped in one conditioned pass.",
+    "canonical": "https://www.semzoneng.com/products/extrusion/fish-feed-extruder/"
+  },
+  {
+    "type": "product",
+    "source_file": "products/fabrication/storage-tanks/index.html",
+    "slug": "storage-tanks",
+    "category_breadcrumb": "Products · Fabrication",
+    "title": "Storage Tanks",
+    "lead": "Fabricated storage from one tonne to one hundred — raw material bins, finished-product silos and liquid tanks built in our Lahore works.",
+    "tags": [
+      "1–100 t",
+      "MS fabrication"
+    ],
+    "body_paragraphs": [
+      "SEMZON fabricates mild-steel storage tanks and bins from 1 to 100 tonnes: intake bins, batching bins above the mixer, finished-feed silos and liquid storage for oils and molasses.",
+      "Discharge geometry, level sensing and access are engineered per material so what goes in comes out — first in, first out, no bridging."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "Capacities 1–100 t",
+      "Intake, batching and finished-product duties",
+      "Liquid tanks for oils and molasses",
+      "Discharge geometry engineered per material"
+    ],
+    "hero_image": "/assets/img/illus-storage-tanks.svg",
+    "hero_image_alt": "Storage Tanks",
+    "spec_table": [
+      {
+        "label": "Range",
+        "value": "1–100 t"
+      },
+      {
+        "label": "Build",
+        "value": "MS fabrication, Lahore works"
+      },
+      {
+        "label": "Duties",
+        "value": "Raw · batching · finished · liquid"
+      },
+      {
+        "label": "Options",
+        "value": "Level sensing, access platforms"
+      }
+    ],
+    "related": [
+      {
+        "name": "Bucket Elevator",
+        "tag": "VERTICAL LIFT",
+        "link": "../../conveying/bucket-elevator/index.html"
+      },
+      {
+        "name": "Ancillary Equipment",
+        "tag": "BOILERS · CYCLONES · MAGNETS",
+        "link": "../../ancillary-equipment/index.html"
+      },
+      {
+        "name": "Rotary Distributor",
+        "tag": "MULTI-BIN ROUTING",
+        "link": "../../conveying/rotary-distributor/index.html"
+      }
+    ],
+    "meta_title": "Storage Tanks — 1–100 T | SEMZON Engineering",
+    "meta_description": "Fabricated storage from one tonne to one hundred — raw material bins, finished-product silos and liquid tanks built in our Lahore works.",
+    "canonical": "https://www.semzoneng.com/products/fabrication/storage-tanks/"
+  },
+  {
+    "type": "product",
+    "source_file": "products/grinding/hammer-mill/index.html",
+    "slug": "hammer-mill",
+    "category_breadcrumb": "Products · Grinding",
+    "title": "Hammer Mill",
+    "lead": "High-throughput grinding that sets up everything downstream — particle size decided here determines mixing accuracy and pellet durability three stages later.",
+    "tags": [
+      "2–35 t/h",
+      "500–700 µm grind",
+      "Stage 02 · Grinding"
+    ],
+    "body_paragraphs": [
+      "The SMSP hammer mill reduces cleaned maize, wheat and meal to a uniform 500–700 µm grind through a high-speed beater rotor and interchangeable screens. Screen apertures are swapped in minutes to match ration and species, so one mill serves mash, pellet and crumb programmes alike.",
+      "Every SMSP is fabricated and trial-run in our Lahore works, balanced as an assembly, and matched to your line's magnet, feeder and aspiration so the grinding section runs dust-tight at rated load."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "Capacities across the 2–35 t/h feed-line range",
+      "Reversible beaters for extended wear life",
+      "Quick-change screens for ration flexibility",
+      "Aspiration-ready housing for dust-tight operation",
+      "Direct spares support from the Lahore works"
+    ],
+    "hero_image": "/assets/img/grinding-hammer-mill-smsp-01.webp",
+    "hero_image_alt": "Hammer Mill",
+    "spec_table": [
+      {
+        "label": "Series",
+        "value": "SMSP"
+      },
+      {
+        "label": "Capacity",
+        "value": "2–35 t/h (model dependent)"
+      },
+      {
+        "label": "Typical grind",
+        "value": "500–700 µm"
+      },
+      {
+        "label": "Screens",
+        "value": "Interchangeable, aperture to ration"
+      },
+      {
+        "label": "Duty",
+        "value": "Poultry · cattle · aqua · biomass pre-grind"
+      }
+    ],
+    "related": [
+      {
+        "name": "Maize Pre-Cleaner",
+        "tag": "CP SERIES · INTAKE",
+        "link": "../../cleaning/maize-pre-cleaner/index.html"
+      },
+      {
+        "name": "Ribbon Mixer",
+        "tag": "SMHY · CV ≤ 5%",
+        "link": "../../mixing/ribbon-mixer/index.html"
+      },
+      {
+        "name": "Feed Pellet Mill",
+        "tag": "SZLH · Ø350–768 MM",
+        "link": "../../pelleting/feed-pellet-mill/index.html"
+      }
+    ],
+    "meta_title": "Hammer Mill — SMSP | SEMZON Engineering",
+    "meta_description": "High-throughput grinding that sets up everything downstream — particle size decided here determines mixing accuracy and pellet durability three stages",
+    "canonical": "https://www.semzoneng.com/products/grinding/hammer-mill/"
+  },
+  {
+    "type": "product",
+    "source_file": "products/mixing/liquid-adding/index.html",
+    "slug": "liquid-adding",
+    "category_breadcrumb": "Products · Liquids",
+    "title": "Automatic Liquid Adding",
+    "lead": "Automatic, recipe-driven dosing of multiple liquids — oil, molasses, enzymes — weighed and delivered per batch by the control system.",
+    "tags": [
+      "Multi-liquid dosing",
+      "Stage 03 · Mixing"
+    ],
+    "body_paragraphs": [
+      "The automatic liquid adding system stores, weighs and injects several liquids per recipe, under PLC control, so each batch receives exactly what the formulation calls for without operator handling.",
+      "It closes the loop between the batching computer and the mixer for consistent finished-feed analysis."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "Multiple liquids per recipe",
+      "Weighed, PLC-driven dosing",
+      "No manual liquid handling",
+      "Consistent batch-to-batch analysis"
+    ],
+    "hero_image": "/assets/img/illus-liquid-adding.svg",
+    "hero_image_alt": "Automatic Liquid Adding",
+    "spec_table": [
+      {
+        "label": "Duty",
+        "value": "Oils, molasses, liquid additives"
+      },
+      {
+        "label": "Control",
+        "value": "Recipe-driven via PLC"
+      },
+      {
+        "label": "Position",
+        "value": "Stage 03 — batching & mixing"
+      }
+    ],
+    "related": [
+      {
+        "name": "Oil Adding Machine",
+        "tag": "OIL DOSING",
+        "link": "../oil-adding/index.html"
+      },
+      {
+        "name": "PLC & Control Panels",
+        "tag": "BATCHING → FULL LINE",
+        "link": "../../automation/plc-control-panels/index.html"
+      },
+      {
+        "name": "Twin-Shaft Paddle Mixer",
+        "tag": "SMSJ · TWIN-SHAFT",
+        "link": "../paddle-mixer/index.html"
+      }
+    ],
+    "meta_title": "Automatic Liquid Adding — ALA | SEMZON Engineering",
+    "meta_description": "Automatic, recipe-driven dosing of multiple liquids — oil, molasses, enzymes — weighed and delivered per batch by the control system.",
+    "canonical": "https://www.semzoneng.com/products/mixing/liquid-adding/"
+  },
+  {
+    "type": "product",
+    "source_file": "products/mixing/oil-adding/index.html",
+    "slug": "oil-adding",
+    "category_breadcrumb": "Products · Liquids",
+    "title": "Oil Adding Machine",
+    "lead": "Tank, pump and spray manifold that puts a measured shot of oil into every batch — evenly, on time, without puddling.",
+    "tags": [
+      "Mixer spray duty",
+      "Stage 03 · Mixing"
+    ],
+    "body_paragraphs": [
+      "The oil adding set meters fats and oils into the mixer through spray nozzles timed to the mixing cycle, so liquid lands on moving material and disperses evenly instead of streaking the batch.",
+      "Tank heating and insulated lines are specified for viscous fats in cold weather."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "Measured oil shot per batch",
+      "Spray manifold for even dispersion",
+      "Tank heating options for viscous fats",
+      "Integrates with PLC batching control"
+    ],
+    "hero_image": "/assets/img/illus-oil-adding.svg",
+    "hero_image_alt": "Oil Adding Machine",
+    "spec_table": [
+      {
+        "label": "Duty",
+        "value": "Fats & oils into mixer"
+      },
+      {
+        "label": "Dosing",
+        "value": "Batch-metered, cycle-timed"
+      },
+      {
+        "label": "Options",
+        "value": "Heated tank, insulated lines"
+      }
+    ],
+    "related": [
+      {
+        "name": "Automatic Liquid Adding",
+        "tag": "AUTO-DOSING",
+        "link": "../liquid-adding/index.html"
+      },
+      {
+        "name": "Ribbon Mixer",
+        "tag": "SMHY · CV ≤ 5%",
+        "link": "../ribbon-mixer/index.html"
+      },
+      {
+        "name": "PLC & Control Panels",
+        "tag": "BATCHING → FULL LINE",
+        "link": "../../automation/plc-control-panels/index.html"
+      }
+    ],
+    "meta_title": "Oil Adding Machine — OIL | SEMZON Engineering",
+    "meta_description": "Tank, pump and spray manifold that puts a measured shot of oil into every batch — evenly, on time, without puddling.",
+    "canonical": "https://www.semzoneng.com/products/mixing/oil-adding/"
+  },
+  {
+    "type": "product",
+    "source_file": "products/mixing/paddle-mixer/index.html",
+    "slug": "paddle-mixer",
+    "category_breadcrumb": "Products · Mixing",
+    "title": "Twin-Shaft Paddle Mixer",
+    "lead": "Twin-shaft paddle action for the shortest cycles and the gentlest handling — built for high-liquid and fragile-ingredient rations.",
+    "tags": [
+      "High-liquid rations",
+      "CV ≤ 5%",
+      "Stage 03 · Mixing"
+    ],
+    "body_paragraphs": [
+      "The SMSJ twin-shaft paddle mixer fluidises the batch between counter-rotating paddle shafts, reaching CV ≤ 5% in an even shorter cycle than ribbon mixing while treating heat-sensitive and fragile ingredients gently.",
+      "It is the mixer of choice where high liquid percentages — molasses, fat, oil — would overload a ribbon machine."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "Counter-rotating twin paddle shafts",
+      "Very short mixing cycles at CV ≤ 5%",
+      "Handles high liquid addition rates",
+      "Gentle action for fragile ingredients",
+      "Twin bomb-door discharge"
+    ],
+    "hero_image": "/assets/img/illus-paddle-mixer.svg",
+    "hero_image_alt": "Twin-Shaft Paddle Mixer",
+    "spec_table": [
+      {
+        "label": "Series",
+        "value": "SMSJ"
+      },
+      {
+        "label": "Type",
+        "value": "Twin-shaft paddle"
+      },
+      {
+        "label": "Uniformity",
+        "value": "CV ≤ 5%"
+      },
+      {
+        "label": "Best for",
+        "value": "High-liquid & premix-critical rations"
+      }
+    ],
+    "related": [
+      {
+        "name": "Ribbon Mixer",
+        "tag": "SMHY · CV ≤ 5%",
+        "link": "../ribbon-mixer/index.html"
+      },
+      {
+        "name": "Oil Adding Machine",
+        "tag": "OIL DOSING",
+        "link": "../oil-adding/index.html"
+      },
+      {
+        "name": "Automatic Liquid Adding",
+        "tag": "AUTO-DOSING",
+        "link": "../liquid-adding/index.html"
+      }
+    ],
+    "meta_title": "Twin-Shaft Paddle Mixer — SMSJ | SEMZON Engineering",
+    "meta_description": "Twin-shaft paddle action for the shortest cycles and the gentlest handling — built for high-liquid and fragile-ingredient rations.",
+    "canonical": "https://www.semzoneng.com/products/mixing/paddle-mixer/"
+  },
+  {
+    "type": "product",
+    "source_file": "products/mixing/ribbon-mixer/index.html",
+    "slug": "ribbon-mixer",
+    "category_breadcrumb": "Products · Mixing",
+    "title": "Ribbon Mixer",
+    "lead": "Batch mixing to a coefficient of variation of 5% or better in a 90–120 second cycle — the accuracy heart of the batching section.",
+    "tags": [
+      "250–2000 kg batch",
+      "CV ≤ 5%",
+      "Stage 03 · Mixing"
+    ],
+    "body_paragraphs": [
+      "The SMHY horizontal ribbon mixer blends macro ingredients, micro-doses and added liquids into a homogeneous batch in 90–120 seconds, holding CV at or below 5% across the 250–2000 kg batch range.",
+      "Full-length bomb-door discharge empties the batch fast and clean, keeping cycle times tight and cross-contamination low between rations."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "Batch sizes 250–2000 kg",
+      "Mixing uniformity CV ≤ 5%",
+      "90–120 second mixing cycle",
+      "Full-length quick-discharge door",
+      "Liquid adding ports for oil and additives"
+    ],
+    "hero_image": "/assets/img/mixing-ribbon-mixer-smhy-cut.webp",
+    "hero_image_alt": "Ribbon Mixer",
+    "spec_table": [
+      {
+        "label": "Series",
+        "value": "SMHY"
+      },
+      {
+        "label": "Batch size",
+        "value": "250–2000 kg"
+      },
+      {
+        "label": "Uniformity",
+        "value": "CV ≤ 5%"
+      },
+      {
+        "label": "Cycle",
+        "value": "90–120 s"
+      },
+      {
+        "label": "Options",
+        "value": "Liquid/oil adding, load cells"
+      }
+    ],
+    "related": [
+      {
+        "name": "Twin-Shaft Paddle Mixer",
+        "tag": "SMSJ · TWIN-SHAFT",
+        "link": "../paddle-mixer/index.html"
+      },
+      {
+        "name": "Automatic Liquid Adding",
+        "tag": "AUTO-DOSING",
+        "link": "../liquid-adding/index.html"
+      },
+      {
+        "name": "Hammer Mill",
+        "tag": "SMSP · 2–35 T/H",
+        "link": "../../grinding/hammer-mill/index.html"
+      }
+    ],
+    "meta_title": "Ribbon Mixer — SMHY | SEMZON Engineering",
+    "meta_description": "Batch mixing to a coefficient of variation of 5% or better in a 90–120 second cycle — the accuracy heart of the batching section.",
+    "canonical": "https://www.semzoneng.com/products/mixing/ribbon-mixer/"
+  },
+  {
+    "type": "product",
+    "source_file": "products/packing/packing-scales/index.html",
+    "slug": "packing-scales",
+    "category_breadcrumb": "Products · Packing",
+    "title": "Packing Scales",
+    "lead": "Weigh, fill, stitch, dispatch — finished feed into accurate 25 and 50 kg bags at the pace of the line.",
+    "tags": [
+      "25/50 kg bags",
+      "Stage 06 · Packing"
+    ],
+    "body_paragraphs": [
+      "SEMZON packing stations weigh finished feed into 25 or 50 kg bags with load-cell accuracy, then carry them across a stitching conveyor to the dispatch bay.",
+      "Bagging rate is matched to line capacity so packing never becomes the bottleneck at the end of a good production day."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "25 and 50 kg bag weights",
+      "Load-cell weighing accuracy",
+      "Integrated stitching conveyor",
+      "Rates matched to line capacity"
+    ],
+    "hero_image": "/assets/img/packing-packing-scales-01.webp",
+    "hero_image_alt": "Packing Scales",
+    "spec_table": [
+      {
+        "label": "Bag sizes",
+        "value": "25 / 50 kg"
+      },
+      {
+        "label": "Weighing",
+        "value": "Load-cell, automatic"
+      },
+      {
+        "label": "Line",
+        "value": "Stitching conveyor to dispatch"
+      },
+      {
+        "label": "Position",
+        "value": "Stage 06 — packing & loading"
+      }
+    ],
+    "related": [
+      {
+        "name": "Bucket Elevator",
+        "tag": "VERTICAL LIFT",
+        "link": "../../conveying/bucket-elevator/index.html"
+      },
+      {
+        "name": "Pellet Cleaner",
+        "tag": "FINES REMOVAL",
+        "link": "../../cleaning/pellet-cleaner/index.html"
+      },
+      {
+        "name": "PLC & Control Panels",
+        "tag": "BATCHING → FULL LINE",
+        "link": "../../automation/plc-control-panels/index.html"
+      }
+    ],
+    "meta_title": "Packing Scales — PACK | SEMZON Engineering",
+    "meta_description": "Weigh, fill, stitch, dispatch — finished feed into accurate 25 and 50 kg bags at the pace of the line.",
+    "canonical": "https://www.semzoneng.com/products/packing/packing-scales/"
+  },
+  {
+    "type": "product",
+    "source_file": "products/pelleting/feed-pellet-mill/index.html",
+    "slug": "feed-pellet-mill",
+    "category_breadcrumb": "Products · Pelleting",
+    "title": "Feed Pellet Mill",
+    "lead": "The heart of the plant — steam-conditioned mash pressed through precision ring dies at 80–85 °C, from 2 to 35 tonnes every hour.",
+    "tags": [
+      "2–35 t/h",
+      "Ring die Ø350–768 mm",
+      "Stage 04 · Pelleting"
+    ],
+    "body_paragraphs": [
+      "The SZLH series covers the full SEMZON feed-line range with ring dies from Ø350 to Ø768 mm. Mash is conditioned with saturated steam to 80–85 °C — up to triple-pass conditioning on larger frames — then pressed into dense, durable pellets.",
+      "Gear-driven transmission, quick die clamping and roller adjustment keep changeovers short, and every die and roller set is supported with spares from the Lahore works for the life of the machine."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "Ring dies Ø350–768 mm across the series",
+      "Capacities from 2 to 35 t/h",
+      "Steam conditioning at 80–85 °C, up to triple conditioner",
+      "Quick die clamp and roller adjustment",
+      "Dies, rollers and wear parts ex-Lahore"
+    ],
+    "hero_image": "/assets/img/pelleting-feed-pellet-mill-szlh-cut.webp",
+    "hero_image_alt": "Feed Pellet Mill",
+    "spec_table": [
+      {
+        "label": "Series",
+        "value": "SZLH"
+      },
+      {
+        "label": "Capacity",
+        "value": "2–35 t/h"
+      },
+      {
+        "label": "Ring die",
+        "value": "Ø350–768 mm"
+      },
+      {
+        "label": "Conditioning",
+        "value": "Saturated steam · 80–85 °C"
+      },
+      {
+        "label": "Drive",
+        "value": "Gear transmission"
+      },
+      {
+        "label": "Duty",
+        "value": "Poultry · cattle · aqua sinking"
+      }
+    ],
+    "related": [
+      {
+        "name": "Hammer Mill",
+        "tag": "SMSP · 2–35 T/H",
+        "link": "../../grinding/hammer-mill/index.html"
+      },
+      {
+        "name": "Counterflow Cooler",
+        "tag": "SKLN · 6–30 T/H",
+        "link": "../../cooling-drying/counterflow-cooler/index.html"
+      },
+      {
+        "name": "Pellet Crumbler",
+        "tag": "SSLG · CRUMBS",
+        "link": "../../screening/crumbler/index.html"
+      }
+    ],
+    "meta_title": "Feed Pellet Mill — SZLH | SEMZON Engineering",
+    "meta_description": "The heart of the plant — steam-conditioned mash pressed through precision ring dies at 80–85 °C, from 2 to 35 tonnes every hour.",
+    "canonical": "https://www.semzoneng.com/products/pelleting/feed-pellet-mill/"
+  },
+  {
+    "type": "product",
+    "source_file": "products/screening/crumbler/index.html",
+    "slug": "crumbler",
+    "category_breadcrumb": "Products · Screening",
+    "title": "Pellet Crumbler",
+    "lead": "Corrugated-roll crumbling that turns cooled pellets into uniform starter and grower crumbs — up to four-roll configurations.",
+    "tags": [
+      "Starter & grower crumbs",
+      "Stage 05 · Screening"
+    ],
+    "body_paragraphs": [
+      "The SSLG crumbler passes cooled pellets between corrugated rolls to produce crumbs for young birds and small species, with roll gap adjustment setting crumb size on the run.",
+      "A bypass flap sends whole pellets straight through when crumbs are not required, so one line serves both products."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "Two- and four-roll configurations",
+      "On-the-run roll gap adjustment",
+      "Pellet bypass for whole-pellet products",
+      "Feeds SFJH screener for grading"
+    ],
+    "hero_image": "/assets/img/screening-crumbler-sslg-01.webp",
+    "hero_image_alt": "Pellet Crumbler",
+    "spec_table": [
+      {
+        "label": "Series",
+        "value": "SSLG"
+      },
+      {
+        "label": "Rolls",
+        "value": "Up to 4, corrugated"
+      },
+      {
+        "label": "Products",
+        "value": "Starter / grower crumbs"
+      },
+      {
+        "label": "Position",
+        "value": "Stage 05 — cooling & screening"
+      }
+    ],
+    "related": [
+      {
+        "name": "Vibration Screener",
+        "tag": "SFJH · GRADING",
+        "link": "../vibration-screener/index.html"
+      },
+      {
+        "name": "Feed Pellet Mill",
+        "tag": "SZLH · Ø350–768 MM",
+        "link": "../../pelleting/feed-pellet-mill/index.html"
+      },
+      {
+        "name": "Pellet Cleaner",
+        "tag": "FINES REMOVAL",
+        "link": "../../cleaning/pellet-cleaner/index.html"
+      }
+    ],
+    "meta_title": "Pellet Crumbler — SSLG | SEMZON Engineering",
+    "meta_description": "Corrugated-roll crumbling that turns cooled pellets into uniform starter and grower crumbs — up to four-roll configurations.",
+    "canonical": "https://www.semzoneng.com/products/screening/crumbler/"
+  },
+  {
+    "type": "product",
+    "source_file": "products/screening/vibration-screener/index.html",
+    "slug": "vibration-screener",
+    "category_breadcrumb": "Products · Screening",
+    "title": "Vibration Screener",
+    "lead": "Rotary vibration grading that splits pellets and crumbs into precise size fractions — uniform product forward, everything else back.",
+    "tags": [
+      "Multi-deck grading",
+      "Stage 05 · Screening"
+    ],
+    "body_paragraphs": [
+      "The SFJH screener grades cooled pellets and crumbled product across multiple decks, sending on-size feed to packing and returning fines and oversize for reprocessing.",
+      "Deck screens are matched to your crumb sizes and pellet diameters, and swap quickly between production runs."
+    ],
+    "why_heading": "Why plants specify it",
+    "features": [
+      "Multi-deck grading of pellets and crumbs",
+      "Quick screen change between products",
+      "Balanced vibration drive, low noise",
+      "Closed, dust-tight construction"
+    ],
+    "hero_image": "/assets/img/screening-vibration-screener-sfjh-01.webp",
+    "hero_image_alt": "Vibration Screener",
+    "spec_table": [
+      {
+        "label": "Series",
+        "value": "SFJH"
+      },
+      {
+        "label": "Duty",
+        "value": "Pellets & crumbs"
+      },
+      {
+        "label": "Decks",
+        "value": "Multiple, screen-to-product"
+      },
+      {
+        "label": "Position",
+        "value": "Stage 05 — cooling & screening"
+      }
+    ],
+    "related": [
+      {
+        "name": "Pellet Crumbler",
+        "tag": "SSLG · CRUMBS",
+        "link": "../crumbler/index.html"
+      },
+      {
+        "name": "Pellet Cleaner",
+        "tag": "FINES REMOVAL",
+        "link": "../../cleaning/pellet-cleaner/index.html"
+      },
+      {
+        "name": "Counterflow Cooler",
+        "tag": "SKLN · 6–30 T/H",
+        "link": "../../cooling-drying/counterflow-cooler/index.html"
+      }
+    ],
+    "meta_title": "Vibration Screener — SFJH | SEMZON Engineering",
+    "meta_description": "Rotary vibration grading that splits pellets and crumbs into precise size fractions — uniform product forward, everything else back.",
+    "canonical": "https://www.semzoneng.com/products/screening/vibration-screener/"
+  }
+]
