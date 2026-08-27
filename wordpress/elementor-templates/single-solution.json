@@ -1,0 +1,259 @@
+{
+  "version": "0.4",
+  "title": "SEMZON — Single Solution",
+  "type": "single-post",
+  "content": [
+    {
+      "id": "d67d8ab",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "page-hero"
+      },
+      "elements": [
+        {
+          "id": "a5771bc",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "column",
+            "css_classes": "container container--wide"
+          },
+          "elements": [
+            {
+              "id": "182be0c",
+              "elType": "widget",
+              "settings": {
+                "css_classes": "crumb"
+              },
+              "elements": [],
+              "widgetType": "breadcrumbs"
+            },
+            {
+              "id": "e369853",
+              "elType": "widget",
+              "settings": {
+                "title": "{{ACF: eyebrow}}",
+                "header_size": "p",
+                "css_classes": "eyebrow rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "1c383cd",
+              "elType": "widget",
+              "settings": {
+                "title": "{{Post Title}}",
+                "header_size": "h1",
+                "css_classes": "display-1 rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "19ca14e",
+              "elType": "widget",
+              "settings": {
+                "title": "{{ACF: hero_lead}}",
+                "header_size": "p",
+                "css_classes": "lead rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "a5bfc9e",
+              "elType": "widget",
+              "settings": {
+                "title": "Tag pills — Loop Grid over ACF repeater 'hero_tags', item class: tag",
+                "header_size": "div",
+                "_element_custom_id": "",
+                "css_classes": "semzon-build-note"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "67c6a1e",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "section section--tight"
+      },
+      "elements": [
+        {
+          "id": "d9d4f49",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "row",
+            "css_classes": "container container--wide page-grid"
+          },
+          "elements": [
+            {
+              "id": "17e6216",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "d645920",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>{{ACF: body_intro}}</p>",
+                    "css_classes": "prose rv"
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "3416a75",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "{{ACF: secondary_heading}}",
+                    "header_size": "h3",
+                    "css_classes": "h-min rv"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "a1d0c6e",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "{{ACF: secondary_text}}",
+                    "header_size": "p",
+                    "css_classes": "rv"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                }
+              ],
+              "isInner": false
+            },
+            {
+              "id": "6c8349c",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "css_classes": "pg-media rv"
+              },
+              "elements": [
+                {
+                  "id": "f717716",
+                  "elType": "widget",
+                  "settings": {
+                    "image": {
+                      "url": "",
+                      "id": ""
+                    },
+                    "image_size": "semzon-render"
+                  },
+                  "elements": [],
+                  "widgetType": "image"
+                }
+              ],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "a684ece",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "section section--tight"
+      },
+      "elements": [
+        {
+          "id": "d82c8d1",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "column",
+            "css_classes": "container container--wide"
+          },
+          "elements": [
+            {
+              "id": "2838023",
+              "elType": "container",
+              "settings": {
+                "content_width": "boxed",
+                "flex_direction": "column",
+                "css_classes": "sec-head"
+              },
+              "elements": [
+                {
+                  "id": "642e92e",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Six stages",
+                    "header_size": "p",
+                    "css_classes": "eyebrow rv"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "f457c54",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "The machines behind the line.",
+                    "header_size": "h2",
+                    "css_classes": "display-2 rv"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "c0c7c76",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "{{ACF: flow_intro}}",
+                    "header_size": "p",
+                    "css_classes": "lead rv"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                }
+              ],
+              "isInner": false
+            },
+            {
+              "id": "9a11581",
+              "elType": "widget",
+              "settings": {
+                "title": "Machine flow — Loop Grid over ACF repeater 'machine_flow', wrapper class: bento, item class: bx",
+                "header_size": "div",
+                "_element_custom_id": "",
+                "css_classes": "semzon-build-note"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": {}
+}

@@ -1,0 +1,178 @@
+{
+  "version": "0.4",
+  "title": "SEMZON — Single Project",
+  "type": "single-post",
+  "content": [
+    {
+      "id": "7f39f83",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "page-hero"
+      },
+      "elements": [
+        {
+          "id": "072b030",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "column",
+            "css_classes": "container container--wide"
+          },
+          "elements": [
+            {
+              "id": "b53b3a3",
+              "elType": "widget",
+              "settings": {
+                "css_classes": "crumb"
+              },
+              "elements": [],
+              "widgetType": "breadcrumbs"
+            },
+            {
+              "id": "9f61408",
+              "elType": "widget",
+              "settings": {
+                "title": "{{ACF: eyebrow}}",
+                "header_size": "p",
+                "css_classes": "eyebrow rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "72b32a1",
+              "elType": "widget",
+              "settings": {
+                "title": "{{Post Title}}",
+                "header_size": "h1",
+                "css_classes": "display-1 rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "66f041e",
+              "elType": "widget",
+              "settings": {
+                "title": "{{ACF: hero_lead}}",
+                "header_size": "p",
+                "css_classes": "lead rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "093f65e",
+              "elType": "widget",
+              "settings": {
+                "title": "Tag pills — Loop Grid over ACF repeater 'hero_tags', item class: tag",
+                "header_size": "div",
+                "_element_custom_id": "",
+                "css_classes": "semzon-build-note"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "14bfa6b",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "section section--tight"
+      },
+      "elements": [
+        {
+          "id": "a3f390d",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "row",
+            "css_classes": "container container--wide page-grid"
+          },
+          "elements": [
+            {
+              "id": "fc490ca",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "css_classes": "prose rv"
+              },
+              "elements": [
+                {
+                  "id": "44f683a",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>{{ACF: body_intro}}</p>",
+                    "css_classes": "prose rv"
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "03afdbd",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "{{ACF: scope_heading}}",
+                    "header_size": "h3",
+                    "css_classes": "h-min"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "ea5d2f1",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Scope list — Loop Grid over ACF repeater 'scope_list', wrapper class: feat-list",
+                    "header_size": "div",
+                    "_element_custom_id": "",
+                    "css_classes": "semzon-build-note"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                }
+              ],
+              "isInner": false
+            },
+            {
+              "id": "735b90b",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "3295c76",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Gallery — Elementor Gallery widget bound to ACF 'gallery', each frame class: pg-media",
+                    "header_size": "div",
+                    "_element_custom_id": "",
+                    "css_classes": "semzon-build-note"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                }
+              ],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": {}
+}

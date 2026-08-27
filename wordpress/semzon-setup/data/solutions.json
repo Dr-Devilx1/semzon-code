@@ -1,0 +1,397 @@
+[
+  {
+    "slug": "aqua-pet-feed-line",
+    "title": "Aqua & Pet Feed Line",
+    "eyebrow": "Production lines",
+    "hero_lead": "Extrusion-based lines for floating and sinking fish feed, shrimp feed and pet food — 2 to 20 tonnes per hour.",
+    "hero_tags": [
+      "2–20 t/h",
+      "Floating & sinking",
+      "Wet extrusion"
+    ],
+    "body_intro": "<p>Aqua and pet lines replace the pellet mill heart with SMHS wet extrusion, add SHGW belt drying and coating, and keep the same cleaning, grinding and packing sections around them.</p><p>Fine grinding and starch cook give the water stability aqua species demand; die changes switch the same line between floating, sinking and pet products.</p>",
+    "secondary_heading": "Built into every line",
+    "secondary_text": "Floating and sinking product by recipe and die; belt drying and oil coating included; species-specific fine-grinding specified up front.",
+    "image": "extrusion-fish-feed-extruder-smhs-01.webp",
+    "image_treatment": "render",
+    "flow_intro": "Every SEMZON line follows the same accountable flow — see it animated on the homepage plant-flow .",
+    "machine_flow": [
+      {
+        "step_label": "01 — Intake & cleaning",
+        "machine_name": "MAIZE PRE-CLEANER",
+        "product_slug": "maize-pre-cleaner"
+      },
+      {
+        "step_label": "02 — Grinding",
+        "machine_name": "HAMMER MILL",
+        "product_slug": "hammer-mill"
+      },
+      {
+        "step_label": "03 — Batching & mixing",
+        "machine_name": "RIBBON MIXER",
+        "product_slug": "ribbon-mixer"
+      },
+      {
+        "step_label": "04 — Conditioning & pelleting",
+        "machine_name": "FEED PELLET MILL",
+        "product_slug": "feed-pellet-mill"
+      },
+      {
+        "step_label": "05 — Cooling & screening",
+        "machine_name": "COUNTERFLOW COOLER",
+        "product_slug": "counterflow-cooler"
+      },
+      {
+        "step_label": "06 — Packing & loading",
+        "machine_name": "PACKING SCALES",
+        "product_slug": "packing-scales"
+      }
+    ],
+    "meta_description": "Extrusion-based lines for floating and sinking fish feed, shrimp feed and pet food — 2 to 20 tonnes per hour."
+  },
+  {
+    "slug": "biomass-wood-pellet-line",
+    "title": "Biomass Wood Pellet Line",
+    "eyebrow": "Production lines",
+    "hero_lead": "Fuel pellet plants from 2 to 20 tonnes per hour — sawdust, rice husk and chipped wood into dense 6–10 mm biomass pellets.",
+    "hero_tags": [
+      "2–20 t/h",
+      "Sawdust · husk · chips",
+      "6–10 mm pellet"
+    ],
+    "body_intro": "<p>Biomass lines adapt the feed-plant backbone to woody raw material: heavier grinding, drying to pelleting moisture, high-compression dies and counterflow cooling for a hard, low-fines fuel pellet.</p><p>Raw-material flexibility is engineered in, because the cheapest fibre next year may not be this year's.</p>",
+    "secondary_heading": "Built into every line",
+    "secondary_text": "Handles sawdust, husk and chips; 6–10 mm fuel pellet output; drying stage matched to raw-material moisture.",
+    "image": "cooling-dryer-shgw-01.webp",
+    "image_treatment": "render",
+    "flow_intro": "Every SEMZON line follows the same accountable flow — see it animated on the homepage plant-flow .",
+    "machine_flow": [
+      {
+        "step_label": "01 — Intake & cleaning",
+        "machine_name": "MAIZE PRE-CLEANER",
+        "product_slug": "maize-pre-cleaner"
+      },
+      {
+        "step_label": "02 — Grinding",
+        "machine_name": "HAMMER MILL",
+        "product_slug": "hammer-mill"
+      },
+      {
+        "step_label": "03 — Batching & mixing",
+        "machine_name": "RIBBON MIXER",
+        "product_slug": "ribbon-mixer"
+      },
+      {
+        "step_label": "04 — Conditioning & pelleting",
+        "machine_name": "FEED PELLET MILL",
+        "product_slug": "feed-pellet-mill"
+      },
+      {
+        "step_label": "05 — Cooling & screening",
+        "machine_name": "COUNTERFLOW COOLER",
+        "product_slug": "counterflow-cooler"
+      },
+      {
+        "step_label": "06 — Packing & loading",
+        "machine_name": "PACKING SCALES",
+        "product_slug": "packing-scales"
+      }
+    ],
+    "meta_description": "Fuel pellet plants from 2 to 20 tonnes per hour — sawdust, rice husk and chipped wood into dense 6–10 mm biomass pellets."
+  },
+  {
+    "slug": "bop-plant",
+    "title": "BOP Fertilizer Plant",
+    "eyebrow": "Production lines",
+    "hero_lead": "Bone-based BOP fertilizer plants at 50–200 tonnes per day — grinding, granulation, drying and screening as one delivered line.",
+    "hero_tags": [
+      "50–200 t/d",
+      "Granulation & screening"
+    ],
+    "body_intro": "<p>BOP plants apply the same process discipline as our SSP scope to bone-derived fertilizer: raw grinding, granulation, drying, screening and bagging, engineered together so each stage feeds the next at rate.</p><p>Auriga, Karachi — a SEMZON BOP delivery — anchors the reference list.</p>",
+    "secondary_heading": "Built into every line",
+    "secondary_text": "Granulation-centred flowsheet; drying and screening matched to granule spec; bagging to 50 kg.",
+    "image": "project-auriga-bop-karachi-01.webp",
+    "image_treatment": "photo",
+    "flow_intro": "Every SEMZON line follows the same accountable flow — see it animated on the homepage plant-flow .",
+    "machine_flow": [
+      {
+        "step_label": "01 — Intake & cleaning",
+        "machine_name": "MAIZE PRE-CLEANER",
+        "product_slug": "maize-pre-cleaner"
+      },
+      {
+        "step_label": "02 — Grinding",
+        "machine_name": "HAMMER MILL",
+        "product_slug": "hammer-mill"
+      },
+      {
+        "step_label": "03 — Batching & mixing",
+        "machine_name": "RIBBON MIXER",
+        "product_slug": "ribbon-mixer"
+      },
+      {
+        "step_label": "04 — Conditioning & pelleting",
+        "machine_name": "FEED PELLET MILL",
+        "product_slug": "feed-pellet-mill"
+      },
+      {
+        "step_label": "05 — Cooling & screening",
+        "machine_name": "COUNTERFLOW COOLER",
+        "product_slug": "counterflow-cooler"
+      },
+      {
+        "step_label": "06 — Packing & loading",
+        "machine_name": "PACKING SCALES",
+        "product_slug": "packing-scales"
+      }
+    ],
+    "meta_description": "Bone-based BOP fertilizer plants at 50–200 tonnes per day — grinding, granulation, drying and screening as one delivered line."
+  },
+  {
+    "slug": "cattle-feed-line",
+    "title": "Cattle Feed Line",
+    "eyebrow": "Production lines",
+    "hero_lead": "Right-sized cattle and dairy feed plants — compact manual and semi-automatic lines that grow with your herd book.",
+    "hero_tags": [
+      "Compact lines",
+      "Manual & semi-auto"
+    ],
+    "body_intro": "<p>Cattle feed lines pare the six-stage flow down to what dairy and fattening rations actually need: robust grinding, accurate mixing with molasses addition, and pelleting where the market pays for it.</p><p>Start manual, automate batching later — the layout is planned for the upgrade on day one.</p>",
+    "secondary_heading": "Built into every line",
+    "secondary_text": "Molasses and liquid addition designed in; mash-only or mash+pellet configurations; staged automation path.",
+    "image": "grinding-hammer-mill-smsp-01.webp",
+    "image_treatment": "render",
+    "flow_intro": "Every SEMZON line follows the same accountable flow — see it animated on the homepage plant-flow .",
+    "machine_flow": [
+      {
+        "step_label": "01 — Intake & cleaning",
+        "machine_name": "MAIZE PRE-CLEANER",
+        "product_slug": "maize-pre-cleaner"
+      },
+      {
+        "step_label": "02 — Grinding",
+        "machine_name": "HAMMER MILL",
+        "product_slug": "hammer-mill"
+      },
+      {
+        "step_label": "03 — Batching & mixing",
+        "machine_name": "RIBBON MIXER",
+        "product_slug": "ribbon-mixer"
+      },
+      {
+        "step_label": "04 — Conditioning & pelleting",
+        "machine_name": "FEED PELLET MILL",
+        "product_slug": "feed-pellet-mill"
+      },
+      {
+        "step_label": "05 — Cooling & screening",
+        "machine_name": "COUNTERFLOW COOLER",
+        "product_slug": "counterflow-cooler"
+      },
+      {
+        "step_label": "06 — Packing & loading",
+        "machine_name": "PACKING SCALES",
+        "product_slug": "packing-scales"
+      }
+    ],
+    "meta_description": "Right-sized cattle and dairy feed plants — compact manual and semi-automatic lines that grow with your herd book."
+  },
+  {
+    "slug": "npk-compound-fertilizer",
+    "title": "NPK & Compound Fertilizer",
+    "eyebrow": "Production lines",
+    "hero_lead": "Compound and blended NPK production — dosing, granulation, drying and screening engineered around your formulations.",
+    "hero_tags": [
+      "Compound granulation",
+      "Blending & screening"
+    ],
+    "body_intro": "<p>NPK scope combines accurate multi-ingredient dosing with granulation, drying, cooling and screening so each granule carries the declared analysis.</p><p>Formulation flexibility is the design driver: the same plant runs seasonal grades without rebuilding the front end.</p>",
+    "secondary_heading": "Built into every line",
+    "secondary_text": "Multi-ingredient batching; granulation and polish screening; seasonal grade changeovers planned in.",
+    "image": "illus-npk-granulator.svg",
+    "image_treatment": "render",
+    "flow_intro": "Every SEMZON line follows the same accountable flow — see it animated on the homepage plant-flow .",
+    "machine_flow": [
+      {
+        "step_label": "01 — Intake & cleaning",
+        "machine_name": "MAIZE PRE-CLEANER",
+        "product_slug": "maize-pre-cleaner"
+      },
+      {
+        "step_label": "02 — Grinding",
+        "machine_name": "HAMMER MILL",
+        "product_slug": "hammer-mill"
+      },
+      {
+        "step_label": "03 — Batching & mixing",
+        "machine_name": "RIBBON MIXER",
+        "product_slug": "ribbon-mixer"
+      },
+      {
+        "step_label": "04 — Conditioning & pelleting",
+        "machine_name": "FEED PELLET MILL",
+        "product_slug": "feed-pellet-mill"
+      },
+      {
+        "step_label": "05 — Cooling & screening",
+        "machine_name": "COUNTERFLOW COOLER",
+        "product_slug": "counterflow-cooler"
+      },
+      {
+        "step_label": "06 — Packing & loading",
+        "machine_name": "PACKING SCALES",
+        "product_slug": "packing-scales"
+      }
+    ],
+    "meta_description": "Compound and blended NPK production — dosing, granulation, drying and screening engineered around your formulations."
+  },
+  {
+    "slug": "organic-compost-plant",
+    "title": "Organic Compost Plant",
+    "eyebrow": "Production lines",
+    "hero_lead": "Compost plants from 50 to 100 tonnes per day — municipal and farm organics screened, matured and refined into saleable compost.",
+    "hero_tags": [
+      "50–100 t/d",
+      "Municipal & farm waste"
+    ],
+    "body_intro": "<p>SEMZON compost plants take mixed organic waste through sorting, size reduction, controlled maturation and final screening, turning a disposal cost into a product line.</p><p>Our waste-management installation at Quetta is the working reference for this scope.</p>",
+    "secondary_heading": "Built into every line",
+    "secondary_text": "Front-end sorting and contaminant removal; maturation handling equipment; final screening to product grade.",
+    "image": "project-quetta-wmc-01.webp",
+    "image_treatment": "photo",
+    "flow_intro": "Every SEMZON line follows the same accountable flow — see it animated on the homepage plant-flow .",
+    "machine_flow": [
+      {
+        "step_label": "01 — Intake & cleaning",
+        "machine_name": "MAIZE PRE-CLEANER",
+        "product_slug": "maize-pre-cleaner"
+      },
+      {
+        "step_label": "02 — Grinding",
+        "machine_name": "HAMMER MILL",
+        "product_slug": "hammer-mill"
+      },
+      {
+        "step_label": "03 — Batching & mixing",
+        "machine_name": "RIBBON MIXER",
+        "product_slug": "ribbon-mixer"
+      },
+      {
+        "step_label": "04 — Conditioning & pelleting",
+        "machine_name": "FEED PELLET MILL",
+        "product_slug": "feed-pellet-mill"
+      },
+      {
+        "step_label": "05 — Cooling & screening",
+        "machine_name": "COUNTERFLOW COOLER",
+        "product_slug": "counterflow-cooler"
+      },
+      {
+        "step_label": "06 — Packing & loading",
+        "machine_name": "PACKING SCALES",
+        "product_slug": "packing-scales"
+      }
+    ],
+    "meta_description": "Compost plants from 50 to 100 tonnes per day — municipal and farm organics screened, matured and refined into saleable compost."
+  },
+  {
+    "slug": "poultry-livestock-feed-line",
+    "title": "Poultry & Livestock Feed Line",
+    "eyebrow": "Production lines",
+    "hero_lead": "Complete poultry and livestock feed plants from 10 to 80 tonnes per hour — grinding to bagging under one signature.",
+    "hero_tags": [
+      "10–80 t/h",
+      "Mash · pellet · crumb",
+      "Turnkey scope"
+    ],
+    "body_intro": "<p>SEMZON poultry and livestock lines carry raw maize and meal through cleaning, grinding, batching, pelleting, cooling, crumbling and packing in one engineered flow — the same six stages you can walk through on our homepage, sized to your market.</p><p>Reference installations include the 20 t/h fully automated Albadar Feed plant in Kabul and pellet systems for Roshan Feeds, Gujranwala — designed, fabricated and commissioned by the same Lahore team that supports them today.</p>",
+    "secondary_heading": "Built into every line",
+    "secondary_text": "Mash, pellet and crumb products from one line; capacities stepped from 10 to 80 t/h; full PLC automation available from day one or as a later retrofit.",
+    "image": "project-roshan-feeds-gujranwala-01.webp",
+    "image_treatment": "photo",
+    "flow_intro": "Every SEMZON line follows the same accountable flow — see it animated on the homepage plant-flow .",
+    "machine_flow": [
+      {
+        "step_label": "01 — Intake & cleaning",
+        "machine_name": "MAIZE PRE-CLEANER",
+        "product_slug": "maize-pre-cleaner"
+      },
+      {
+        "step_label": "02 — Grinding",
+        "machine_name": "HAMMER MILL",
+        "product_slug": "hammer-mill"
+      },
+      {
+        "step_label": "03 — Batching & mixing",
+        "machine_name": "RIBBON MIXER",
+        "product_slug": "ribbon-mixer"
+      },
+      {
+        "step_label": "04 — Conditioning & pelleting",
+        "machine_name": "FEED PELLET MILL",
+        "product_slug": "feed-pellet-mill"
+      },
+      {
+        "step_label": "05 — Cooling & screening",
+        "machine_name": "COUNTERFLOW COOLER",
+        "product_slug": "counterflow-cooler"
+      },
+      {
+        "step_label": "06 — Packing & loading",
+        "machine_name": "PACKING SCALES",
+        "product_slug": "packing-scales"
+      }
+    ],
+    "meta_description": "Complete poultry and livestock feed plants from 10 to 80 tonnes per hour — grinding to bagging under one signature."
+  },
+  {
+    "slug": "ssp-plant",
+    "title": "SSP Fertilizer Plant",
+    "eyebrow": "Production lines",
+    "hero_lead": "Single Super Phosphate plants from 50 to 200 tonnes per day — rock phosphate and acid in, cured, granulated, bagged SSP out.",
+    "hero_tags": [
+      "50–200 t/d",
+      "Acid to bagging"
+    ],
+    "body_intro": "<p>SEMZON SSP plants cover the full process chain: rock grinding, acidulation, den curing, granulation, screening and bagging, with materials handling and structures fabricated in our own works.</p><p>The Auriga installation in Karachi is our standing reference for fertilizer-scale process fabrication delivered turnkey.</p>",
+    "secondary_heading": "Built into every line",
+    "secondary_text": "Complete process from acidulation to bagging; corrosion-conscious materials selection; structures and handling fabricated in-house.",
+    "image": "project-auriga-bop-karachi-01.webp",
+    "image_treatment": "photo",
+    "flow_intro": "Every SEMZON line follows the same accountable flow — see it animated on the homepage plant-flow .",
+    "machine_flow": [
+      {
+        "step_label": "01 — Intake & cleaning",
+        "machine_name": "MAIZE PRE-CLEANER",
+        "product_slug": "maize-pre-cleaner"
+      },
+      {
+        "step_label": "02 — Grinding",
+        "machine_name": "HAMMER MILL",
+        "product_slug": "hammer-mill"
+      },
+      {
+        "step_label": "03 — Batching & mixing",
+        "machine_name": "RIBBON MIXER",
+        "product_slug": "ribbon-mixer"
+      },
+      {
+        "step_label": "04 — Conditioning & pelleting",
+        "machine_name": "FEED PELLET MILL",
+        "product_slug": "feed-pellet-mill"
+      },
+      {
+        "step_label": "05 — Cooling & screening",
+        "machine_name": "COUNTERFLOW COOLER",
+        "product_slug": "counterflow-cooler"
+      },
+      {
+        "step_label": "06 — Packing & loading",
+        "machine_name": "PACKING SCALES",
+        "product_slug": "packing-scales"
+      }
+    ],
+    "meta_description": "Single Super Phosphate plants from 50 to 200 tonnes per day — rock phosphate and acid in, cured, granulated, bagged SSP out."
+  }
+]

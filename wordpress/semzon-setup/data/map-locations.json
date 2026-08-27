@@ -1,0 +1,51 @@
+[
+  {
+    "name": "SEMZON Engineering — HQ & Works",
+    "lat": 31.291,
+    "lng": 74.102,
+    "cap": "2.5 KM MANGA RAIWIND ROAD, LAHORE",
+    "type": "hq"
+  },
+  {
+    "name": "Albadar Feed — Kabul",
+    "lat": 34.5553,
+    "lng": 69.2075,
+    "cap": "20 T/H POULTRY FEED · TURNKEY",
+    "type": "project"
+  },
+  {
+    "name": "Roshan Feeds — Gujranwala",
+    "lat": 32.1877,
+    "lng": 74.1945,
+    "cap": "PELLET LINE",
+    "type": "project"
+  },
+  {
+    "name": "Auriga — Karachi",
+    "lat": 24.8607,
+    "lng": 67.0011,
+    "cap": "BOP FERTILIZER PLANT",
+    "type": "project"
+  },
+  {
+    "name": "Subhan & Al-Itifaq Feeds — Kasur",
+    "lat": 31.1187,
+    "lng": 74.4502,
+    "cap": "FEED LINES",
+    "type": "project"
+  },
+  {
+    "name": "Quetta WMC",
+    "lat": 30.1798,
+    "lng": 66.975,
+    "cap": "COMPOST · WASTE MANAGEMENT",
+    "type": "project"
+  },
+  {
+    "name": "Dubai — Export & Support",
+    "lat": 25.2048,
+    "lng": 55.2708,
+    "cap": "GCC EXPORT PROGRAM",
+    "type": "export"
+  }
+]

@@ -1,0 +1,90 @@
+{
+  "version": "0.4",
+  "title": "SEMZON — Projects Archive",
+  "type": "archive",
+  "content": [
+    {
+      "id": "c7e1249",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "page-hero"
+      },
+      "elements": [
+        {
+          "id": "93db85e",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "column",
+            "css_classes": "container container--wide"
+          },
+          "elements": [
+            {
+              "id": "68d30a9",
+              "elType": "widget",
+              "settings": {
+                "title": "Installed",
+                "header_size": "p",
+                "css_classes": "eyebrow rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "3ef8154",
+              "elType": "widget",
+              "settings": {
+                "title": "Plants running in the field.",
+                "header_size": "h1",
+                "css_classes": "display-1 rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "8613985",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "section section--tight"
+      },
+      "elements": [
+        {
+          "id": "7647966",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "column",
+            "css_classes": "container container--wide"
+          },
+          "elements": [
+            {
+              "id": "2a38a4a",
+              "elType": "widget",
+              "settings": {
+                "title": "Archive loop — Elementor Archive Posts / Loop Grid, wrapper class: grid grid--3, item class: card",
+                "header_size": "div",
+                "_element_custom_id": "",
+                "css_classes": "semzon-build-note"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": {}
+}

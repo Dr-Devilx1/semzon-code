@@ -1,0 +1,178 @@
+{
+  "version": "0.4",
+  "title": "SEMZON — Footer",
+  "type": "footer",
+  "content": [
+    {
+      "id": "f0935e4",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "footer"
+      },
+      "elements": [
+        {
+          "id": "54229ab",
+          "elType": "widget",
+          "settings": {
+            "title": "SEMZON",
+            "header_size": "div",
+            "css_classes": "f-mark"
+          },
+          "elements": [],
+          "widgetType": "heading"
+        },
+        {
+          "id": "65b9eea",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "row",
+            "css_classes": "container container--wide footer-grid"
+          },
+          "elements": [
+            {
+              "id": "812b4ba",
+              "elType": "container",
+              "settings": {
+                "content_width": "boxed",
+                "flex_direction": "column",
+                "css_classes": "f-brand"
+              },
+              "elements": [
+                {
+                  "id": "92cc227",
+                  "elType": "widget",
+                  "settings": {
+                    "image": {
+                      "url": "",
+                      "id": ""
+                    },
+                    "css_classes": "f-logo"
+                  },
+                  "elements": [],
+                  "widgetType": "image"
+                },
+                {
+                  "id": "98dce83",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>Custom industrial machinery and turnkey feed, biomass and fertilizer plants — engineered in Lahore since 1994.</p>"
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "f4b9ec3",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "QUALITY FIRST · SERVICE FIRST · PRICE REASONABLE",
+                    "header_size": "span",
+                    "css_classes": "mono"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                }
+              ],
+              "isInner": false
+            },
+            {
+              "id": "ed3d2c2",
+              "elType": "container",
+              "settings": {
+                "content_width": "boxed",
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "26657d5",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Products",
+                    "header_size": "h5"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "e2ef524",
+                  "elType": "widget",
+                  "settings": {
+                    "menu": ""
+                  },
+                  "elements": [],
+                  "widgetType": "nav-menu"
+                }
+              ],
+              "isInner": false
+            },
+            {
+              "id": "38b3eff",
+              "elType": "container",
+              "settings": {
+                "content_width": "boxed",
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "ac627ab",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Solutions",
+                    "header_size": "h5"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "f899139",
+                  "elType": "widget",
+                  "settings": {
+                    "menu": ""
+                  },
+                  "elements": [],
+                  "widgetType": "nav-menu"
+                }
+              ],
+              "isInner": false
+            },
+            {
+              "id": "c9e1074",
+              "elType": "container",
+              "settings": {
+                "content_width": "boxed",
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "ec89566",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Contact",
+                    "header_size": "h5"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "6974ce5",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<ul class='f-contact'><li><b>+92 323 8845411</b><span class='small'>Phone &amp; WhatsApp</span></li><li><b>semzoneng@gmail.com</b><span class='small'>Engineering enquiries</span></li><li><b>2.5 KM Manga Raiwind Road</b><span class='small'>Manga Mandi, Lahore, Pakistan</span></li></ul>"
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": {}
+}
