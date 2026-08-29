@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:       SEMZON Setup
+ * Plugin Name:       SEMZON Setup (one-time installer)
  * Plugin URI:        https://www.semzoneng.com/
- * Description:       Installer and content architecture for the SEMZON site. Registers the Product, Solution and Project post types, their taxonomy and ACF field groups, configures Elementor's global colours, fonts and responsive breakpoints, and seeds the catalogue content. This is a configurator, not a rendering engine — once setup is finished the site runs as a normal WordPress + Elementor + ACF install and this plugin only maintains the registrations.
- * Version:           1.0.0
+ * Description:       One-time installer for the SEMZON site. Imports the catalogue content and images, writes the design tokens and the six responsive breakpoints into the Elementor kit, and creates the required pages. It registers nothing the finished site depends on — post types, custom fields and settings all live in the SEMZON Engineering theme — so once the wizard reports "complete" this plugin can be deleted with no effect on the website.
+ * Version:           1.1.0
  * Requires at least: 6.2
  * Requires PHP:      7.4
  * Author:            SEMZON Engineering
@@ -15,29 +15,21 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'SEMZON_SETUP_VERSION', '1.0.0' );
-define( 'SEMZON_SETUP_FILE', __FILE__ );
+define( 'SEMZON_SETUP_VERSION', '1.1.0' );
 define( 'SEMZON_SETUP_DIR', plugin_dir_path( __FILE__ ) );
-define( 'SEMZON_SETUP_URL', plugin_dir_url( __FILE__ ) );
 
-require_once SEMZON_SETUP_DIR . 'includes/class-semzon-cpt.php';
-require_once SEMZON_SETUP_DIR . 'includes/class-semzon-acf.php';
 require_once SEMZON_SETUP_DIR . 'includes/class-semzon-elementor.php';
 require_once SEMZON_SETUP_DIR . 'includes/class-semzon-importer.php';
-require_once SEMZON_SETUP_DIR . 'includes/class-semzon-settings.php';
 require_once SEMZON_SETUP_DIR . 'includes/class-semzon-wizard.php';
 
 /**
- * Registrations must run on every load, not just during setup — the post
- * types and fields are what the site is built on. Only the wizard UI and the
- * importer are one-time operations.
+ * Boot the installer.
+ *
+ * Admin only, by design: this plugin has no front-end behaviour whatsoever.
+ * Nothing here runs on a visitor request, which is also why removing it cannot
+ * change how the site renders.
  */
 function semzon_setup_bootstrap() {
-	Semzon_CPT::init();
-	Semzon_ACF::init();
-	Semzon_Elementor::init();
-	Semzon_Settings::init();
-
 	if ( is_admin() ) {
 		Semzon_Wizard::init();
 	}
@@ -45,61 +37,34 @@ function semzon_setup_bootstrap() {
 add_action( 'plugins_loaded', 'semzon_setup_bootstrap' );
 
 /**
- * Flush rewrite rules once on activation so the CPT permalinks resolve
- * immediately instead of 404ing until someone visits Settings → Permalinks.
+ * Requirements notice.
+ *
+ * The theme is the hard dependency — it owns the post types the importer
+ * writes into. Elementor Pro and ACF PRO are needed for the site itself.
  */
-function semzon_setup_activate() {
-	Semzon_CPT::register();
-	flush_rewrite_rules();
-
-	if ( ! get_option( 'semzon_setup_state' ) ) {
-		add_option(
-			'semzon_setup_state',
-			array(
-				'post_types'  => false,
-				'taxonomies'  => false,
-				'acf'         => false,
-				'elementor'   => false,
-				'pages'       => false,
-				'content'     => false,
-				'finished_at' => '',
-			)
-		);
-	}
-}
-register_activation_hook( __FILE__, 'semzon_setup_activate' );
-
-/**
- * Leave the content in place on deactivation — posts, fields and pages are the
- * client's data. Only the rewrite cache is cleared.
- */
-function semzon_setup_deactivate() {
-	flush_rewrite_rules();
-}
-register_deactivation_hook( __FILE__, 'semzon_setup_deactivate' );
-
-/**
- * Dependency notice. The build depends on Elementor Pro (Theme Builder +
- * dynamic tags) and ACF PRO (repeater fields). Without them the site will not
- * render the templates, so say so plainly rather than failing quietly.
- */
-function semzon_setup_dependency_notice() {
+function semzon_setup_requirements_notice() {
 	if ( ! current_user_can( 'activate_plugins' ) ) {
+		return;
+	}
+
+	$screen = function_exists( 'get_current_screen' ) ? get_current_screen() : null;
+	if ( $screen && ! in_array( $screen->id, array( 'plugins', 'toplevel_page_semzon', 'semzon_page_semzon-setup' ), true ) ) {
 		return;
 	}
 
 	$missing = array();
 
+	if ( ! class_exists( 'Semzon_CPT' ) ) {
+		$missing[] = __( 'the SEMZON Engineering theme (activate it under Appearance → Themes)', 'semzon-setup' );
+	}
 	if ( ! did_action( 'elementor/loaded' ) ) {
 		$missing[] = 'Elementor';
 	}
 	if ( ! defined( 'ELEMENTOR_PRO_VERSION' ) ) {
 		$missing[] = 'Elementor Pro';
 	}
-	if ( ! class_exists( 'ACF' ) ) {
-		$missing[] = 'Advanced Custom Fields PRO';
-	} elseif ( ! function_exists( 'acf_add_local_field_group' ) ) {
-		$missing[] = 'Advanced Custom Fields PRO (the free build is active — repeater fields are required)';
+	if ( ! function_exists( 'acf_add_local_field_group' ) ) {
+		$missing[] = __( 'Advanced Custom Fields PRO (the free build cannot do repeater fields, which this site needs)', 'semzon-setup' );
 	}
 
 	if ( ! $missing ) {
@@ -108,11 +73,30 @@ function semzon_setup_dependency_notice() {
 
 	printf(
 		'<div class="notice notice-error"><p><strong>SEMZON Setup:</strong> %s</p></div>',
-		esc_html( sprintf(
-			/* translators: %s: comma separated plugin names */
-			__( 'the following required plugins are not active: %s. Activate them, then run SEMZON → Setup Wizard.', 'semzon-setup' ),
-			implode( ', ', $missing )
-		) )
+		esc_html(
+			sprintf(
+				/* translators: %s: comma separated list of missing requirements */
+				__( 'not ready to run — missing %s.', 'semzon-setup' ),
+				implode( '; ', $missing )
+			)
+		)
 	);
 }
-add_action( 'admin_notices', 'semzon_setup_dependency_notice' );
+add_action( 'admin_notices', 'semzon_setup_requirements_notice' );
+
+/**
+ * Record install time so the wizard can show whether it has been run.
+ */
+function semzon_setup_activate() {
+	if ( ! get_option( 'semzon_setup_state' ) ) {
+		add_option( 'semzon_setup_state', array( 'finished_at' => '' ) );
+	}
+}
+register_activation_hook( __FILE__, 'semzon_setup_activate' );
+
+/**
+ * Deactivation is a no-op.
+ *
+ * There is deliberately nothing to tear down: no post types to unregister, no
+ * fields to remove, no rewrite rules of its own. The site does not notice.
+ */

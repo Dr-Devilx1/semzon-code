@@ -4,7 +4,8 @@
  *
  * Each step runs over AJAX and reports its own result, so a failure names the
  * step that failed instead of leaving a half-configured site. Every step is
- * safe to re-run.
+ * safe to re-run: content is matched by slug and updated, images are matched by
+ * filename before being added.
  *
  * @package semzon-setup
  */
@@ -23,53 +24,55 @@ class Semzon_Wizard {
 	 * Hook registration.
 	 */
 	public static function init() {
-		add_action( 'admin_menu', array( __CLASS__, 'menu' ) );
+		add_action( 'admin_menu', array( __CLASS__, 'menu' ), 11 );
 		add_action( 'wp_ajax_semzon_wizard_step', array( __CLASS__, 'ajax_step' ) );
 	}
 
 	/**
-	 * Admin menu entries.
+	 * Attach the wizard under the theme's SEMZON menu.
+	 *
+	 * If the theme is not active there is no parent menu, so the wizard adds
+	 * its own top-level entry purely so the requirements notice is reachable.
 	 */
 	public static function menu() {
-		add_menu_page(
-			__( 'SEMZON', 'semzon-setup' ),
-			__( 'SEMZON', 'semzon-setup' ),
-			self::CAPABILITY,
-			'semzon-setup',
-			array( __CLASS__, 'render' ),
-			'dashicons-admin-generic',
-			58
-		);
+		$parent = class_exists( 'Semzon_Admin' ) ? 'semzon' : null;
+
+		if ( ! $parent ) {
+			add_menu_page(
+				__( 'SEMZON Setup', 'semzon-setup' ),
+				__( 'SEMZON Setup', 'semzon-setup' ),
+				self::CAPABILITY,
+				'semzon-setup',
+				array( __CLASS__, 'render' ),
+				'dashicons-admin-generic',
+				58
+			);
+			return;
+		}
 
 		add_submenu_page(
-			'semzon-setup',
+			$parent,
 			__( 'Setup Wizard', 'semzon-setup' ),
 			__( 'Setup Wizard', 'semzon-setup' ),
 			self::CAPABILITY,
 			'semzon-setup',
 			array( __CLASS__, 'render' )
 		);
-
-		add_submenu_page(
-			'semzon-setup',
-			__( 'Settings', 'semzon-setup' ),
-			__( 'Settings', 'semzon-setup' ),
-			self::CAPABILITY,
-			'semzon-settings',
-			array( 'Semzon_Settings', 'render_page' )
-		);
 	}
 
 	/**
-	 * The ordered list of steps the wizard runs.
+	 * The ordered list of steps.
+	 *
+	 * Post types and custom fields are absent on purpose — the theme registers
+	 * those, so there is nothing for the installer to do about them beyond
+	 * confirming they are present and flushing permalinks at the end.
 	 *
 	 * @return array<string,string> step key => human label
 	 */
 	public static function steps() {
 		return array(
 			'requirements' => __( 'Check requirements', 'semzon-setup' ),
-			'post_types'   => __( 'Register post types & taxonomies', 'semzon-setup' ),
-			'elementor'    => __( 'Configure Elementor breakpoints, colours & fonts', 'semzon-setup' ),
+			'elementor'    => __( 'Write breakpoints, colours & fonts into Elementor', 'semzon-setup' ),
 			'pages'        => __( 'Create the unique pages', 'semzon-setup' ),
 			'products'     => __( 'Import 22 products', 'semzon-setup' ),
 			'solutions'    => __( 'Import 8 solutions', 'semzon-setup' ),
@@ -89,6 +92,9 @@ class Semzon_Wizard {
 		switch ( $step ) {
 			case 'requirements':
 				$missing = array();
+				if ( ! class_exists( 'Semzon_CPT' ) ) {
+					$missing[] = __( 'SEMZON Engineering theme', 'semzon-setup' );
+				}
 				if ( ! did_action( 'elementor/loaded' ) ) {
 					$missing[] = 'Elementor';
 				}
@@ -98,8 +104,8 @@ class Semzon_Wizard {
 				if ( ! function_exists( 'acf_add_local_field_group' ) ) {
 					$missing[] = 'ACF PRO';
 				}
-				if ( 'semzon-child' !== get_stylesheet() && ! wp_get_theme()->get( 'Name' ) ) {
-					$missing[] = __( 'SEMZON child theme', 'semzon-setup' );
+				if ( ! function_exists( 'update_field' ) ) {
+					$missing[] = __( 'ACF update_field() (is ACF fully loaded?)', 'semzon-setup' );
 				}
 
 				if ( $missing ) {
@@ -107,21 +113,15 @@ class Semzon_Wizard {
 						'success' => false,
 						'message' => sprintf(
 							/* translators: %s: comma separated list */
-							__( 'Missing: %s. Activate these, then re-run.', 'semzon-setup' ),
+							__( 'Missing: %s. Activate these, then retry.', 'semzon-setup' ),
 							implode( ', ', $missing )
 						),
 					);
 				}
-				return array(
-					'success' => true,
-					'message' => __( 'Elementor Pro, ACF PRO and the theme are active.', 'semzon-setup' ),
-				);
 
-			case 'post_types':
-				Semzon_CPT::register();
 				return array(
 					'success' => true,
-					'message' => __( 'Product, Solution and Project registered, with Product Category and Industry taxonomies.', 'semzon-setup' ),
+					'message' => __( 'Theme, Elementor Pro and ACF PRO all present.', 'semzon-setup' ),
 				);
 
 			case 'elementor':
@@ -133,7 +133,7 @@ class Semzon_Wizard {
 					'success' => true,
 					'message' => sprintf(
 						/* translators: 1: created count, 2: existing count */
-						__( '%1$d pages created, %2$d already existed. Home set as the front page.', 'semzon-setup' ),
+						__( '%1$d created, %2$d already existed. Home set as the front page.', 'semzon-setup' ),
 						$r['created'],
 						$r['existing']
 					),
@@ -141,42 +141,15 @@ class Semzon_Wizard {
 
 			case 'products':
 				$r = Semzon_Importer::import_products();
-				return array(
-					'success' => true,
-					'message' => sprintf(
-						/* translators: 1: created, 2: updated, 3: images */
-						__( '%1$d created, %2$d updated, %3$d images added to the media library.', 'semzon-setup' ),
-						$r['created'],
-						$r['updated'],
-						$r['images']
-					),
-				);
+				return self::report( $r );
 
 			case 'solutions':
 				$r = Semzon_Importer::import_solutions();
-				return array(
-					'success' => true,
-					'message' => sprintf(
-						/* translators: 1: created, 2: updated, 3: images */
-						__( '%1$d created, %2$d updated, %3$d images added.', 'semzon-setup' ),
-						$r['created'],
-						$r['updated'],
-						$r['images']
-					),
-				);
+				return self::report( $r );
 
 			case 'projects':
 				$r = Semzon_Importer::import_projects();
-				return array(
-					'success' => true,
-					'message' => sprintf(
-						/* translators: 1: created, 2: updated, 3: images */
-						__( '%1$d created, %2$d updated, %3$d gallery images added.', 'semzon-setup' ),
-						$r['created'],
-						$r['updated'],
-						$r['images']
-					),
-				);
+				return self::report( $r );
 
 			case 'relations':
 				$linked = Semzon_Importer::link_products();
@@ -192,16 +165,15 @@ class Semzon_Wizard {
 				);
 
 			case 'permalinks':
-				Semzon_CPT::register();
+				if ( class_exists( 'Semzon_CPT' ) ) {
+					Semzon_CPT::register();
+				}
 				flush_rewrite_rules();
-
-				$state = (array) get_option( 'semzon_setup_state', array() );
-				$state['finished_at'] = current_time( 'mysql' );
-				update_option( 'semzon_setup_state', $state );
+				update_option( 'semzon_setup_state', array( 'finished_at' => current_time( 'mysql' ) ) );
 
 				return array(
 					'success' => true,
-					'message' => __( 'Permalinks flushed. Setup complete.', 'semzon-setup' ),
+					'message' => __( 'Permalinks flushed. Setup complete — this plugin can now be deleted.', 'semzon-setup' ),
 				);
 		}
 
@@ -212,7 +184,26 @@ class Semzon_Wizard {
 	}
 
 	/**
-	 * AJAX endpoint for a single step.
+	 * Format an importer result.
+	 *
+	 * @param array $r Importer stats.
+	 * @return array{success:bool,message:string}
+	 */
+	private static function report( $r ) {
+		return array(
+			'success' => true,
+			'message' => sprintf(
+				/* translators: 1: created, 2: updated, 3: images */
+				__( '%1$d created, %2$d updated, %3$d images added to the media library.', 'semzon-setup' ),
+				$r['created'],
+				$r['updated'],
+				$r['images']
+			),
+		);
+	}
+
+	/**
+	 * AJAX endpoint for one step.
 	 */
 	public static function ajax_step() {
 		if ( ! current_user_can( self::CAPABILITY ) ) {
@@ -255,16 +246,16 @@ class Semzon_Wizard {
 						<?php
 						printf(
 							/* translators: %s: date */
-							esc_html__( 'Setup last completed %s. Re-running is safe — every step updates in place instead of duplicating content.', 'semzon-setup' ),
-							esc_html( $state['finished_at'] )
+							esc_html__( 'Setup completed %s. You can delete this plugin now — the site will not change. Re-running it is also safe.', 'semzon-setup' ),
+							esc_html( (string) $state['finished_at'] )
 						);
 						?>
 					</p>
 				</div>
 			<?php endif; ?>
 
-			<p style="max-width:70ch">
-				<?php esc_html_e( 'This runs the one-time configuration: post types, custom fields, Elementor global settings and the catalogue content exported from the original site. Once it finishes, the site is a normal WordPress + Elementor + ACF install — nothing here renders the front end.', 'semzon-setup' ); ?>
+			<p style="max-width:72ch">
+				<?php esc_html_e( 'This is a one-time installer. It imports the catalogue content and images and configures Elementor. It does not register the post types or custom fields — the theme does that — so once it finishes you can delete this plugin and nothing on the website changes.', 'semzon-setup' ); ?>
 			</p>
 
 			<ol id="semzon-steps" class="semzon-steps">
@@ -281,10 +272,13 @@ class Semzon_Wizard {
 				<button class="button button-primary button-hero" id="semzon-run">
 					<?php esc_html_e( 'Run setup', 'semzon-setup' ); ?>
 				</button>
+				<span id="semzon-done" style="display:none;margin-left:14px;font-weight:600;color:#00a32a">
+					<?php esc_html_e( 'All steps complete.', 'semzon-setup' ); ?>
+				</span>
 			</p>
 
 			<style>
-				.semzon-steps { margin: 20px 0; padding: 0; list-style: none; max-width: 80ch; }
+				.semzon-steps { margin: 20px 0; padding: 0; list-style: none; max-width: 84ch; }
 				.semzon-steps li {
 					padding: 12px 16px; border: 1px solid #dcdcde; border-bottom: 0;
 					background: #fff; display: flex; gap: 12px; align-items: baseline;
@@ -301,12 +295,14 @@ class Semzon_Wizard {
 
 			<script>
 			( function () {
-				var btn = document.getElementById( 'semzon-run' );
-				var items = Array.prototype.slice.call(
-					document.querySelectorAll( '#semzon-steps li' )
-				);
+				var btn   = document.getElementById( 'semzon-run' );
+				var done  = document.getElementById( 'semzon-done' );
+				var items = Array.prototype.slice.call( document.querySelectorAll( '#semzon-steps li' ) );
 				var ajaxUrl = <?php echo wp_json_encode( admin_url( 'admin-ajax.php' ) ); ?>;
-				var nonce = <?php echo wp_json_encode( wp_create_nonce( self::NONCE ) ); ?>;
+				var nonce   = <?php echo wp_json_encode( wp_create_nonce( self::NONCE ) ); ?>;
+				var LBL_AGAIN = <?php echo wp_json_encode( __( 'Run setup again', 'semzon-setup' ) ); ?>;
+				var LBL_RETRY = <?php echo wp_json_encode( __( 'Retry', 'semzon-setup' ) ); ?>;
+				var LBL_WORK  = <?php echo wp_json_encode( __( 'Working…', 'semzon-setup' ) ); ?>;
 
 				function setState( li, state, msg, mark ) {
 					li.classList.remove( 'running', 'done', 'failed' );
@@ -318,44 +314,42 @@ class Semzon_Wizard {
 				function runStep( i ) {
 					if ( i >= items.length ) {
 						btn.disabled = false;
-						btn.textContent = <?php echo wp_json_encode( __( 'Run setup again', 'semzon-setup' ) ); ?>;
+						btn.textContent = LBL_AGAIN;
+						done.style.display = 'inline';
 						return;
 					}
 
 					var li = items[ i ];
-					setState( li, 'running', <?php echo wp_json_encode( __( 'Working…', 'semzon-setup' ) ); ?>, '◌' );
+					setState( li, 'running', LBL_WORK, '◌' );
 
 					var body = new URLSearchParams();
 					body.append( 'action', 'semzon_wizard_step' );
 					body.append( 'nonce', nonce );
 					body.append( 'step', li.getAttribute( 'data-step' ) );
 
-					fetch( ajaxUrl, {
-						method: 'POST',
-						credentials: 'same-origin',
-						body: body
-					} )
-					.then( function ( r ) { return r.json(); } )
-					.then( function ( res ) {
-						var payload = ( res && res.data ) || {};
-						if ( res && res.success ) {
-							setState( li, 'done', payload.message, '✔' );
-							runStep( i + 1 );
-						} else {
-							setState( li, 'failed', payload.message || 'Failed.', '✕' );
+					fetch( ajaxUrl, { method: 'POST', credentials: 'same-origin', body: body } )
+						.then( function ( r ) { return r.json(); } )
+						.then( function ( res ) {
+							var payload = ( res && res.data ) || {};
+							if ( res && res.success ) {
+								setState( li, 'done', payload.message, '✔' );
+								runStep( i + 1 );
+							} else {
+								setState( li, 'failed', payload.message || 'Failed.', '✕' );
+								btn.disabled = false;
+								btn.textContent = LBL_RETRY;
+							}
+						} )
+						.catch( function ( err ) {
+							setState( li, 'failed', String( err ), '✕' );
 							btn.disabled = false;
-							btn.textContent = <?php echo wp_json_encode( __( 'Retry', 'semzon-setup' ) ); ?>;
-						}
-					} )
-					.catch( function ( err ) {
-						setState( li, 'failed', String( err ), '✕' );
-						btn.disabled = false;
-						btn.textContent = <?php echo wp_json_encode( __( 'Retry', 'semzon-setup' ) ); ?>;
-					} );
+							btn.textContent = LBL_RETRY;
+						} );
 				}
 
 				btn.addEventListener( 'click', function () {
 					btn.disabled = true;
+					done.style.display = 'none';
 					items.forEach( function ( li ) { setState( li, '', '', '•' ); } );
 					runStep( 0 );
 				} );

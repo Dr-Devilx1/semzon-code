@@ -2,7 +2,13 @@
 /**
  * Post types and taxonomies for the SEMZON catalogue.
  *
- * @package semzon-setup
+ * These live in the theme, not the installer plugin, because they are what the
+ * site is built on: if they were registered by a plugin, deleting that plugin
+ * would make every product, solution and project vanish from the front end and
+ * from wp-admin. Registering them here means the installer can be removed the
+ * moment setup finishes with no effect on the site.
+ *
+ * @package semzon
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -35,7 +41,7 @@ class Semzon_CPT {
 		register_post_type(
 			'product',
 			array(
-				'labels'        => self::labels( __( 'Product', 'semzon-setup' ), __( 'Products', 'semzon-setup' ) ),
+				'labels'        => self::labels( __( 'Product', 'semzon' ), __( 'Products', 'semzon' ) ),
 				'public'        => true,
 				'has_archive'   => 'products',
 				'rewrite'       => array(
@@ -53,7 +59,7 @@ class Semzon_CPT {
 		register_post_type(
 			'solution',
 			array(
-				'labels'        => self::labels( __( 'Solution', 'semzon-setup' ), __( 'Solutions', 'semzon-setup' ) ),
+				'labels'        => self::labels( __( 'Solution', 'semzon' ), __( 'Solutions', 'semzon' ) ),
 				'public'        => true,
 				'has_archive'   => 'solutions',
 				'rewrite'       => array(
@@ -71,7 +77,7 @@ class Semzon_CPT {
 		register_post_type(
 			'project',
 			array(
-				'labels'        => self::labels( __( 'Project', 'semzon-setup' ), __( 'Projects', 'semzon-setup' ) ),
+				'labels'        => self::labels( __( 'Project', 'semzon' ), __( 'Projects', 'semzon' ) ),
 				'public'        => true,
 				'has_archive'   => 'projects',
 				'rewrite'       => array(
@@ -90,7 +96,7 @@ class Semzon_CPT {
 			'product_category',
 			array( 'product' ),
 			array(
-				'labels'            => self::labels( __( 'Product Category', 'semzon-setup' ), __( 'Product Categories', 'semzon-setup' ) ),
+				'labels'            => self::labels( __( 'Product Category', 'semzon' ), __( 'Product Categories', 'semzon' ) ),
 				'public'            => true,
 				'hierarchical'      => true,
 				'show_admin_column' => true,
@@ -106,7 +112,7 @@ class Semzon_CPT {
 			'industry',
 			array( 'solution', 'project' ),
 			array(
-				'labels'            => self::labels( __( 'Industry', 'semzon-setup' ), __( 'Industries', 'semzon-setup' ) ),
+				'labels'            => self::labels( __( 'Industry', 'semzon' ), __( 'Industries', 'semzon' ) ),
 				'public'            => true,
 				'hierarchical'      => true,
 				'show_admin_column' => true,
@@ -131,24 +137,24 @@ class Semzon_CPT {
 			'name'               => $plural,
 			'singular_name'      => $singular,
 			'menu_name'          => $plural,
-			'add_new'            => __( 'Add New', 'semzon-setup' ),
+			'add_new'            => __( 'Add New', 'semzon' ),
 			/* translators: %s: singular post type label */
-			'add_new_item'       => sprintf( __( 'Add New %s', 'semzon-setup' ), $singular ),
+			'add_new_item'       => sprintf( __( 'Add New %s', 'semzon' ), $singular ),
 			/* translators: %s: singular post type label */
-			'edit_item'          => sprintf( __( 'Edit %s', 'semzon-setup' ), $singular ),
+			'edit_item'          => sprintf( __( 'Edit %s', 'semzon' ), $singular ),
 			/* translators: %s: singular post type label */
-			'new_item'           => sprintf( __( 'New %s', 'semzon-setup' ), $singular ),
+			'new_item'           => sprintf( __( 'New %s', 'semzon' ), $singular ),
 			/* translators: %s: singular post type label */
-			'view_item'          => sprintf( __( 'View %s', 'semzon-setup' ), $singular ),
+			'view_item'          => sprintf( __( 'View %s', 'semzon' ), $singular ),
 			/* translators: %s: plural post type label */
-			'search_items'       => sprintf( __( 'Search %s', 'semzon-setup' ), $plural ),
+			'search_items'       => sprintf( __( 'Search %s', 'semzon' ), $plural ),
 			/* translators: %s: lowercase plural post type label */
-			'not_found'          => sprintf( __( 'No %s found', 'semzon-setup' ), strtolower( $plural ) ),
+			'not_found'          => sprintf( __( 'No %s found', 'semzon' ), strtolower( $plural ) ),
 			/* translators: %s: lowercase plural post type label */
-			'not_found_in_trash' => sprintf( __( 'No %s found in Trash', 'semzon-setup' ), strtolower( $plural ) ),
+			'not_found_in_trash' => sprintf( __( 'No %s found in Trash', 'semzon' ), strtolower( $plural ) ),
 			'all_items'          => $plural,
 			/* translators: %s: singular label */
-			'parent_item_colon'  => sprintf( __( 'Parent %s:', 'semzon-setup' ), $singular ),
+			'parent_item_colon'  => sprintf( __( 'Parent %s:', 'semzon' ), $singular ),
 		);
 	}
 
@@ -230,3 +236,5 @@ class Semzon_CPT {
 		}
 	}
 }
+
+Semzon_CPT::init();

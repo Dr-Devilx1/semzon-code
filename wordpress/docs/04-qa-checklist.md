@@ -4,13 +4,25 @@ Work top to bottom. Anything that fails, fix before moving on.
 
 ## 1. Setup verified
 
-- [ ] SEMZON → Setup Wizard shows all nine steps green
+- [ ] SEMZON → Setup Wizard shows all eight steps green
 - [ ] Products list shows **22**, Solutions **8**, Projects **6**
 - [ ] Media library contains the **36** machine and project images
 - [ ] Product Categories has **11** terms, each with products in it
 - [ ] SEMZON → Plant Flow shows **6** stages, each with linked machines
 - [ ] Settings → Reading shows *Home* as the front page
 - [ ] Settings → Permalinks is on **Post name**
+
+## 1b. Installer removal (do this once everything above passes)
+
+- [ ] Plugins → **SEMZON Setup** → Deactivate → Delete
+- [ ] Products / Solutions / Projects still listed in wp-admin
+- [ ] Open a product — all custom fields still present with their values
+- [ ] SEMZON → Settings still reachable, values intact
+- [ ] SEMZON → Plant Flow still reachable, 6 stages intact
+- [ ] Front end unchanged — home, a product, a solution, a project
+
+If anything above fails, the theme is not active. Re-activate **SEMZON
+Engineering** under Appearance → Themes; the plugin is not the fix.
 
 ## 2. Templates
 

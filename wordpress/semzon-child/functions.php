@@ -12,9 +12,33 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'SEMZON_THEME_VERSION', '1.0.0' );
+define( 'SEMZON_THEME_VERSION', '1.1.0' );
 
+/*
+ * Everything the finished site depends on is registered by the theme, not by
+ * the SEMZON Setup plugin. The plugin is a one-time installer and is safe to
+ * delete the moment setup finishes — see docs/00-START-HERE.md.
+ */
+require_once get_stylesheet_directory() . '/inc/post-types.php';
+require_once get_stylesheet_directory() . '/inc/fields.php';
 require_once get_stylesheet_directory() . '/inc/navigation.php';
+
+if ( is_admin() ) {
+	require_once get_stylesheet_directory() . '/inc/admin.php';
+}
+
+/**
+ * Flush rewrite rules once when the theme is activated.
+ *
+ * The post types are registered here, so their permalinks would 404 until
+ * someone visited Settings → Permalinks. Doing it on switch_theme costs one
+ * request and removes that trap.
+ */
+function semzon_flush_rewrites_on_activation() {
+	Semzon_CPT::register();
+	flush_rewrite_rules();
+}
+add_action( 'after_switch_theme', 'semzon_flush_rewrites_on_activation' );
 
 /**
  * Enqueue the parent theme stylesheet, the SEMZON design system and motion.

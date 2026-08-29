@@ -112,7 +112,7 @@ still need a redirect when it moved. The build uses flat
 `/products/hammer-mill/` URLs with **301 redirects from all 22 old paths**
 (including the `/index.html` variants), which preserves ranking signal and
 stays stable. The redirect map is in
-`semzon-setup/includes/class-semzon-cpt.php` — in code, so it survives a
+`semzon-child/inc/post-types.php` — in code, so it survives a
 database restore and is reviewable.
 
 If you would rather keep the nested URLs exactly, say so and I will implement

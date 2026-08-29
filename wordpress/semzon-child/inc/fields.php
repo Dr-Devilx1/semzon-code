@@ -7,7 +7,7 @@
  * should not be editable into drift by accident. Field keys are stable and
  * human-readable so Elementor's dynamic tags keep resolving after an update.
  *
- * @package semzon-setup
+ * @package semzon
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -35,10 +35,10 @@ class Semzon_ACF {
 
 		acf_add_options_page(
 			array(
-				'page_title' => __( 'Plant Flow', 'semzon-setup' ),
-				'menu_title' => __( 'Plant Flow', 'semzon-setup' ),
+				'page_title' => __( 'Plant Flow', 'semzon' ),
+				'menu_title' => __( 'Plant Flow', 'semzon' ),
 				'menu_slug'  => 'semzon-plant-flow',
-				'parent_slug' => 'semzon-setup',
+				'parent_slug' => 'semzon',
 				'capability' => 'edit_theme_options',
 				'redirect'   => false,
 			)
@@ -69,32 +69,32 @@ class Semzon_ACF {
 		return array(
 			array(
 				'key'          => "field_{$prefix}_eyebrow",
-				'label'        => __( 'Eyebrow', 'semzon-setup' ),
+				'label'        => __( 'Eyebrow', 'semzon' ),
 				'name'         => 'eyebrow',
 				'type'         => 'text',
-				'instructions' => __( 'Small mono label above the title, e.g. "Products · Grinding" or "Case study · Afghanistan".', 'semzon-setup' ),
+				'instructions' => __( 'Small mono label above the title, e.g. "Products · Grinding" or "Case study · Afghanistan".', 'semzon' ),
 			),
 			array(
 				'key'          => "field_{$prefix}_hero_lead",
-				'label'        => __( 'Hero lead', 'semzon-setup' ),
+				'label'        => __( 'Hero lead', 'semzon' ),
 				'name'         => 'hero_lead',
 				'type'         => 'textarea',
 				'rows'         => 3,
 				'new_lines'    => '',
-				'instructions' => __( 'The one or two sentence summary directly under the page title.', 'semzon-setup' ),
+				'instructions' => __( 'The one or two sentence summary directly under the page title.', 'semzon' ),
 			),
 			array(
 				'key'          => "field_{$prefix}_hero_tags",
-				'label'        => __( 'Hero tags', 'semzon-setup' ),
+				'label'        => __( 'Hero tags', 'semzon' ),
 				'name'         => 'hero_tags',
 				'type'         => 'repeater',
 				'layout'       => 'table',
-				'button_label' => __( 'Add tag', 'semzon-setup' ),
-				'instructions' => __( 'The pill badges under the lead, e.g. "2–35 t/h", "Turnkey".', 'semzon-setup' ),
+				'button_label' => __( 'Add tag', 'semzon' ),
+				'instructions' => __( 'The pill badges under the lead, e.g. "2–35 t/h", "Turnkey".', 'semzon' ),
 				'sub_fields'   => array(
 					array(
 						'key'   => "field_{$prefix}_hero_tag_text",
-						'label' => __( 'Tag', 'semzon-setup' ),
+						'label' => __( 'Tag', 'semzon' ),
 						'name'  => 'tag_text',
 						'type'  => 'text',
 					),
@@ -110,7 +110,7 @@ class Semzon_ACF {
 		acf_add_local_field_group(
 			array(
 				'key'      => 'group_semzon_product',
-				'title'    => __( 'Product details', 'semzon-setup' ),
+				'title'    => __( 'Product details', 'semzon' ),
 				'location' => array(
 					array(
 						array(
@@ -131,32 +131,32 @@ class Semzon_ACF {
 					array(
 						array(
 							'key'          => 'field_product_body_intro',
-							'label'        => __( 'Body introduction', 'semzon-setup' ),
+							'label'        => __( 'Body introduction', 'semzon' ),
 							'name'         => 'body_intro',
 							'type'         => 'wysiwyg',
 							'tabs'         => 'visual',
 							'toolbar'      => 'basic',
 							'media_upload' => 0,
-							'instructions' => __( 'The prose column beside the machine image.', 'semzon-setup' ),
+							'instructions' => __( 'The prose column beside the machine image.', 'semzon' ),
 						),
 						array(
 							'key'           => 'field_product_why_heading',
-							'label'         => __( 'Feature list heading', 'semzon-setup' ),
+							'label'         => __( 'Feature list heading', 'semzon' ),
 							'name'          => 'why_heading',
 							'type'          => 'text',
-							'default_value' => __( 'Why plants specify it', 'semzon-setup' ),
+							'default_value' => __( 'Why plants specify it', 'semzon' ),
 						),
 						array(
 							'key'          => 'field_product_features',
-							'label'        => __( 'Feature list', 'semzon-setup' ),
+							'label'        => __( 'Feature list', 'semzon' ),
 							'name'         => 'features',
 							'type'         => 'repeater',
 							'layout'       => 'table',
-							'button_label' => __( 'Add feature', 'semzon-setup' ),
+							'button_label' => __( 'Add feature', 'semzon' ),
 							'sub_fields'   => array(
 								array(
 									'key'   => 'field_product_feature_text',
-									'label' => __( 'Feature', 'semzon-setup' ),
+									'label' => __( 'Feature', 'semzon' ),
 									'name'  => 'feature_text',
 									'type'  => 'text',
 								),
@@ -164,44 +164,44 @@ class Semzon_ACF {
 						),
 						array(
 							'key'           => 'field_product_hero_image',
-							'label'         => __( 'Machine image', 'semzon-setup' ),
+							'label'         => __( 'Machine image', 'semzon' ),
 							'name'          => 'hero_image',
 							'type'          => 'image',
 							'return_format' => 'id',
 							'preview_size'  => 'medium',
-							'instructions'  => __( 'Render (4:3, 1200×900) or transparent cut-out (1:1, 1000×1000). The CSS frame is fixed, so any image of the right ratio drops in without breaking the layout.', 'semzon-setup' ),
+							'instructions'  => __( 'Render (4:3, 1200×900) or transparent cut-out (1:1, 1000×1000). The CSS frame is fixed, so any image of the right ratio drops in without breaking the layout.', 'semzon' ),
 						),
 						array(
 							'key'           => 'field_product_image_treatment',
-							'label'         => __( 'Image treatment', 'semzon-setup' ),
+							'label'         => __( 'Image treatment', 'semzon' ),
 							'name'          => 'image_treatment',
 							'type'          => 'select',
 							'choices'       => array(
-								'render' => __( 'Render — multiply blend, contained', 'semzon-setup' ),
-								'cut'    => __( 'Cut-out — drop shadow', 'semzon-setup' ),
-								'photo'  => __( 'Photograph — fills the frame', 'semzon-setup' ),
+								'render' => __( 'Render — multiply blend, contained', 'semzon' ),
+								'cut'    => __( 'Cut-out — drop shadow', 'semzon' ),
+								'photo'  => __( 'Photograph — fills the frame', 'semzon' ),
 							),
 							'default_value' => 'render',
-							'instructions'  => __( 'Drives which CSS class the image gets, matching the three treatments in the original build.', 'semzon-setup' ),
+							'instructions'  => __( 'Drives which CSS class the image gets, matching the three treatments in the original build.', 'semzon' ),
 						),
 						array(
 							'key'          => 'field_product_spec_table',
-							'label'        => __( 'Spec table', 'semzon-setup' ),
+							'label'        => __( 'Spec table', 'semzon' ),
 							'name'         => 'spec_table',
 							'type'         => 'repeater',
 							'layout'       => 'table',
-							'button_label' => __( 'Add spec row', 'semzon-setup' ),
+							'button_label' => __( 'Add spec row', 'semzon' ),
 							'sub_fields'   => array(
 								array(
 									'key'       => 'field_product_spec_label',
-									'label'     => __( 'Label', 'semzon-setup' ),
+									'label'     => __( 'Label', 'semzon' ),
 									'name'      => 'label',
 									'type'      => 'text',
 									'wrapper'   => array( 'width' => '40' ),
 								),
 								array(
 									'key'     => 'field_product_spec_value',
-									'label'   => __( 'Value', 'semzon-setup' ),
+									'label'   => __( 'Value', 'semzon' ),
 									'name'    => 'value',
 									'type'    => 'text',
 									'wrapper' => array( 'width' => '60' ),
@@ -210,14 +210,14 @@ class Semzon_ACF {
 						),
 						array(
 							'key'           => 'field_product_related',
-							'label'         => __( 'Related machines', 'semzon-setup' ),
+							'label'         => __( 'Related machines', 'semzon' ),
 							'name'          => 'related_products',
 							'type'          => 'relationship',
 							'post_type'     => array( 'product' ),
 							'filters'       => array( 'search', 'taxonomy' ),
 							'max'           => 3,
 							'return_format' => 'id',
-							'instructions'  => __( 'Up to three machines shown in the "Works with" row.', 'semzon-setup' ),
+							'instructions'  => __( 'Up to three machines shown in the "Works with" row.', 'semzon' ),
 						),
 					)
 				),
@@ -232,7 +232,7 @@ class Semzon_ACF {
 		acf_add_local_field_group(
 			array(
 				'key'      => 'group_semzon_solution',
-				'title'    => __( 'Solution details', 'semzon-setup' ),
+				'title'    => __( 'Solution details', 'semzon' ),
 				'location' => array(
 					array(
 						array(
@@ -252,7 +252,7 @@ class Semzon_ACF {
 					array(
 						array(
 							'key'          => 'field_solution_body_intro',
-							'label'        => __( 'Body introduction', 'semzon-setup' ),
+							'label'        => __( 'Body introduction', 'semzon' ),
 							'name'         => 'body_intro',
 							'type'         => 'wysiwyg',
 							'tabs'         => 'visual',
@@ -261,14 +261,14 @@ class Semzon_ACF {
 						),
 						array(
 							'key'           => 'field_solution_secondary_heading',
-							'label'         => __( 'Secondary heading', 'semzon-setup' ),
+							'label'         => __( 'Secondary heading', 'semzon' ),
 							'name'          => 'secondary_heading',
 							'type'          => 'text',
-							'default_value' => __( 'Built into every line', 'semzon-setup' ),
+							'default_value' => __( 'Built into every line', 'semzon' ),
 						),
 						array(
 							'key'   => 'field_solution_secondary_text',
-							'label' => __( 'Secondary paragraph', 'semzon-setup' ),
+							'label' => __( 'Secondary paragraph', 'semzon' ),
 							'name'  => 'secondary_text',
 							'type'  => 'textarea',
 							'rows'  => 3,
@@ -276,7 +276,7 @@ class Semzon_ACF {
 						),
 						array(
 							'key'           => 'field_solution_hero_image',
-							'label'         => __( 'Line image', 'semzon-setup' ),
+							'label'         => __( 'Line image', 'semzon' ),
 							'name'          => 'hero_image',
 							'type'          => 'image',
 							'return_format' => 'id',
@@ -284,52 +284,52 @@ class Semzon_ACF {
 						),
 						array(
 							'key'           => 'field_solution_image_treatment',
-							'label'         => __( 'Image treatment', 'semzon-setup' ),
+							'label'         => __( 'Image treatment', 'semzon' ),
 							'name'          => 'image_treatment',
 							'type'          => 'select',
 							'choices'       => array(
-								'render' => __( 'Render — multiply blend, contained', 'semzon-setup' ),
-								'photo'  => __( 'Photograph — fills the frame', 'semzon-setup' ),
+								'render' => __( 'Render — multiply blend, contained', 'semzon' ),
+								'photo'  => __( 'Photograph — fills the frame', 'semzon' ),
 							),
 							'default_value' => 'photo',
 						),
 						array(
 							'key'          => 'field_solution_flow_intro',
-							'label'        => __( 'Flow section intro', 'semzon-setup' ),
+							'label'        => __( 'Flow section intro', 'semzon' ),
 							'name'         => 'flow_intro',
 							'type'         => 'textarea',
 							'rows'         => 2,
 							'new_lines'    => '',
-							'instructions' => __( 'Optional sentence above the six-stage machine row.', 'semzon-setup' ),
+							'instructions' => __( 'Optional sentence above the six-stage machine row.', 'semzon' ),
 						),
 						array(
 							'key'          => 'field_solution_machine_flow',
-							'label'        => __( 'Machine flow', 'semzon-setup' ),
+							'label'        => __( 'Machine flow', 'semzon' ),
 							'name'         => 'machine_flow',
 							'type'         => 'repeater',
 							'layout'       => 'block',
-							'button_label' => __( 'Add stage', 'semzon-setup' ),
-							'instructions' => __( 'The stages of this production line, in order.', 'semzon-setup' ),
+							'button_label' => __( 'Add stage', 'semzon' ),
+							'instructions' => __( 'The stages of this production line, in order.', 'semzon' ),
 							'sub_fields'   => array(
 								array(
 									'key'          => 'field_solution_flow_step',
-									'label'        => __( 'Step label', 'semzon-setup' ),
+									'label'        => __( 'Step label', 'semzon' ),
 									'name'         => 'step_label',
 									'type'         => 'text',
-									'instructions' => __( 'e.g. "01 — Intake &amp; cleaning"', 'semzon-setup' ),
+									'instructions' => __( 'e.g. "01 — Intake &amp; cleaning"', 'semzon' ),
 									'wrapper'      => array( 'width' => '40' ),
 								),
 								array(
 									'key'          => 'field_solution_flow_machine',
-									'label'        => __( 'Machine caption', 'semzon-setup' ),
+									'label'        => __( 'Machine caption', 'semzon' ),
 									'name'         => 'machine_name',
 									'type'         => 'text',
-									'instructions' => __( 'The mono caption, e.g. "HAMMER MILL".', 'semzon-setup' ),
+									'instructions' => __( 'The mono caption, e.g. "HAMMER MILL".', 'semzon' ),
 									'wrapper'      => array( 'width' => '30' ),
 								),
 								array(
 									'key'           => 'field_solution_flow_link',
-									'label'         => __( 'Linked product', 'semzon-setup' ),
+									'label'         => __( 'Linked product', 'semzon' ),
 									'name'          => 'linked_product',
 									'type'          => 'post_object',
 									'post_type'     => array( 'product' ),
@@ -352,7 +352,7 @@ class Semzon_ACF {
 		acf_add_local_field_group(
 			array(
 				'key'      => 'group_semzon_project',
-				'title'    => __( 'Project details', 'semzon-setup' ),
+				'title'    => __( 'Project details', 'semzon' ),
 				'location' => array(
 					array(
 						array(
@@ -372,7 +372,7 @@ class Semzon_ACF {
 					array(
 						array(
 							'key'          => 'field_project_body_intro',
-							'label'        => __( 'Case study body', 'semzon-setup' ),
+							'label'        => __( 'Case study body', 'semzon' ),
 							'name'         => 'body_intro',
 							'type'         => 'wysiwyg',
 							'tabs'         => 'visual',
@@ -381,22 +381,22 @@ class Semzon_ACF {
 						),
 						array(
 							'key'           => 'field_project_scope_heading',
-							'label'         => __( 'Scope list heading', 'semzon-setup' ),
+							'label'         => __( 'Scope list heading', 'semzon' ),
 							'name'          => 'scope_heading',
 							'type'          => 'text',
-							'default_value' => __( 'Scope delivered', 'semzon-setup' ),
+							'default_value' => __( 'Scope delivered', 'semzon' ),
 						),
 						array(
 							'key'          => 'field_project_scope_list',
-							'label'        => __( 'Scope delivered', 'semzon-setup' ),
+							'label'        => __( 'Scope delivered', 'semzon' ),
 							'name'         => 'scope_list',
 							'type'         => 'repeater',
 							'layout'       => 'table',
-							'button_label' => __( 'Add item', 'semzon-setup' ),
+							'button_label' => __( 'Add item', 'semzon' ),
 							'sub_fields'   => array(
 								array(
 									'key'   => 'field_project_scope_item',
-									'label' => __( 'Item', 'semzon-setup' ),
+									'label' => __( 'Item', 'semzon' ),
 									'name'  => 'item_text',
 									'type'  => 'text',
 								),
@@ -404,32 +404,32 @@ class Semzon_ACF {
 						),
 						array(
 							'key'           => 'field_project_gallery',
-							'label'         => __( 'Project gallery', 'semzon-setup' ),
+							'label'         => __( 'Project gallery', 'semzon' ),
 							'name'          => 'gallery',
 							'type'          => 'gallery',
 							'return_format' => 'id',
 							'preview_size'  => 'medium',
-							'instructions'  => __( 'Site photographs, 16:10 (1600×1000).', 'semzon-setup' ),
+							'instructions'  => __( 'Site photographs, 16:10 (1600×1000).', 'semzon' ),
 						),
 						array(
 							'key'          => 'field_project_facts',
-							'label'        => __( 'Project facts', 'semzon-setup' ),
+							'label'        => __( 'Project facts', 'semzon' ),
 							'name'         => 'project_facts',
 							'type'         => 'repeater',
 							'layout'       => 'table',
-							'button_label' => __( 'Add fact', 'semzon-setup' ),
-							'instructions' => __( 'Optional mono facts strip — capacity, location, year.', 'semzon-setup' ),
+							'button_label' => __( 'Add fact', 'semzon' ),
+							'instructions' => __( 'Optional mono facts strip — capacity, location, year.', 'semzon' ),
 							'sub_fields'   => array(
 								array(
 									'key'     => 'field_project_fact_label',
-									'label'   => __( 'Label', 'semzon-setup' ),
+									'label'   => __( 'Label', 'semzon' ),
 									'name'    => 'label',
 									'type'    => 'text',
 									'wrapper' => array( 'width' => '40' ),
 								),
 								array(
 									'key'     => 'field_project_fact_value',
-									'label'   => __( 'Value', 'semzon-setup' ),
+									'label'   => __( 'Value', 'semzon' ),
 									'name'    => 'value',
 									'type'    => 'text',
 									'wrapper' => array( 'width' => '60' ),
@@ -452,7 +452,7 @@ class Semzon_ACF {
 		acf_add_local_field_group(
 			array(
 				'key'      => 'group_semzon_plant_flow',
-				'title'    => __( 'Plant flow stages', 'semzon-setup' ),
+				'title'    => __( 'Plant flow stages', 'semzon' ),
 				'location' => array(
 					array(
 						array(
@@ -466,30 +466,30 @@ class Semzon_ACF {
 				'fields' => array(
 					array(
 						'key'          => 'field_flow_stages',
-						'label'        => __( 'Stages', 'semzon-setup' ),
+						'label'        => __( 'Stages', 'semzon' ),
 						'name'         => 'plant_flow_stages',
 						'type'         => 'repeater',
 						'layout'       => 'block',
-						'button_label' => __( 'Add stage', 'semzon-setup' ),
-						'instructions' => __( 'Drives the interactive plant-flow section on the homepage. Six stages is the designed length; the rail adapts if you add or remove one.', 'semzon-setup' ),
+						'button_label' => __( 'Add stage', 'semzon' ),
+						'instructions' => __( 'Drives the interactive plant-flow section on the homepage. Six stages is the designed length; the rail adapts if you add or remove one.', 'semzon' ),
 						'sub_fields'   => array(
 							array(
 								'key'     => 'field_flow_number',
-								'label'   => __( 'Number', 'semzon-setup' ),
+								'label'   => __( 'Number', 'semzon' ),
 								'name'    => 'stage_number',
 								'type'    => 'text',
 								'wrapper' => array( 'width' => '15' ),
 							),
 							array(
 								'key'     => 'field_flow_title',
-								'label'   => __( 'Title', 'semzon-setup' ),
+								'label'   => __( 'Title', 'semzon' ),
 								'name'    => 'stage_title',
 								'type'    => 'text',
 								'wrapper' => array( 'width' => '85' ),
 							),
 							array(
 								'key'       => 'field_flow_description',
-								'label'     => __( 'Description', 'semzon-setup' ),
+								'label'     => __( 'Description', 'semzon' ),
 								'name'      => 'stage_description',
 								'type'      => 'textarea',
 								'rows'      => 3,
@@ -497,29 +497,29 @@ class Semzon_ACF {
 							),
 							array(
 								'key'          => 'field_flow_machines',
-								'label'        => __( 'Machines at this stage', 'semzon-setup' ),
+								'label'        => __( 'Machines at this stage', 'semzon' ),
 								'name'         => 'machines',
 								'type'         => 'repeater',
 								'layout'       => 'table',
-								'button_label' => __( 'Add machine', 'semzon-setup' ),
+								'button_label' => __( 'Add machine', 'semzon' ),
 								'sub_fields'   => array(
 									array(
 										'key'     => 'field_flow_machine_name',
-										'label'   => __( 'Name', 'semzon-setup' ),
+										'label'   => __( 'Name', 'semzon' ),
 										'name'    => 'machine_name',
 										'type'    => 'text',
 										'wrapper' => array( 'width' => '35' ),
 									),
 									array(
 										'key'     => 'field_flow_machine_spec',
-										'label'   => __( 'Spec caption', 'semzon-setup' ),
+										'label'   => __( 'Spec caption', 'semzon' ),
 										'name'    => 'machine_spec',
 										'type'    => 'text',
 										'wrapper' => array( 'width' => '35' ),
 									),
 									array(
 										'key'           => 'field_flow_machine_link',
-										'label'         => __( 'Product', 'semzon-setup' ),
+										'label'         => __( 'Product', 'semzon' ),
 										'name'          => 'linked_product',
 										'type'          => 'post_object',
 										'post_type'     => array( 'product' ),
@@ -536,3 +536,5 @@ class Semzon_ACF {
 		);
 	}
 }
+
+Semzon_ACF::init();
