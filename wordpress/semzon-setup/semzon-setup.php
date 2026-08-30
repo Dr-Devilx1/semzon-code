@@ -3,7 +3,7 @@
  * Plugin Name:       SEMZON Setup (one-time installer)
  * Plugin URI:        https://www.semzoneng.com/
  * Description:       One-time installer for the SEMZON site. Imports the catalogue content and images, writes the design tokens and the six responsive breakpoints into the Elementor kit, and creates the required pages. It registers nothing the finished site depends on — post types, custom fields and settings all live in the SEMZON Engineering theme — so once the wizard reports "complete" this plugin can be deleted with no effect on the website.
- * Version:           1.1.0
+ * Version:           1.2.0
  * Requires at least: 6.2
  * Requires PHP:      7.4
  * Author:            SEMZON Engineering
@@ -15,7 +15,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'SEMZON_SETUP_VERSION', '1.1.0' );
+define( 'SEMZON_SETUP_VERSION', '1.2.0' );
 define( 'SEMZON_SETUP_DIR', plugin_dir_path( __FILE__ ) );
 
 require_once SEMZON_SETUP_DIR . 'includes/class-semzon-elementor.php';

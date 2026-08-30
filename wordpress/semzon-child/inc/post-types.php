@@ -13,6 +13,22 @@
 
 defined( 'ABSPATH' ) || exit;
 
+/*
+ * Guard against a duplicate declaration.
+ *
+ * An earlier build shipped some of these classes in the installer plugin
+ * rather than the theme, so a stale copy of that plugin would trigger a fatal
+ * "cannot redeclare" and take the whole site down.
+ *
+ * This has to be an if/endif wrapper, not an early `return`: PHP binds an
+ * unconditional top-level class when the file is *compiled*, before any
+ * statement in it runs — so a `return` guard would find the class already
+ * present, bail, and skip the registration call at the bottom of the file,
+ * leaving the site with no post types and no fields. Wrapping the declaration
+ * defers binding to runtime, so the guard only fires for a genuine duplicate.
+ */
+if ( ! class_exists( 'Semzon_CPT' ) ) :
+
 /**
  * Registers the three repeated content types and the product taxonomy.
  */
@@ -238,3 +254,5 @@ class Semzon_CPT {
 }
 
 Semzon_CPT::init();
+
+endif;

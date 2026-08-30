@@ -159,9 +159,9 @@ function submit_button( ...$a ) {}
 function settings_fields( $g ) {}
 function do_settings_sections( $p ) {}
 function get_current_screen() { return null; }
-function have_rows( $f, $p = false ) { return false; }
-function the_row() {}
-function get_sub_field( $f ) { return ''; }
+if ( ! function_exists( 'have_rows' ) ) { function have_rows( $f, $p = false ) { return false; } }
+if ( ! function_exists( 'the_row' ) ) { function the_row() {} }
+if ( ! function_exists( 'get_sub_field' ) ) { function get_sub_field( $f ) { return ''; } }
 function update_field( $n, $v, $id = false ) { $GLOBALS['fields'][ ( false === $id ? 'option' : $id ) . ":$n" ] = $v; return true; }
 function get_field( $n, $id = false ) { return $GLOBALS['fields'][ ( false === $id ? 'option' : $id ) . ":$n" ] ?? null; }
 function plugin_dir_path( $f ) { return dirname( $f ) . '/'; }
@@ -174,3 +174,11 @@ function wp_update_attachment_metadata( $i, $m ) { return true; }
 function __return_false() { return false; }
 function screen_reader_text() {}
 function filemtime_safe( $p ) { return 1; }
+function bloginfo( $s = '' ) { echo 'SEMZON'; }
+function wp_nav_menu( $a = array() ) { echo ''; }
+function is_active_sidebar( $i ) { return false; }
+function dynamic_sidebar( $i ) {}
+function get_search_form( $e = true ) {}
+function esc_textarea( $s ) { return $s; }
+function absint( $v ) { return abs( (int) $v ); }
+function wp_kses_post( $s ) { return $s; }

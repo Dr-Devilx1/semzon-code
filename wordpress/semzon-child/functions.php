@@ -12,7 +12,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'SEMZON_THEME_VERSION', '1.1.0' );
+define( 'SEMZON_THEME_VERSION', '1.2.0' );
 
 /*
  * Everything the finished site depends on is registered by the theme, not by
@@ -35,7 +35,9 @@ if ( is_admin() ) {
  * request and removes that trap.
  */
 function semzon_flush_rewrites_on_activation() {
-	Semzon_CPT::register();
+	if ( class_exists( 'Semzon_CPT' ) && method_exists( 'Semzon_CPT', 'register' ) ) {
+		Semzon_CPT::register();
+	}
 	flush_rewrite_rules();
 }
 add_action( 'after_switch_theme', 'semzon_flush_rewrites_on_activation' );
