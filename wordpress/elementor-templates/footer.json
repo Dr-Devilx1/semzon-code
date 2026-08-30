@@ -1,171 +1,151 @@
 {
   "version": "0.4",
   "title": "SEMZON — Footer",
-  "type": "footer",
+  "type": "section",
   "content": [
     {
-      "id": "f0935e4",
-      "elType": "container",
+      "id": "1afa34a",
+      "elType": "section",
       "settings": {
-        "content_width": "full",
-        "flex_direction": "column",
+        "structure": "40",
         "css_classes": "footer"
       },
       "elements": [
         {
-          "id": "54229ab",
-          "elType": "widget",
+          "id": "4c56ff4",
+          "elType": "column",
           "settings": {
-            "title": "SEMZON",
-            "header_size": "div",
-            "css_classes": "f-mark"
-          },
-          "elements": [],
-          "widgetType": "heading"
-        },
-        {
-          "id": "65b9eea",
-          "elType": "container",
-          "settings": {
-            "content_width": "boxed",
-            "flex_direction": "row",
-            "css_classes": "container container--wide footer-grid"
+            "_column_size": 34,
+            "_inline_size": null
           },
           "elements": [
             {
-              "id": "812b4ba",
-              "elType": "container",
+              "id": "5ef0599",
+              "elType": "widget",
               "settings": {
-                "content_width": "boxed",
-                "flex_direction": "column",
-                "css_classes": "f-brand"
+                "image": {
+                  "url": "",
+                  "id": ""
+                },
+                "image_size": "full",
+                "css_classes": "f-logo"
               },
-              "elements": [
-                {
-                  "id": "92cc227",
-                  "elType": "widget",
-                  "settings": {
-                    "image": {
-                      "url": "",
-                      "id": ""
-                    },
-                    "css_classes": "f-logo"
-                  },
-                  "elements": [],
-                  "widgetType": "image"
-                },
-                {
-                  "id": "98dce83",
-                  "elType": "widget",
-                  "settings": {
-                    "editor": "<p>Custom industrial machinery and turnkey feed, biomass and fertilizer plants — engineered in Lahore since 1994.</p>"
-                  },
-                  "elements": [],
-                  "widgetType": "text-editor"
-                },
-                {
-                  "id": "f4b9ec3",
-                  "elType": "widget",
-                  "settings": {
-                    "title": "QUALITY FIRST · SERVICE FIRST · PRICE REASONABLE",
-                    "header_size": "span",
-                    "css_classes": "mono"
-                  },
-                  "elements": [],
-                  "widgetType": "heading"
-                }
-              ],
-              "isInner": false
+              "elements": [],
+              "widgetType": "image"
             },
             {
-              "id": "ed3d2c2",
-              "elType": "container",
+              "id": "07e1cd7",
+              "elType": "widget",
               "settings": {
-                "content_width": "boxed",
-                "flex_direction": "column"
+                "editor": "<p>Custom industrial machinery and turnkey feed, biomass and fertilizer plants — engineered in Lahore since 1994.</p>"
               },
-              "elements": [
-                {
-                  "id": "26657d5",
-                  "elType": "widget",
-                  "settings": {
-                    "title": "Products",
-                    "header_size": "h5"
-                  },
-                  "elements": [],
-                  "widgetType": "heading"
-                },
-                {
-                  "id": "e2ef524",
-                  "elType": "widget",
-                  "settings": {
-                    "menu": ""
-                  },
-                  "elements": [],
-                  "widgetType": "nav-menu"
-                }
-              ],
-              "isInner": false
+              "elements": [],
+              "widgetType": "text-editor"
             },
             {
-              "id": "38b3eff",
-              "elType": "container",
+              "id": "da4fb5c",
+              "elType": "widget",
               "settings": {
-                "content_width": "boxed",
-                "flex_direction": "column"
+                "title": "QUALITY FIRST · SERVICE FIRST · PRICE REASONABLE",
+                "header_size": "div",
+                "css_classes": "mono"
               },
-              "elements": [
-                {
-                  "id": "ac627ab",
-                  "elType": "widget",
-                  "settings": {
-                    "title": "Solutions",
-                    "header_size": "h5"
-                  },
-                  "elements": [],
-                  "widgetType": "heading"
-                },
-                {
-                  "id": "f899139",
-                  "elType": "widget",
-                  "settings": {
-                    "menu": ""
-                  },
-                  "elements": [],
-                  "widgetType": "nav-menu"
-                }
-              ],
-              "isInner": false
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "c8ffe9a",
+          "elType": "column",
+          "settings": {
+            "_column_size": 22,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "a0a080f",
+              "elType": "widget",
+              "settings": {
+                "title": "Products",
+                "header_size": "h5"
+              },
+              "elements": [],
+              "widgetType": "heading"
             },
             {
-              "id": "c9e1074",
-              "elType": "container",
+              "id": "202cb96",
+              "elType": "widget",
               "settings": {
-                "content_width": "boxed",
-                "flex_direction": "column"
+                "title": "Products links — Loop Grid over the Product post type, or Elementor Pro's Nav Menu widget with a WordPress menu",
+                "header_size": "div",
+                "css_classes": "semzon-build-note"
               },
-              "elements": [
-                {
-                  "id": "ec89566",
-                  "elType": "widget",
-                  "settings": {
-                    "title": "Contact",
-                    "header_size": "h5"
-                  },
-                  "elements": [],
-                  "widgetType": "heading"
-                },
-                {
-                  "id": "6974ce5",
-                  "elType": "widget",
-                  "settings": {
-                    "editor": "<ul class='f-contact'><li><b>+92 323 8845411</b><span class='small'>Phone &amp; WhatsApp</span></li><li><b>semzoneng@gmail.com</b><span class='small'>Engineering enquiries</span></li><li><b>2.5 KM Manga Raiwind Road</b><span class='small'>Manga Mandi, Lahore, Pakistan</span></li></ul>"
-                  },
-                  "elements": [],
-                  "widgetType": "text-editor"
-                }
-              ],
-              "isInner": false
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "ec5decc",
+          "elType": "column",
+          "settings": {
+            "_column_size": 22,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "3def184",
+              "elType": "widget",
+              "settings": {
+                "title": "Solutions",
+                "header_size": "h5"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "069059b",
+              "elType": "widget",
+              "settings": {
+                "title": "Solutions links — Loop Grid over the Solution post type",
+                "header_size": "div",
+                "css_classes": "semzon-build-note"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "9b86192",
+          "elType": "column",
+          "settings": {
+            "_column_size": 22,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "76dc611",
+              "elType": "widget",
+              "settings": {
+                "title": "Contact",
+                "header_size": "h5"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "d1f491a",
+              "elType": "widget",
+              "settings": {
+                "editor": "<ul class='f-contact'><li><b>+92 323 8845411</b><span class='small'>Phone &amp; WhatsApp</span></li><li><b>semzoneng@gmail.com</b><span class='small'>Engineering enquiries</span></li><li><b>2.5 KM Manga Raiwind Road</b><span class='small'>Manga Mandi, Lahore, Pakistan</span></li></ul>"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
             }
           ],
           "isInner": false
@@ -174,5 +154,5 @@
       "isInner": false
     }
   ],
-  "page_settings": {}
+  "page_settings": []
 }

@@ -108,9 +108,12 @@ function get_posts( $args = array() ) {
 		}
 		return array();
 	}
+	$ids_only = ( ( $args['fields'] ?? '' ) === 'ids' );
 	$out = array();
 	foreach ( $GLOBALS['posts'] as $id => $p ) {
-		if ( ( $p['post_type'] ?? '' ) === ( $args['post_type'] ?? '' ) ) { $out[] = (object) ( $p + array( 'ID' => $id ) ); }
+		if ( ( $p['post_type'] ?? '' ) === ( $args['post_type'] ?? '' ) ) {
+			$out[] = $ids_only ? $id : (object) ( $p + array( 'ID' => $id ) );
+		}
 	}
 	return $out;
 }

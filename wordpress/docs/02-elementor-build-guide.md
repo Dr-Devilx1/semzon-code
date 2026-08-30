@@ -9,9 +9,31 @@ by the name given below. No code, no HTML widget.
 
 ---
 
-## Template conditions
+## How to import (and why they import as "sections")
 
-| File | Theme Builder type | Condition |
+Elementor → Templates → **Saved Templates** → *Import Templates* → upload
+`semzon-templates.zip` (all seven at once), or the individual `.json` files.
+
+Every template is typed as a **section**, not as a Theme Builder document.
+That is deliberate. Theme Builder types (`single-post`, `archive`, `header`,
+`footer`) only exist while Elementor Pro's theme-builder module is loaded, and
+Elementor validates the type on import — if it does not recognise it, the
+import fails outright with no useful message. A `section` is core Elementor
+and imports on every version and licence.
+
+They also use the classic **section → column → widget** structure rather than
+flexbox Containers, for the same reason: Containers only import when the
+"Flexbox Container" experiment is enabled, and are rejected when it is off.
+
+### Putting a section into a Theme Builder template — two clicks
+
+1. Elementor → **Templates → Theme Builder** → add the template you need
+   (Single, Archive, Footer) and set its condition from the table below.
+2. In the editor, click the **folder icon** in the canvas (Add Template).
+3. Open the **My Templates** tab, find the SEMZON section, click **Insert**.
+4. Delete the empty starter section Elementor added, then Publish.
+
+| File | Theme Builder template to create | Condition |
 |---|---|---|
 | `single-product.json` | Single | Posts → Product → All |
 | `single-solution.json` | Single | Posts → Solution → All |
@@ -21,13 +43,19 @@ by the name given below. No code, no HTML widget.
 | `archive-projects.json` | Archive | Archives → Project Archive |
 | `footer.json` | Footer | Entire Site |
 
-The **header** is not shipped as a template. Its mega-menu markup carries
-`data-mega` attributes and hover-intent behaviour that the theme's JS binds to,
-and Elementor's Nav Menu widget cannot emit that structure. Build it as a
-Theme Builder header using the classes in `03-header-and-homepage.md`, or keep
-the header in the child theme where the JS already drives it.
+The **header** is not shipped as a template — it ships working in the theme.
+Its mega panels carry the `data-mega` attributes and the exact
+`.mega → .mega-in → .mega-feat` structure that the CSS grid and the
+hover-intent JavaScript both bind to, and Elementor's Nav Menu widget cannot
+emit that. It is still content-managed: the panels build themselves from the
+Product Category taxonomy and the Solution post type. See `03`.
 
----
+### Only core widgets are used
+
+The templates contain `heading`, `text-editor`, `image`, `button` and
+`icon-list` only. Elementor Pro widgets (Nav Menu, Breadcrumbs, Loop Grid) are
+marked as dashed build-notes instead of being pre-placed, so the import cannot
+fail on a licence check and you always see exactly what to add.
 
 ## Single Product — bindings
 

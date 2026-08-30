@@ -187,6 +187,100 @@ class Semzon_Elementor {
 	}
 
 	/**
+	 * Find the active Elementor kit, creating one if the site has none.
+	 *
+	 * A kit is only created the first time Elementor's editor or Site Settings
+	 * screen is opened, so on a fresh install there is nothing to write into.
+	 * Rather than making the operator go and open Elementor, we ask Elementor
+	 * to create its own default kit — and fall back through progressively more
+	 * manual strategies if that API is unavailable in their version.
+	 *
+	 * @return int Kit post ID, or 0 if one could not be established.
+	 */
+	public static function resolve_kit_id() {
+		$plugin = class_exists( '\Elementor\Plugin' ) ? \Elementor\Plugin::$instance : null;
+
+		/*
+		 * 1. The stored option first.
+		 *
+		 * This is checked before asking Elementor to create anything: a second
+		 * run of this step must reuse the kit the first run established, never
+		 * mint a duplicate. Elementor's own create_default() is not guaranteed
+		 * to be idempotent from our side.
+		 */
+		$id = (int) get_option( 'elementor_active_kit' );
+		if ( $id && get_post( $id ) ) {
+			return $id;
+		}
+
+		// 2. Ask Elementor which kit is active.
+		if ( $plugin && isset( $plugin->kits_manager ) ) {
+			if ( method_exists( $plugin->kits_manager, 'get_active_id' ) ) {
+				$id = (int) $plugin->kits_manager->get_active_id();
+				if ( $id && get_post( $id ) ) {
+					update_option( 'elementor_active_kit', $id );
+					return $id;
+				}
+			}
+
+			// 3. Ask Elementor to create its default kit.
+			if ( method_exists( $plugin->kits_manager, 'create_default' ) ) {
+				$id = (int) $plugin->kits_manager->create_default();
+				if ( $id && get_post( $id ) ) {
+					update_option( 'elementor_active_kit', $id );
+					return $id;
+				}
+			}
+		}
+
+		// 4. Any kit already in the library that was orphaned from the option.
+		$existing = get_posts(
+			array(
+				'post_type'      => 'elementor_library',
+				'post_status'    => array( 'publish', 'draft' ),
+				'posts_per_page' => 1,
+				'fields'         => 'ids',
+				'no_found_rows'  => true,
+				'meta_query'     => array( // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query
+					array(
+						'key'   => '_elementor_template_type',
+						'value' => 'kit',
+					),
+				),
+			)
+		);
+		if ( $existing ) {
+			// Normalise defensively: a plugin filtering pre_get_posts can hand
+			// back post objects even when 'fields' => 'ids' was requested.
+			$found = is_object( $existing[0] ) ? (int) $existing[0]->ID : (int) $existing[0];
+			if ( $found ) {
+				update_option( 'elementor_active_kit', $found );
+				update_post_meta( $found, '_elementor_template_type', 'kit' );
+				return $found;
+			}
+		}
+
+		// 5. Last resort — build a minimal kit by hand.
+		$id = wp_insert_post(
+			array(
+				'post_title'  => __( 'SEMZON Kit', 'semzon-setup' ),
+				'post_type'   => 'elementor_library',
+				'post_status' => 'publish',
+			),
+			true
+		);
+		if ( is_wp_error( $id ) || ! $id ) {
+			return 0;
+		}
+
+		update_post_meta( $id, '_elementor_template_type', 'kit' );
+		update_post_meta( $id, '_elementor_edit_mode', 'builder' );
+		update_option( 'elementor_active_kit', (int) $id );
+
+		return (int) $id;
+	}
+
+	/**
 	 * Write every setting above into the active Elementor kit.
 	 *
 	 * @return array{success:bool,message:string}
@@ -199,11 +293,11 @@ class Semzon_Elementor {
 			);
 		}
 
-		$kit_id = (int) get_option( 'elementor_active_kit' );
-		if ( ! $kit_id || ! get_post( $kit_id ) ) {
+		$kit_id = self::resolve_kit_id();
+		if ( ! $kit_id ) {
 			return array(
 				'success' => false,
-				'message' => __( 'No active Elementor kit was found. Open Elementor once so it creates one, then re-run this step.', 'semzon-setup' ),
+				'message' => __( 'Could not find or create an Elementor kit. Open Elementor → Site Settings once, then re-run this step.', 'semzon-setup' ),
 			);
 		}
 
@@ -237,15 +331,25 @@ class Semzon_Elementor {
 
 		update_post_meta( $kit_id, '_elementor_page_settings', $settings );
 
+		// A kit only behaves as a kit if it is flagged as one and marked as
+		// built with Elementor. A kit we created by hand has neither yet.
+		update_post_meta( $kit_id, '_elementor_template_type', 'kit' );
+		update_post_meta( $kit_id, '_elementor_edit_mode', 'builder' );
+
 		// Elementor caches generated CSS per kit; clear it so the new values
 		// are compiled on the next front-end request.
-		if ( class_exists( '\Elementor\Plugin' ) && isset( \Elementor\Plugin::$instance->files_manager ) ) {
-			\Elementor\Plugin::$instance->files_manager->clear_cache();
+		$plugin = \Elementor\Plugin::$instance;
+		if ( isset( $plugin->files_manager ) ) {
+			$plugin->files_manager->clear_cache();
 		}
 
 		return array(
 			'success' => true,
-			'message' => __( 'Breakpoints, global colours and global fonts written to the Elementor kit.', 'semzon-setup' ),
+			'message' => sprintf(
+				/* translators: %d: kit post ID */
+				__( 'Six breakpoints, 19 colours and 4 type styles written to Elementor kit #%d.', 'semzon-setup' ),
+				$kit_id
+			),
 		);
 	}
 }
