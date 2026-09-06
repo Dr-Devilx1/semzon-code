@@ -1,0 +1,327 @@
+{
+  "version": "0.4",
+  "title": "SEMZON — Contact",
+  "type": "section",
+  "content": [
+    {
+      "id": "69c1c9d",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "css_classes": "page-hero"
+      },
+      "elements": [
+        {
+          "id": "3fcaef9",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": 100
+          },
+          "elements": [
+            {
+              "id": "c3a1bce",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p><a href=\"/\">Home</a> <i>›</i> <span>Contact</span></p>",
+                "css_classes": "crumb"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "9123db3",
+              "elType": "widget",
+              "settings": {
+                "title": "Start your project",
+                "header_size": "p",
+                "css_classes": "eyebrow"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "b08d663",
+              "elType": "widget",
+              "settings": {
+                "title": "Talk to an engineer, not a form.",
+                "header_size": "h1",
+                "css_classes": "display-1"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "8bff3da",
+              "elType": "widget",
+              "settings": {
+                "title": "Send drawings, capacity targets, or just an idea — a SEMZON engineer replies within 24 hours, usually sooner. Prefer instant? WhatsApp goes straight to the works.",
+                "header_size": "p",
+                "css_classes": "lead"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "4adcc02",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p><span class=\"tag\">Reply &lt; 24 h</span><span class=\"tag\">Lahore, Pakistan</span></p>",
+                "css_classes": "page-meta"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "86b28b6",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "css_classes": "section section--tight page-grid"
+      },
+      "elements": [
+        {
+          "id": "6601d48",
+          "elType": "column",
+          "settings": {
+            "_column_size": 55,
+            "_inline_size": 55,
+            "css_classes": "semzon-form-col"
+          },
+          "elements": [
+            {
+              "id": "bb8ba10",
+              "elType": "widget",
+              "settings": {
+                "title": "FORM SLOT — delete this and drop in your form widget. Elementor Pro Form, WPForms or Contact Form 7; all three are styled identically by the stylesheet. Fields, in order: Your name (text, required) | Phone / WhatsApp (tel) | Interested in (select: Poultry / livestock feed line, Aqua & pet feed line, Biomass pellet line, Fertilizer plant (SSP / BOP / compost), Single machine, Automation / retrofit, Spares, Other) | Target capacity (text, placeholder 'e.g. 20 t/h') | Your message (textarea, placeholder 'Tell us about the site, raw material, timeline…'). Set the form's own submit button label to 'Send enquiry'.",
+                "header_size": "div",
+                "css_classes": "semzon-slot"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "b136d28",
+              "elType": "widget",
+              "settings": {
+                "text": "Send via WhatsApp",
+                "link": {
+                  "url": "https://wa.me/923238845411?text=Salaam%2C%20I%27d%20like%20to%20discuss%20a%20plant.",
+                  "is_external": "on",
+                  "nofollow": ""
+                },
+                "css_classes": "semzon-btn semzon-btn--primary"
+              },
+              "elements": [],
+              "widgetType": "button"
+            },
+            {
+              "id": "befc0bb",
+              "elType": "widget",
+              "settings": {
+                "text": "Send by email",
+                "link": {
+                  "url": "mailto:semzoneng@gmail.com?subject=RFQ%20%E2%80%94%20SEMZON%20website",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "css_classes": "semzon-btn semzon-btn--secondary"
+              },
+              "elements": [],
+              "widgetType": "button"
+            },
+            {
+              "id": "d7f870c",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Your message opens in WhatsApp or your mail app addressed to SEMZON — nothing is stored on this website.</p>",
+                "css_classes": "form-note"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "0c34119",
+          "elType": "column",
+          "settings": {
+            "_column_size": 45,
+            "_inline_size": 45,
+            "css_classes": "semzon-card-col"
+          },
+          "elements": [
+            {
+              "id": "efbab5e",
+              "elType": "widget",
+              "settings": {
+                "editor": "<div><span class=\"mono-label\">Phone &amp; WhatsApp</span><p><b>+92 323 8845411</b></p></div><div><span class=\"mono-label\">Email</span><p><b>semzoneng@gmail.com</b></p></div><div><span class=\"mono-label\">Works &amp; office</span><p>2.5 KM Manga Raiwind Road,<br>Manga Mandi, Lahore, Pakistan</p></div><div><span class=\"mono-label\">Factory visits</span><p>Any working day — message ahead and we&rsquo;ll schedule a workshop walkthrough.</p></div>",
+                "css_classes": "contact-card"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "dc9203e",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "css_classes": "section section--tight"
+      },
+      "elements": [
+        {
+          "id": "b6f9abb",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": 100
+          },
+          "elements": [
+            {
+              "id": "892d279",
+              "elType": "widget",
+              "settings": {
+                "title": "Find us",
+                "header_size": "p",
+                "css_classes": "eyebrow"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "c93bf81",
+              "elType": "widget",
+              "settings": {
+                "title": "Lahore works, global reach.",
+                "header_size": "h2",
+                "css_classes": "display-2"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "b903272",
+              "elType": "widget",
+              "settings": {
+                "image": {
+                  "url": "",
+                  "id": ""
+                },
+                "image_size": "full",
+                "align": "center",
+                "css_classes": "semzon-map"
+              },
+              "elements": [],
+              "widgetType": "image"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "f3302eb",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "css_classes": "band-wrap"
+      },
+      "elements": [
+        {
+          "id": "99b10d2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": 100
+          },
+          "elements": [
+            {
+              "id": "cf47010",
+              "elType": "widget",
+              "settings": {
+                "title": "Start a conversation",
+                "header_size": "p",
+                "css_classes": "eyebrow eyebrow--plain"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "d53fc3b",
+              "elType": "widget",
+              "settings": {
+                "title": "Discuss your plant with our engineers.",
+                "header_size": "h2",
+                "css_classes": "display-2"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "9de39e9",
+              "elType": "widget",
+              "settings": {
+                "title": "Send drawings, capacity targets, or just an idea. A SEMZON engineer replies within 24 hours — usually sooner.",
+                "header_size": "p",
+                "css_classes": "lead"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "6def9e4",
+              "elType": "widget",
+              "settings": {
+                "text": "Start your project",
+                "link": {
+                  "url": "/contact/",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "css_classes": "semzon-btn semzon-btn--inverse"
+              },
+              "elements": [],
+              "widgetType": "button"
+            },
+            {
+              "id": "534d9d8",
+              "elType": "widget",
+              "settings": {
+                "text": "WhatsApp +92 323 8845411",
+                "link": {
+                  "url": "https://wa.me/923238845411?text=Salaam%2C%20I%27d%20like%20to%20discuss%20a%20plant.",
+                  "is_external": "on",
+                  "nofollow": ""
+                },
+                "css_classes": "semzon-btn semzon-btn--ghost"
+              },
+              "elements": [],
+              "widgetType": "button"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": []
+}

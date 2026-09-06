@@ -1,0 +1,327 @@
+/* ============================================================
+   SEMZON — contact page styles
+   Paste into: Appearance → Customize → Additional CSS
+   (append below the header CSS if you already added that; the
+   :root block is identical in both, so a duplicate is harmless)
+
+   Self-contained: own tokens, own fonts, no theme required.
+   Styles Elementor Pro Form, WPForms and Contact Form 7
+   identically, so whichever you drop into the form slot matches.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --sz-ink-950:   #0D0333;
+  --sz-brand-800: #1C0863;
+  --sz-brand-600: #3A22A8;
+  --sz-brand-400: #8A79CC;
+  --sz-brand-200: #D5CFEE;
+  --sz-brand-100: #EBE8F7;
+  --sz-brand-050: #F5F4FB;
+  --sz-accent-700:#840C0C;
+  --sz-text-900:  #14152B;
+  --sz-text-700:  #2B2C42;
+  --sz-text-500:  #4C4D60;
+  --sz-inv-soft:  #C7C2E8;
+  --sz-line:      #E4E6EB;
+  --sz-mist:      #F6F7F9;
+
+  --sz-font-display: "Bricolage Grotesque", Avenir, "Segoe UI", sans-serif;
+  --sz-font-body:    "Inter", "Segoe UI", system-ui, sans-serif;
+  --sz-font-mono:    "JetBrains Mono", Consolas, monospace;
+
+  --sz-margin: clamp(20px, 4vw, 150px);
+  --sz-sec-y:  clamp(64px, 8vw, 116px);
+  --sz-ease:   cubic-bezier(.22, 1, .36, 1);
+  --sz-dur:    280ms;
+}
+
+/* ------------------------------------------------------------------
+   1. SECTION RHYTHM
+   ------------------------------------------------------------------ */
+.elementor-section.page-hero  { padding: clamp(36px,5vw,60px) var(--sz-margin) clamp(22px,3vw,38px); }
+.elementor-section.section    { padding-block: var(--sz-sec-y); }
+.elementor-section.section--tight { padding: calc(var(--sz-sec-y)*.62) var(--sz-margin); }
+.elementor-section.band-wrap  { padding: calc(var(--sz-sec-y)*.3) var(--sz-margin); }
+.elementor-section > .elementor-container { max-width: min(1800px, 100%); }
+
+/* Everything this stylesheet sizes must include its own padding in that size.
+   Themes vary on whether they set border-box for form controls and buttons;
+   relying on it caused inputs to overflow their column on narrow screens. */
+.semzon-form-col input, .semzon-form-col select, .semzon-form-col textarea,
+.semzon-form-col button, .semzon-btn .elementor-button, .contact-card,
+.semzon-form-col .elementor-field-textual, .semzon-form-col .wpcf7-form-control {
+  box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------------
+   2. TYPE — matching the original scale exactly
+   ------------------------------------------------------------------ */
+.crumb, .crumb p {
+  font-family: var(--sz-font-mono); font-size: .72rem; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--sz-text-500); margin: 0 0 20px;
+}
+.crumb a { color: inherit; text-decoration: none; }
+.crumb a:hover { color: var(--sz-brand-800); }
+.crumb i { font-style: normal; color: var(--sz-brand-200); padding: 0 6px; }
+
+.eyebrow .elementor-heading-title,
+.eyebrow {
+  font-family: var(--sz-font-mono); font-size: .78rem; font-weight: 500;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--sz-brand-600);
+  display: flex; align-items: center; gap: 12px; margin: 0 0 14px;
+}
+.eyebrow .elementor-heading-title::before,
+.eyebrow::before {
+  content: ""; width: 26px; height: 1px; flex: none;
+  background: linear-gradient(120deg, #840C0C, #B81A1A);
+  box-shadow: 0 0 10px rgba(158,20,20,.55);
+}
+.eyebrow--plain .elementor-heading-title { justify-content: center; }
+.eyebrow--plain .elementor-heading-title::before { display: none; }
+
+.display-1 .elementor-heading-title {
+  font-family: var(--sz-font-display); font-weight: 800;
+  font-size: clamp(1.95rem, 1.1rem + 3.1vw, 3.6rem);
+  line-height: 1.06; letter-spacing: -.022em; color: var(--sz-text-900);
+  max-width: 16ch; margin: 0;
+}
+.display-2 .elementor-heading-title {
+  font-family: var(--sz-font-display); font-weight: 700;
+  font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.1rem);
+  line-height: 1.12; letter-spacing: -.018em; color: var(--sz-text-900); margin: 0;
+}
+.lead .elementor-heading-title, .lead {
+  font-family: var(--sz-font-body); font-weight: 400;
+  font-size: clamp(1rem, .94rem + .35vw, 1.18rem);
+  line-height: 1.7; color: var(--sz-text-700); max-width: 56ch;
+  margin: 14px 0 0; text-wrap: pretty;
+}
+
+/* tag pills under the hero lead */
+.page-meta p { display: flex; gap: 10px; flex-wrap: wrap; margin: 18px 0 0; }
+.page-meta .tag {
+  display: inline-flex; align-items: center; gap: 8px;
+  border: 1px solid rgba(108,79,224,.22); border-radius: 999px;
+  padding: 8px 14px; font-family: var(--sz-font-mono); font-size: .74rem;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--sz-text-700);
+  background: linear-gradient(180deg, #fff, rgba(245,244,251,.8));
+}
+.page-meta .tag::before {
+  content: ""; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--sz-accent-700); flex: none;
+}
+
+/* ------------------------------------------------------------------
+   3. TWO-COLUMN GRID
+   The layout class sits on the section, but the children it must lay
+   out are Elementor's columns one level down inside .elementor-container.
+   ------------------------------------------------------------------ */
+.elementor-section.page-grid > .elementor-container {
+  display: grid; gap: clamp(26px, 4vw, 52px); align-items: start;
+}
+@media (min-width: 900px) {
+  .elementor-section.page-grid > .elementor-container {
+    grid-template-columns: 1.05fr .95fr;
+  }
+}
+.elementor-section.page-grid > .elementor-container > .elementor-column {
+  width: 100% !important; max-width: 100%; flex: none;
+}
+
+/* ------------------------------------------------------------------
+   4. FORM — one look across Elementor Pro, WPForms and CF7
+   ------------------------------------------------------------------ */
+.semzon-form-col form,
+.semzon-form-col .elementor-form,
+.semzon-form-col .wpforms-form,
+.semzon-form-col .wpcf7-form { display: grid; gap: 14px; }
+
+/* two-up row for name + phone, as the original does */
+@media (min-width: 900px) {
+  .semzon-form-col .elementor-form .elementor-form-fields-wrapper { gap: 14px; }
+}
+
+.semzon-form-col label,
+.semzon-form-col .elementor-field-label,
+.semzon-form-col .wpforms-field-label {
+  font-family: var(--sz-font-mono) !important; font-size: .72rem !important;
+  font-weight: 500 !important; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--sz-text-500) !important; margin-bottom: 6px; display: block;
+}
+
+.semzon-form-col input[type=text],
+.semzon-form-col input[type=email],
+.semzon-form-col input[type=tel],
+.semzon-form-col select,
+.semzon-form-col textarea,
+.semzon-form-col .elementor-field-textual,
+.semzon-form-col .wpforms-field input,
+.semzon-form-col .wpforms-field select,
+.semzon-form-col .wpforms-field textarea,
+.semzon-form-col .wpcf7-form-control {
+  width: 100%; font-family: var(--sz-font-body); font-size: 1rem;
+  border: 1.5px solid var(--sz-line) !important; border-radius: 14px !important;
+  padding: 13px 16px !important; background: #fff !important;
+  color: var(--sz-text-900) !important; box-shadow: none !important;
+  min-height: auto; transition: border-color var(--sz-dur) var(--sz-ease);
+}
+.semzon-form-col textarea,
+.semzon-form-col .wpcf7-form-control.wpcf7-textarea { min-height: 130px; resize: vertical; }
+
+.semzon-form-col input:focus,
+.semzon-form-col select:focus,
+.semzon-form-col textarea:focus,
+.semzon-form-col .elementor-field-textual:focus {
+  outline: none !important; border-color: var(--sz-brand-800) !important;
+  box-shadow: none !important;
+}
+
+/* the form plugin's own submit button gets the primary treatment */
+.semzon-form-col button[type=submit],
+.semzon-form-col .elementor-button[type=submit],
+.semzon-form-col .wpforms-submit,
+.semzon-form-col .wpcf7-submit {
+  background: linear-gradient(120deg,#2A1080 0%,#3A22A8 46%,#6C4FE0 100%) !important;
+  color: #fff !important; border: 0 !important; border-radius: 999px !important;
+  font-family: var(--sz-font-body); font-weight: 600; font-size: .95rem;
+  min-height: 52px; padding: 0 28px !important; cursor: pointer;
+  box-shadow: 0 10px 30px -10px rgba(58,34,168,.6);
+  transition: filter var(--sz-dur) var(--sz-ease);
+}
+.semzon-form-col button[type=submit]:hover,
+.semzon-form-col .wpforms-submit:hover,
+.semzon-form-col .wpcf7-submit:hover { filter: brightness(1.07) saturate(1.05); }
+
+.form-note p {
+  font-family: var(--sz-font-body); font-size: .86rem;
+  color: var(--sz-text-500); margin: 4px 0 0;
+}
+
+/* ------------------------------------------------------------------
+   5. BUTTONS
+   ------------------------------------------------------------------ */
+.semzon-btn { display: inline-block; }
+.semzon-btn .elementor-button {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--sz-font-body); font-weight: 600; font-size: .95rem;
+  min-height: 52px; padding: 0 28px; border-radius: 999px;
+  border: 1.5px solid transparent; text-decoration: none !important;
+  transition: background var(--sz-dur) var(--sz-ease),
+              border-color var(--sz-dur) var(--sz-ease),
+              filter var(--sz-dur) var(--sz-ease);
+}
+.semzon-btn--primary .elementor-button {
+  background: linear-gradient(120deg,#2A1080 0%,#3A22A8 46%,#6C4FE0 100%);
+  color: #fff; border: 0;
+  box-shadow: 0 10px 30px -10px rgba(58,34,168,.6), inset 0 0 0 1px rgba(108,79,224,.25);
+}
+.semzon-btn--primary .elementor-button:hover { filter: brightness(1.07) saturate(1.05); color: #fff; }
+.semzon-btn--secondary .elementor-button {
+  background: rgba(255,255,255,.6); border-color: var(--sz-brand-200);
+  color: var(--sz-brand-800);
+}
+.semzon-btn--secondary .elementor-button:hover {
+  border-color: var(--sz-brand-600); background: rgba(245,244,251,.9);
+}
+.semzon-btn--inverse .elementor-button { background: #fff; color: var(--sz-brand-800); }
+.semzon-btn--inverse .elementor-button:hover { background: var(--sz-brand-100); }
+.semzon-btn--ghost .elementor-button {
+  background: transparent; border-color: rgba(255,255,255,.35); color: #fff;
+}
+.semzon-btn--ghost .elementor-button:hover { border-color: #fff; background: rgba(255,255,255,.06); }
+
+/* The two hand-off buttons sit side by side, as .hero-ctas does in the
+   original. Elementor gives every widget width:100%, which stacks them, so
+   the button widgets are shrunk to their content and floated inline. */
+.semzon-form-col .elementor-widget.semzon-btn,
+.band-wrap .elementor-widget.semzon-btn { width: auto; }
+.semzon-form-col .semzon-btn { margin-right: 12px; margin-top: 8px; vertical-align: top; }
+@media (max-width: 479px) {
+  .semzon-form-col .elementor-widget.semzon-btn { width: 100%; }
+  .semzon-form-col .semzon-btn { display: block; margin-right: 0; }
+  .semzon-form-col .semzon-btn .elementor-button {
+    width: 100%; justify-content: center; padding-inline: 16px;
+  }
+}
+
+/* ------------------------------------------------------------------
+   6. CONTACT CARD
+   ------------------------------------------------------------------ */
+.contact-card {
+  border: 1px solid var(--sz-line); border-radius: 28px;
+  padding: clamp(20px,3vw,30px); background: var(--sz-brand-050);
+  display: grid; gap: 14px; align-content: start;
+}
+.contact-card > div { display: grid; gap: 4px; }
+.contact-card .mono-label {
+  font-family: var(--sz-font-mono); font-size: .72rem; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--sz-text-500);
+}
+.contact-card p { margin: 0; font-family: var(--sz-font-body); color: var(--sz-text-700); line-height: 1.6; }
+.contact-card b { color: var(--sz-text-900); font-weight: 600; }
+
+/* ------------------------------------------------------------------
+   7. MAP CARD — the frame the original draws around the network graphic
+   ------------------------------------------------------------------ */
+.semzon-map {
+  margin-top: clamp(28px,4vw,44px);
+  border: 1px solid rgba(108,79,224,.22); border-radius: 28px;
+  background: var(--sz-brand-050); overflow: hidden;
+  box-shadow: 0 30px 70px -30px rgba(28,8,99,.4);
+}
+.semzon-map img, .semzon-map svg {
+  display: block; width: 100%; height: auto;
+  aspect-ratio: 900 / 520; object-fit: cover;
+}
+.semzon-map figure, .semzon-map .elementor-image { margin: 0; line-height: 0; }
+
+/* On phones the map would scale to ~390px wide, shrinking its 12px mono
+   labels to about 5px — present but unreadable. Instead the map keeps a
+   legible minimum width and scrolls inside its own card. The page itself
+   still never scrolls sideways. */
+@media (max-width: 767px) {
+  .semzon-map { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .semzon-map img, .semzon-map svg { min-width: 660px; }
+}
+
+/* ------------------------------------------------------------------
+   8. CTA BAND — inset dark card with the aurora glow
+   ------------------------------------------------------------------ */
+.elementor-section.band-wrap > .elementor-container {
+  border-radius: clamp(22px,3vw,42px); overflow: clip; position: relative;
+  padding: var(--sz-sec-y) clamp(20px,4vw,64px); text-align: center;
+  background:
+    radial-gradient(900px 500px at 82% -20%, rgba(108,79,224,.30), transparent 60%),
+    radial-gradient(700px 460px at 0% 120%, rgba(132,12,12,.22), transparent 60%),
+    linear-gradient(165deg, #160A4A, #0D0333);
+}
+.band-wrap .elementor-widget-wrap { justify-content: center; }
+.band-wrap .elementor-heading-title { color: #fff; }
+.band-wrap .eyebrow .elementor-heading-title { color: #E08A8A; justify-content: center; }
+.band-wrap .lead .elementor-heading-title { color: var(--sz-inv-soft); margin-inline: auto; }
+.band-wrap .semzon-btn { display: inline-block; margin: 14px 7px 0; }
+
+/* ------------------------------------------------------------------
+   9. BUILD NOTES — visible while editing, never to visitors
+   ------------------------------------------------------------------ */
+.semzon-slot { display: none; }
+.elementor-editor-active .semzon-slot,
+.elementor-editor-preview .semzon-slot {
+  display: block; font-family: var(--sz-font-mono); font-size: .72rem;
+  line-height: 1.7; color: #7A6BB8;
+  background: repeating-linear-gradient(45deg,#F5F4FB,#F5F4FB 8px,#EDEBF7 8px,#EDEBF7 16px);
+  border: 1px dashed var(--sz-brand-200); border-radius: 12px; padding: 14px 16px;
+}
+
+/* ------------------------------------------------------------------
+   10. SAFETY
+   ------------------------------------------------------------------ */
+.elementor-section.page-hero,
+.elementor-section.section--tight,
+.elementor-section.band-wrap { max-width: 100vw; }
+@media (prefers-reduced-motion: reduce) {
+  .semzon-btn .elementor-button, .semzon-form-col input,
+  .semzon-form-col textarea, .semzon-form-col select { transition-duration: .01ms !important; }
+}
