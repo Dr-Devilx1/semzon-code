@@ -4,16 +4,35 @@
   "type": "section",
   "content": [
     {
-      "id": "69c1c9d",
+      "id": "081b16b",
       "elType": "section",
       "settings": {
-        "layout": "full_width",
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 980
+        },
         "gap": "no",
-        "css_classes": "page-hero"
+        "padding": {
+          "unit": "px",
+          "top": "64",
+          "right": "0",
+          "bottom": "40",
+          "left": "0",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "40",
+          "right": "0",
+          "bottom": "28",
+          "left": "0",
+          "isLinked": false
+        }
       },
       "elements": [
         {
-          "id": "3fcaef9",
+          "id": "074d5d1",
           "elType": "column",
           "settings": {
             "_column_size": 100,
@@ -21,57 +40,211 @@
           },
           "elements": [
             {
-              "id": "c3a1bce",
+              "id": "a4157ea",
               "elType": "widget",
               "settings": {
-                "editor": "<p><a href=\"/\">Home</a> <i>›</i> <span>Contact</span></p>",
-                "css_classes": "crumb"
-              },
-              "elements": [],
-              "widgetType": "text-editor"
-            },
-            {
-              "id": "9123db3",
-              "elType": "widget",
-              "settings": {
-                "title": "Start your project",
-                "header_size": "p",
-                "css_classes": "eyebrow"
+                "title": "Home  ›  Contact",
+                "header_size": "div",
+                "title_color": "#4C4D60",
+                "typography_typography": "custom",
+                "typography_font_family": "JetBrains Mono",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_text_transform": "uppercase",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "22",
+                  "left": "0",
+                  "isLinked": false
+                }
               },
               "elements": [],
               "widgetType": "heading"
             },
             {
-              "id": "b08d663",
+              "id": "99ff292",
+              "elType": "widget",
+              "settings": {
+                "title": "Start your project",
+                "header_size": "div",
+                "title_color": "#3A22A8",
+                "typography_typography": "custom",
+                "typography_font_family": "JetBrains Mono",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_font_weight": "500",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2.1,
+                  "sizes": []
+                },
+                "typography_text_transform": "uppercase",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "14",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "de11878",
               "elType": "widget",
               "settings": {
                 "title": "Talk to an engineer, not a form.",
                 "header_size": "h1",
-                "css_classes": "display-1"
+                "title_color": "#14152B",
+                "typography_typography": "custom",
+                "typography_font_family": "Bricolage Grotesque",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 58,
+                  "sizes": []
+                },
+                "typography_font_weight": "800",
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 42,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 32,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.06,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -1.3,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "18",
+                  "left": "0",
+                  "isLinked": false
+                }
               },
               "elements": [],
               "widgetType": "heading"
             },
             {
-              "id": "8bff3da",
+              "id": "f13904a",
               "elType": "widget",
               "settings": {
-                "title": "Send drawings, capacity targets, or just an idea — a SEMZON engineer replies within 24 hours, usually sooner. Prefer instant? WhatsApp goes straight to the works.",
-                "header_size": "p",
-                "css_classes": "lead"
-              },
-              "elements": [],
-              "widgetType": "heading"
-            },
-            {
-              "id": "4adcc02",
-              "elType": "widget",
-              "settings": {
-                "editor": "<p><span class=\"tag\">Reply &lt; 24 h</span><span class=\"tag\">Lahore, Pakistan</span></p>",
-                "css_classes": "page-meta"
+                "editor": "<p>Send drawings, capacity targets, or just an idea — a SEMZON engineer replies within 24 hours, usually sooner. Prefer instant? WhatsApp goes straight to the works.</p>",
+                "text_color": "#2B2C42",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 17,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.7,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "20",
+                  "left": "0",
+                  "isLinked": false
+                }
               },
               "elements": [],
               "widgetType": "text-editor"
+            },
+            {
+              "id": "f185225",
+              "elType": "widget",
+              "settings": {
+                "view": "inline",
+                "icon_list": [
+                  {
+                    "_id": "5f7478e",
+                    "text": "Reply under 24 hours",
+                    "selected_icon": {
+                      "value": "fas fa-circle",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "_id": "8557acb",
+                    "text": "Lahore, Pakistan",
+                    "selected_icon": {
+                      "value": "fas fa-circle",
+                      "library": "fa-solid"
+                    }
+                  }
+                ],
+                "icon_color": "#840C0C",
+                "icon_size": {
+                  "unit": "px",
+                  "size": 6,
+                  "sizes": []
+                },
+                "text_color": "#2B2C42",
+                "space_between": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "icon_typography_typography": "custom",
+                "icon_typography_font_family": "JetBrains Mono",
+                "icon_typography_font_size": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "icon_typography_font_weight": "500",
+                "icon_typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1.2,
+                  "sizes": []
+                },
+                "icon_typography_text_transform": "uppercase"
+              },
+              "elements": [],
+              "widgetType": "icon-list"
             }
           ],
           "isInner": false
@@ -80,36 +253,176 @@
       "isInner": false
     },
     {
-      "id": "86b28b6",
+      "id": "46fe226",
       "elType": "section",
       "settings": {
-        "layout": "full_width",
-        "gap": "no",
-        "css_classes": "section section--tight page-grid"
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1200
+        },
+        "gap": "extended",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "0",
+          "bottom": "70",
+          "left": "0",
+          "isLinked": false
+        }
       },
       "elements": [
         {
-          "id": "6601d48",
+          "id": "0a10ca0",
           "elType": "column",
           "settings": {
             "_column_size": 55,
-            "_inline_size": 55,
-            "css_classes": "semzon-form-col"
+            "_inline_size": 55
           },
           "elements": [
             {
-              "id": "bb8ba10",
+              "id": "22cf1cc",
               "elType": "widget",
               "settings": {
-                "title": "FORM SLOT — delete this and drop in your form widget. Elementor Pro Form, WPForms or Contact Form 7; all three are styled identically by the stylesheet. Fields, in order: Your name (text, required) | Phone / WhatsApp (tel) | Interested in (select: Poultry / livestock feed line, Aqua & pet feed line, Biomass pellet line, Fertilizer plant (SSP / BOP / compost), Single machine, Automation / retrofit, Spares, Other) | Target capacity (text, placeholder 'e.g. 20 t/h') | Your message (textarea, placeholder 'Tell us about the site, raw material, timeline…'). Set the form's own submit button label to 'Send enquiry'.",
-                "header_size": "div",
-                "css_classes": "semzon-slot"
+                "form_name": "SEMZON enquiry",
+                "form_fields": [
+                  {
+                    "_id": "fname",
+                    "field_type": "text",
+                    "field_label": "Your name",
+                    "required": "true",
+                    "width": "50"
+                  },
+                  {
+                    "_id": "fphone",
+                    "field_type": "tel",
+                    "field_label": "Phone / WhatsApp",
+                    "width": "50"
+                  },
+                  {
+                    "_id": "fint",
+                    "field_type": "select",
+                    "field_label": "Interested in",
+                    "field_options": "Poultry / livestock feed line\nAqua & pet feed line\nBiomass pellet line\nFertilizer plant (SSP / BOP / compost)\nSingle machine\nAutomation / retrofit\nSpares\nOther",
+                    "width": "100"
+                  },
+                  {
+                    "_id": "fcap",
+                    "field_type": "text",
+                    "field_label": "Target capacity (if known)",
+                    "placeholder": "e.g. 20 t/h",
+                    "width": "100"
+                  },
+                  {
+                    "_id": "fmsg",
+                    "field_type": "textarea",
+                    "field_label": "Your message",
+                    "placeholder": "Tell us about the site, raw material, timeline…",
+                    "rows": 5,
+                    "width": "100"
+                  }
+                ],
+                "button_text": "Send enquiry",
+                "button_size": "md",
+                "email_to": "semzoneng@gmail.com",
+                "email_subject": "New enquiry from semzoneng.com",
+                "label_typography_typography": "custom",
+                "label_typography_font_family": "JetBrains Mono",
+                "label_typography_font_size": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "label_typography_font_weight": "500",
+                "label_typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "label_typography_text_transform": "uppercase",
+                "label_color": "#4C4D60",
+                "field_typography_typography": "custom",
+                "field_typography_font_family": "Inter",
+                "field_typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "field_background_color": "#FFFFFF",
+                "field_text_color": "#14152B",
+                "field_border_color": "#E4E6EB",
+                "field_border_width": {
+                  "unit": "px",
+                  "top": "1.5",
+                  "right": "1.5",
+                  "bottom": "1.5",
+                  "left": "1.5",
+                  "isLinked": false
+                },
+                "field_border_radius": {
+                  "unit": "px",
+                  "top": "14",
+                  "right": "14",
+                  "bottom": "14",
+                  "left": "14",
+                  "isLinked": true
+                },
+                "row_gap": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "button_background_color": "#3A22A8",
+                "button_background_hover_color": "#1C0863",
+                "button_text_color": "#FFFFFF",
+                "button_border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": true
+                },
+                "button_text_padding": {
+                  "unit": "px",
+                  "top": "18",
+                  "right": "32",
+                  "bottom": "18",
+                  "left": "32",
+                  "isLinked": false
+                },
+                "button_typography_typography": "custom",
+                "button_typography_font_family": "Inter",
+                "button_typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "button_typography_font_weight": "600"
               },
               "elements": [],
-              "widgetType": "heading"
+              "widgetType": "form"
             },
             {
-              "id": "b136d28",
+              "id": "714b25d",
+              "elType": "widget",
+              "settings": {
+                "gap": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                },
+                "weight": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "divider"
+            },
+            {
+              "id": "896032d",
               "elType": "widget",
               "settings": {
                 "text": "Send via WhatsApp",
@@ -118,32 +431,128 @@
                   "is_external": "on",
                   "nofollow": ""
                 },
-                "css_classes": "semzon-btn semzon-btn--primary"
+                "align": "left",
+                "background_color": "#3A22A8",
+                "button_background_hover_color": "#1C0863",
+                "button_text_color": "#FFFFFF",
+                "hover_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": true
+                },
+                "text_padding": {
+                  "unit": "px",
+                  "top": "18",
+                  "right": "30",
+                  "bottom": "18",
+                  "left": "30",
+                  "isLinked": false
+                },
+                "button_box_shadow_box_shadow_type": "yes",
+                "button_box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 10,
+                  "blur": 30,
+                  "spread": -10,
+                  "color": "rgba(58,34,168,0.6)"
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_font_weight": "600"
               },
               "elements": [],
               "widgetType": "button"
             },
             {
-              "id": "befc0bb",
+              "id": "3ba52ee",
               "elType": "widget",
               "settings": {
                 "text": "Send by email",
                 "link": {
-                  "url": "mailto:semzoneng@gmail.com?subject=RFQ%20%E2%80%94%20SEMZON%20website",
+                  "url": "mailto:semzoneng@gmail.com?subject=RFQ%20from%20semzoneng.com",
                   "is_external": "",
                   "nofollow": ""
                 },
-                "css_classes": "semzon-btn semzon-btn--secondary"
+                "align": "left",
+                "background_color": "#FFFFFF00",
+                "button_background_hover_color": "#F5F4FB",
+                "button_text_color": "#1C0863",
+                "hover_color": "#1C0863",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1.5",
+                  "right": "1.5",
+                  "bottom": "1.5",
+                  "left": "1.5",
+                  "isLinked": false
+                },
+                "border_color": "#D5CFEE",
+                "button_hover_border_color": "#3A22A8",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": true
+                },
+                "text_padding": {
+                  "unit": "px",
+                  "top": "18",
+                  "right": "30",
+                  "bottom": "18",
+                  "left": "30",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_font_weight": "600"
               },
               "elements": [],
               "widgetType": "button"
             },
             {
-              "id": "d7f870c",
+              "id": "2c5ccb3",
               "elType": "widget",
               "settings": {
-                "editor": "<p>Your message opens in WhatsApp or your mail app addressed to SEMZON — nothing is stored on this website.</p>",
-                "css_classes": "form-note"
+                "editor": "<p>Prefer to talk? WhatsApp goes straight to the works, and the email button opens your own mail app.</p>",
+                "text_color": "#4C4D60",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "14",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
               },
               "elements": [],
               "widgetType": "text-editor"
@@ -152,20 +561,301 @@
           "isInner": false
         },
         {
-          "id": "0c34119",
+          "id": "30a54d7",
           "elType": "column",
           "settings": {
             "_column_size": 45,
             "_inline_size": 45,
-            "css_classes": "semzon-card-col"
+            "background_background": "classic",
+            "background_color": "#F5F4FB",
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": false
+            },
+            "border_color": "#E4E6EB",
+            "border_radius": {
+              "unit": "px",
+              "top": "24",
+              "right": "24",
+              "bottom": "24",
+              "left": "24",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "32",
+              "right": "30",
+              "bottom": "14",
+              "left": "30",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "26",
+              "right": "22",
+              "bottom": "8",
+              "left": "22",
+              "isLinked": false
+            }
           },
           "elements": [
             {
-              "id": "efbab5e",
+              "id": "002963c",
               "elType": "widget",
               "settings": {
-                "editor": "<div><span class=\"mono-label\">Phone &amp; WhatsApp</span><p><b>+92 323 8845411</b></p></div><div><span class=\"mono-label\">Email</span><p><b>semzoneng@gmail.com</b></p></div><div><span class=\"mono-label\">Works &amp; office</span><p>2.5 KM Manga Raiwind Road,<br>Manga Mandi, Lahore, Pakistan</p></div><div><span class=\"mono-label\">Factory visits</span><p>Any working day — message ahead and we&rsquo;ll schedule a workshop walkthrough.</p></div>",
-                "css_classes": "contact-card"
+                "title": "Phone & WhatsApp",
+                "header_size": "div",
+                "title_color": "#4C4D60",
+                "typography_typography": "custom",
+                "typography_font_family": "JetBrains Mono",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "typography_font_weight": "500",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_text_transform": "uppercase",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "4",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "56bdbf4",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p><strong>+92 323 8845411</strong></p>",
+                "text_color": "#2B2C42",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "20",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "0c2d4c9",
+              "elType": "widget",
+              "settings": {
+                "title": "Email",
+                "header_size": "div",
+                "title_color": "#4C4D60",
+                "typography_typography": "custom",
+                "typography_font_family": "JetBrains Mono",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "typography_font_weight": "500",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_text_transform": "uppercase",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "4",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "49a1f04",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p><strong>semzoneng@gmail.com</strong></p>",
+                "text_color": "#2B2C42",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "20",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "d4c0de4",
+              "elType": "widget",
+              "settings": {
+                "title": "Works & office",
+                "header_size": "div",
+                "title_color": "#4C4D60",
+                "typography_typography": "custom",
+                "typography_font_family": "JetBrains Mono",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "typography_font_weight": "500",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_text_transform": "uppercase",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "4",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "fb71604",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>2.5 KM Manga Raiwind Road,<br>Manga Mandi, Lahore, Pakistan</p>",
+                "text_color": "#2B2C42",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "20",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "1207bea",
+              "elType": "widget",
+              "settings": {
+                "title": "Factory visits",
+                "header_size": "div",
+                "title_color": "#4C4D60",
+                "typography_typography": "custom",
+                "typography_font_family": "JetBrains Mono",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "typography_font_weight": "500",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_text_transform": "uppercase",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "4",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "523f869",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Any working day — message ahead and we&rsquo;ll schedule a workshop walkthrough.</p>",
+                "text_color": "#2B2C42",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "20",
+                  "left": "0",
+                  "isLinked": false
+                }
               },
               "elements": [],
               "widgetType": "text-editor"
@@ -177,16 +867,29 @@
       "isInner": false
     },
     {
-      "id": "dc9203e",
+      "id": "6be2546",
       "elType": "section",
       "settings": {
-        "layout": "full_width",
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1200
+        },
         "gap": "no",
-        "css_classes": "section section--tight"
+        "padding": {
+          "unit": "px",
+          "top": "10",
+          "right": "0",
+          "bottom": "70",
+          "left": "0",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF"
       },
       "elements": [
         {
-          "id": "b6f9abb",
+          "id": "d64c7a6",
           "elType": "column",
           "settings": {
             "_column_size": 100,
@@ -194,41 +897,122 @@
           },
           "elements": [
             {
-              "id": "892d279",
+              "id": "2a01b84",
               "elType": "widget",
               "settings": {
                 "title": "Find us",
-                "header_size": "p",
-                "css_classes": "eyebrow"
+                "header_size": "div",
+                "title_color": "#3A22A8",
+                "typography_typography": "custom",
+                "typography_font_family": "JetBrains Mono",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_font_weight": "500",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2.1,
+                  "sizes": []
+                },
+                "typography_text_transform": "uppercase",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "12",
+                  "left": "0",
+                  "isLinked": false
+                }
               },
               "elements": [],
               "widgetType": "heading"
             },
             {
-              "id": "c93bf81",
+              "id": "91a02fe",
               "elType": "widget",
               "settings": {
                 "title": "Lahore works, global reach.",
                 "header_size": "h2",
-                "css_classes": "display-2"
+                "title_color": "#14152B",
+                "typography_typography": "custom",
+                "typography_font_family": "Bricolage Grotesque",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 34,
+                  "sizes": []
+                },
+                "typography_font_weight": "700",
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 28,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.12,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.6,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "28",
+                  "left": "0",
+                  "isLinked": false
+                }
               },
               "elements": [],
               "widgetType": "heading"
             },
             {
-              "id": "b903272",
+              "id": "45e09f2",
               "elType": "widget",
               "settings": {
-                "image": {
-                  "url": "",
-                  "id": ""
+                "address": "2.5 KM Manga Raiwind Road, Manga Mandi, Lahore, Pakistan",
+                "zoom": {
+                  "unit": "px",
+                  "size": 14
                 },
-                "image_size": "full",
-                "align": "center",
-                "css_classes": "semzon-map"
+                "height": {
+                  "unit": "px",
+                  "size": 460
+                },
+                "height_mobile": {
+                  "unit": "px",
+                  "size": 320
+                },
+                "css_filters_css_filter": "custom",
+                "css_filters_saturate": {
+                  "unit": "%",
+                  "size": 55
+                },
+                "css_filters_contrast": {
+                  "unit": "%",
+                  "size": 105
+                },
+                "_border_radius": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                }
               },
               "elements": [],
-              "widgetType": "image"
+              "widgetType": "google_maps"
             }
           ],
           "isInner": false
@@ -237,81 +1021,238 @@
       "isInner": false
     },
     {
-      "id": "f3302eb",
+      "id": "bd1aab6",
       "elType": "section",
       "settings": {
-        "layout": "full_width",
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1200
+        },
         "gap": "no",
-        "css_classes": "band-wrap"
+        "padding": {
+          "unit": "px",
+          "top": "72",
+          "right": "0",
+          "bottom": "76",
+          "left": "0",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "52",
+          "right": "0",
+          "bottom": "56",
+          "left": "0",
+          "isLinked": false
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "40",
+          "left": "0",
+          "isLinked": false
+        },
+        "background_background": "gradient",
+        "background_color": "#160A4A",
+        "background_color_b": "#0D0333",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 165
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "32",
+          "right": "32",
+          "bottom": "32",
+          "left": "32",
+          "isLinked": true
+        },
+        "shape_divider_top": ""
       },
       "elements": [
         {
-          "id": "99b10d2",
+          "id": "3731644",
           "elType": "column",
           "settings": {
             "_column_size": 100,
-            "_inline_size": 100
+            "_inline_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "40",
+              "bottom": "0",
+              "left": "40",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "0",
+              "right": "6",
+              "bottom": "0",
+              "left": "6",
+              "isLinked": false
+            }
           },
           "elements": [
             {
-              "id": "cf47010",
+              "id": "7c784d1",
               "elType": "widget",
               "settings": {
                 "title": "Start a conversation",
-                "header_size": "p",
-                "css_classes": "eyebrow eyebrow--plain"
+                "header_size": "div",
+                "title_color": "#E08A8A",
+                "typography_typography": "custom",
+                "typography_font_family": "JetBrains Mono",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_font_weight": "500",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2.1,
+                  "sizes": []
+                },
+                "typography_text_transform": "uppercase",
+                "align": "center",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "14",
+                  "left": "0",
+                  "isLinked": false
+                }
               },
               "elements": [],
               "widgetType": "heading"
             },
             {
-              "id": "d53fc3b",
+              "id": "1521e03",
               "elType": "widget",
               "settings": {
                 "title": "Discuss your plant with our engineers.",
                 "header_size": "h2",
-                "css_classes": "display-2"
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Bricolage Grotesque",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 38,
+                  "sizes": []
+                },
+                "typography_font_weight": "700",
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 30,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 25,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.14,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.7,
+                  "sizes": []
+                },
+                "align": "center",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "16",
+                  "left": "0",
+                  "isLinked": false
+                }
               },
               "elements": [],
               "widgetType": "heading"
             },
             {
-              "id": "9de39e9",
+              "id": "722bfbb",
               "elType": "widget",
               "settings": {
-                "title": "Send drawings, capacity targets, or just an idea. A SEMZON engineer replies within 24 hours — usually sooner.",
-                "header_size": "p",
-                "css_classes": "lead"
+                "editor": "<p style=\"text-align:center\">Send drawings, capacity targets, or just an idea. A SEMZON engineer replies within 24 hours — usually sooner.</p>",
+                "text_color": "#C7C2E8",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 17,
+                  "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.7,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "28",
+                  "left": "0",
+                  "isLinked": false
+                }
               },
               "elements": [],
-              "widgetType": "heading"
+              "widgetType": "text-editor"
             },
             {
-              "id": "6def9e4",
+              "id": "d5d46fd",
               "elType": "widget",
               "settings": {
                 "text": "Start your project",
                 "link": {
-                  "url": "/contact/",
+                  "url": "#",
                   "is_external": "",
                   "nofollow": ""
                 },
-                "css_classes": "semzon-btn semzon-btn--inverse"
-              },
-              "elements": [],
-              "widgetType": "button"
-            },
-            {
-              "id": "534d9d8",
-              "elType": "widget",
-              "settings": {
-                "text": "WhatsApp +92 323 8845411",
-                "link": {
-                  "url": "https://wa.me/923238845411?text=Salaam%2C%20I%27d%20like%20to%20discuss%20a%20plant.",
-                  "is_external": "on",
-                  "nofollow": ""
+                "align": "center",
+                "background_color": "#FFFFFF",
+                "button_background_hover_color": "#EBE8F7",
+                "button_text_color": "#1C0863",
+                "hover_color": "#1C0863",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": true
                 },
-                "css_classes": "semzon-btn semzon-btn--ghost"
+                "text_padding": {
+                  "unit": "px",
+                  "top": "18",
+                  "right": "32",
+                  "bottom": "18",
+                  "left": "32",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_font_weight": "600"
               },
               "elements": [],
               "widgetType": "button"

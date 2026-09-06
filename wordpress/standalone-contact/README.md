@@ -1,123 +1,120 @@
-# SEMZON contact page — install in 10 minutes
+# SEMZON contact page — v2, no custom CSS
 
 ```
-semzon-contact.json   → import into Elementor
-semzon-contact.css    → paste into Additional CSS   (required)
-semzon-map.png        → the multi-location map, upload as an image
-semzon-map.svg        → same map as vector (see note below)
+semzon-contact.json     → the only file you import
+c2-desktop.png          → what it looks like
+c2-mobile.png
+preview-contact.html    → open in a browser to inspect it locally
 ```
 
-**Both the JSON and the CSS are required.** The JSON is the layout; the CSS is
-the entire look. Importing only the JSON gives you an unstyled page.
+**There is no stylesheet to paste this time.** Every colour, font, size,
+padding, border, radius and gradient is stored inside the template as Elementor
+widget settings. Import it and it looks right.
 
----
+## Why it was broken before
 
-## Step 1 — CSS first
+The previous version put the layout in the template and the entire look in a
+separate CSS file. On your site that CSS never loaded — the giveaway in your
+screenshot was the dashed "FORM SLOT" note showing on the live page, which the
+stylesheet is what hides. With the CSS missing, every element fell back to your
+theme's defaults, which is why the text was maroon and the pills and cards had
+no styling at all.
 
-**Appearance → Customize → Additional CSS** → paste all of
-`semzon-contact.css` → **Publish**.
+Making 100% of the appearance depend on a manual paste step was the wrong
+design. That is fixed: the styling now travels inside the template.
 
-If you already pasted the header CSS, just append this below it. Both files
-declare the same `:root` tokens; a duplicate is harmless.
+## Install — 3 steps
 
-## Step 2 — import the layout
+1. **Elementor → Templates → Saved Templates → Import Templates** → upload
+   `semzon-contact.json`
+2. Open your Contact page → **Edit with Elementor** → grey **folder icon** →
+   **My Templates** → *SEMZON — Contact* → **Insert**
+3. Delete the empty starter section Elementor added → **Publish**
 
-**Elementor → Templates → Saved Templates → Import Templates** → upload
-`semzon-contact.json`.
+That's it. Nothing to paste, nothing to configure.
 
-Then create/edit your Contact page → **Edit with Elementor** → grey **folder
-icon** → **My Templates** → *SEMZON — Contact* → **Insert**.
+## Widgets used — all standard
 
-## Step 3 — the map
-
-Upload **`semzon-map.png`** to the Media Library, then select the Image widget
-in the map section and choose it.
-
-Use the PNG, not the SVG, unless you have SVG uploads enabled — WordPress
-blocks `.svg` by default for security. If you want the sharper vector version,
-install **Safe SVG** first, then upload `semzon-map.svg` instead.
-
-## Step 4 — the form
-
-The template has a dashed **FORM SLOT**. Delete it and drop in your form widget
-— **Elementor Pro Form**, **WPForms** or **Contact Form 7**. The CSS styles all
-three identically, so it does not matter which you pick.
-
-Fields, in the original's order:
-
-| Field | Type | Notes |
-|---|---|---|
-| Your name | Text | required |
-| Phone / WhatsApp | Tel | |
-| Interested in | Select | Poultry / livestock feed line · Aqua & pet feed line · Biomass pellet line · Fertilizer plant (SSP / BOP / compost) · Single machine · Automation / retrofit · Spares · Other |
-| Target capacity (if known) | Text | placeholder `e.g. 20 t/h` |
-| Your message | Textarea | placeholder `Tell us about the site, raw material, timeline…` |
-
-Set the submit button label to **Send enquiry**, and in the form's Actions
-After Submit set **Email** to `semzoneng@gmail.com`.
-
-The two buttons below the form (**Send via WhatsApp**, **Send by email**) are
-plain Button widgets and already work — no plugin needed. That is how the
-original page behaved: it never stored anything, it handed off to WhatsApp or
-the mail app. Adding a real form on top means enquiries also land in your
-inbox, which the coded site could not do.
-
----
-
-## About the map — read this
-
-The original draws seven pins with the Google Maps JavaScript API, custom
-styling and info windows. **Elementor's Google Maps widget only supports one
-location**, and a styled multi-pin map genuinely needs JavaScript, so it cannot
-be reproduced as an Elementor widget.
-
-So the map here is the same information drawn as a graphic: all seven real
-locations, each placed by an equirectangular projection of its true latitude
-and longitude, in the original's visual language — blueprint grid, dashed
-delivery arcs radiating from the Lahore hub, ringed HQ marker, mono labels.
-
-| Location | Role |
+| Section | Widgets |
 |---|---|
-| Lahore | HQ + works (ringed hub) |
-| Gujranwala | Roshan Feeds — pellet line |
-| Kasur | Subhan & Al-Itifaq — feed lines |
-| Karachi | Auriga — BOP plant |
-| Quetta | WMC — compost |
-| Kabul | Albadar Feed — 20 t/h turnkey |
-| Dubai | GCC export & support (hollow marker) |
+| Hero | Heading ×3, Text Editor, Icon List |
+| Form + details | **Form** (Elementor Pro), Button ×2, Text Editor, Divider |
+| Map | Heading ×2, **Google Maps** |
+| CTA band | Heading ×2, Text Editor, Button |
 
-What you gain over the coded version: no API key, no Google billing, no
-JavaScript, nothing to break, and it stays sharp at any size. What you lose:
-it does not pan or zoom, and clicking a pin does not open an info window.
+Nothing custom, no HTML widget, no third-party addon. Every one of these is a
+widget you already have, so you can click any element and restyle it in the
+normal Elementor panel — the settings are all sitting there, not locked away in
+a stylesheet.
 
-**If you want the real interactive Google map instead**, it needs the Maps API
-key and a small JS snippet — tell me and I will supply it. Note the old key
-(`AIzaSyD3gn…`) is still public in the GitHub repo and must be rotated first.
+## The form
 
-On phones the map keeps a 660px minimum width and scrolls inside its own card,
-because scaling it to 390px would shrink the labels to about 5px — present but
-unreadable. The page itself never scrolls sideways.
+It is a real **Elementor Pro Form**, already built with the original's fields:
 
----
+Your name (required, half width) · Phone / WhatsApp (half width) ·
+Interested in (all 8 options) · Target capacity · Your message
+
+Submit button reads **Send enquiry**, and the form is pre-set to email
+`semzoneng@gmail.com`. Open the widget → **Actions After Submit** to confirm
+the email settings on your install.
+
+Under it sit the **Send via WhatsApp** and **Send by email** buttons, which
+work with no plugin at all — that is how the original page behaved. With the
+Pro form on top, enquiries now also land in your inbox, which the coded site
+could not do.
+
+If the form area is empty after importing, Elementor **Pro** is not active —
+that widget is Pro-only. Everything else on the page still works.
+
+## The map — now a single Lahore pin, as you asked
+
+It is Elementor's own **Google Maps** widget pointed at:
+
+> 2.5 KM Manga Raiwind Road, Manga Mandi, Lahore, Pakistan
+
+Zoom 14, 460px tall on desktop and 320px on phones, 24px rounded corners, with
+a slight desaturation so it sits with the brand palette rather than shouting.
+
+**No API key needed** — Elementor's Maps widget uses Google's keyless embed.
+Nothing to configure, nothing to bill. To change the address, click the widget
+and type a new one.
+
+## Responsive
+
+Every heading carries desktop, tablet and mobile sizes, so text scales properly
+instead of staying huge on phones:
+
+| Element | Desktop | Tablet | Mobile |
+|---|---|---|---|
+| H1 | 58px | 42px | 32px |
+| Section H2 | 34–38px | 28–30px | 24–25px |
+| Lead paragraph | 18px | 17px | 16px |
+
+The two columns stack below Elementor's tablet breakpoint. Section padding also
+has its own mobile values, so the page tightens up rather than keeping desktop
+spacing.
 
 ## What was verified
 
-`preview-contact.html` renders this exact CSS against Elementor's real DOM.
-Screenshots `contact-desktop.png` and `contact-mobile.png` come from it.
+`preview-contact.html` is generated **from the template's own settings** — it
+reads `semzon-contact.json` and turns each stored value into CSS. It is not a
+hand-drawn mock, so if a size or colour in the template were wrong, the preview
+would be wrong in the same way. Screenshots come from rendering it in a real
+browser at 1440px and 390px.
 
-Checked at 1440px and 390px: no page-level horizontal scroll; two-column grid
-above 900px and single column below; form inputs 14px radius matching the
-original; map holds its 900:520 ratio.
+Checked: no horizontal scroll at either width; H1 resolves to 58px on desktop
+and 32px on mobile from the stored responsive values; columns stack on mobile.
 
 Three bugs were caught this way and fixed before delivery:
 
-1. Inputs and buttons overflowed their column, because they were sized
-   `width:100%` **plus** padding without `box-sizing: border-box`. Themes vary
-   on whether they set that for form controls, so it is now set explicitly.
-2. The WhatsApp and email buttons stacked vertically instead of sitting side
-   by side — Elementor gives every widget `width:100%`.
-3. Map labels were unreadable on phones (see above).
+1. The contact-card labels printed a literal `&amp;` — an Elementor heading
+   title is plain text, not HTML, so the entity was never decoded.
+2. The eyebrow text was accent red; in the original's final visual pass it is
+   brand purple.
+3. The H1 ran to a single 1200px line instead of wrapping to the original's
+   tighter measure, so the hero section now uses a 980px content width.
 
-**What this cannot catch:** a conflict with your specific theme or another
-plugin's CSS, since I have no way to reach a live WordPress install. If
-something looks off, send a screenshot and I will target it.
+**What this cannot catch:** a conflict with your specific theme. Because the
+styling is now inline on each widget it is far harder for a theme to override
+than the previous stylesheet, but if anything still looks off, send a
+screenshot and I will target it.
