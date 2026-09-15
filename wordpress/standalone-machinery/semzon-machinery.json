@@ -1,0 +1,2379 @@
+{
+  "version": "0.4",
+  "title": "SEMZON — Machinery bento (home 02)",
+  "type": "section",
+  "content": [
+    {
+      "id": "da33c34",
+      "elType": "section",
+      "settings": {
+        "gap": "no",
+        "structure": "20",
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1360
+        },
+        "padding": {
+          "unit": "px",
+          "top": "115",
+          "right": "0",
+          "bottom": "64",
+          "left": "0",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "72",
+          "right": "26",
+          "bottom": "45",
+          "left": "26",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "64",
+          "right": "14",
+          "bottom": "30",
+          "left": "14",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "b313950",
+          "elType": "column",
+          "settings": {
+            "_column_size": 80,
+            "_inline_size": 80,
+            "_inline_size_tablet": 74,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "14",
+              "bottom": "0",
+              "left": "14",
+              "isLinked": false
+            },
+            "padding_tablet": {
+              "unit": "px",
+              "top": "0",
+              "right": "10",
+              "bottom": "0",
+              "left": "10",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "0",
+              "right": "6",
+              "bottom": "0",
+              "left": "6",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "8b5f83a",
+              "elType": "widget",
+              "settings": {
+                "view": "inline",
+                "icon_list": [
+                  {
+                    "_id": "74a4a5e",
+                    "text": "Machinery",
+                    "selected_icon": {
+                      "value": "fas fa-minus",
+                      "library": "fa-solid"
+                    }
+                  }
+                ],
+                "icon_color": "#840C0C",
+                "icon_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "text_color": "#3A22A8",
+                "icon_align": "left",
+                "space_between": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "16",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "icon_typography_typography": "custom",
+                "icon_typography_font_family": "JetBrains Mono",
+                "icon_typography_font_size": {
+                  "unit": "px",
+                  "size": 13.6,
+                  "sizes": []
+                },
+                "icon_typography_font_weight": "500",
+                "icon_typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "icon_typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 11.8,
+                  "sizes": []
+                },
+                "icon_typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2.18,
+                  "sizes": []
+                },
+                "icon_typography_letter_spacing_tablet": {
+                  "unit": "px",
+                  "size": 2.07,
+                  "sizes": []
+                },
+                "icon_typography_letter_spacing_mobile": {
+                  "unit": "px",
+                  "size": 1.9,
+                  "sizes": []
+                },
+                "icon_typography_text_transform": "uppercase"
+              },
+              "elements": [],
+              "widgetType": "icon-list"
+            },
+            {
+              "id": "8ad4188",
+              "elType": "widget",
+              "settings": {
+                "title": "Built in our workshop, proven in yours.",
+                "header_size": "h2",
+                "title_color": "#14152B",
+                "typography_typography": "custom",
+                "typography_font_family": "Bricolage Grotesque",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 50,
+                  "sizes": []
+                },
+                "typography_font_weight": "700",
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 42,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 27,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.12,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.9,
+                  "sizes": []
+                },
+                "typography_letter_spacing_tablet": {
+                  "unit": "px",
+                  "size": -0.78,
+                  "sizes": []
+                },
+                "typography_letter_spacing_mobile": {
+                  "unit": "px",
+                  "size": -0.49,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "315dbb7",
+          "elType": "column",
+          "settings": {
+            "_column_size": 20,
+            "_inline_size": 20,
+            "_inline_size_tablet": 26,
+            "content_position": "flex-end",
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "14",
+              "bottom": "0",
+              "left": "14",
+              "isLinked": false
+            },
+            "padding_tablet": {
+              "unit": "px",
+              "top": "0",
+              "right": "10",
+              "bottom": "0",
+              "left": "10",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "0",
+              "right": "6",
+              "bottom": "0",
+              "left": "6",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "4975acf",
+              "elType": "widget",
+              "settings": {
+                "title": "02",
+                "header_size": "div",
+                "title_color": "#F3F1FB",
+                "typography_typography": "custom",
+                "typography_font_family": "Bricolage Grotesque",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 187,
+                  "sizes": []
+                },
+                "typography_font_weight": "800",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -3.7,
+                  "sizes": []
+                },
+                "align": "right",
+                "_position": "absolute",
+                "_offset_orientation_h": "end",
+                "_offset_x_end": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
+                },
+                "_offset_orientation_v": "start",
+                "_offset_y": {
+                  "unit": "px",
+                  "size": -101,
+                  "sizes": []
+                },
+                "_z_index": 0,
+                "hide_tablet": "hidden-tablet",
+                "hide_mobile": "hidden-mobile"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "a5209ab",
+              "elType": "widget",
+              "settings": {
+                "text": "All 20+ machines",
+                "link": {
+                  "url": "https://www.semzoneng.com/products/",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "align": "right",
+                "align_mobile": "left",
+                "selected_icon": {
+                  "value": "fas fa-arrow-right",
+                  "library": "fa-solid"
+                },
+                "icon_align": "right",
+                "icon_indent": {
+                  "unit": "px",
+                  "size": 8,
+                  "sizes": []
+                },
+                "background_color": "#FFFFFF00",
+                "button_background_hover_color": "#FFFFFF00",
+                "button_text_color": "#1C0863",
+                "hover_color": "#3A22A8",
+                "text_padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "6",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "_margin_mobile": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16.6,
+                  "sizes": []
+                },
+                "typography_font_weight": "600",
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 15.8,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 14.4,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "button"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "52ad6c8",
+      "elType": "section",
+      "settings": {
+        "gap": "no",
+        "structure": "20",
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1360
+        },
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "0",
+          "right": "26",
+          "bottom": "0",
+          "left": "26",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "0",
+          "right": "14",
+          "bottom": "0",
+          "left": "14",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "99884a5",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": 50,
+            "background_background": "classic",
+            "background_color": "#FFFFFF",
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": false
+            },
+            "border_color": "#E4E6EB",
+            "border_radius": {
+              "unit": "px",
+              "top": "20",
+              "right": "20",
+              "bottom": "20",
+              "left": "20",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "30",
+              "right": "30",
+              "bottom": "30",
+              "left": "30",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "20",
+              "right": "20",
+              "bottom": "20",
+              "left": "20",
+              "isLinked": false
+            },
+            "space_between_widgets": 0,
+            "margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "14",
+              "bottom": "28",
+              "left": "14",
+              "isLinked": false
+            },
+            "margin_tablet": {
+              "unit": "px",
+              "top": "0",
+              "right": "10",
+              "bottom": "20",
+              "left": "10",
+              "isLinked": false
+            },
+            "margin_mobile": {
+              "unit": "px",
+              "top": "0",
+              "right": "6",
+              "bottom": "12",
+              "left": "6",
+              "isLinked": false
+            },
+            "_inline_size_tablet": 100,
+            "padding_tablet": {
+              "unit": "px",
+              "top": "22",
+              "right": "22",
+              "bottom": "22",
+              "left": "22",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "f1c64fa",
+              "elType": "widget",
+              "settings": {
+                "image": {
+                  "url": "https://www.semzoneng.com/assets/img/pelleting-feed-pellet-mill-szlh-cut.webp",
+                  "id": "",
+                  "size": ""
+                },
+                "image_size": "full",
+                "align": "center",
+                "width": {
+                  "unit": "%",
+                  "size": 80,
+                  "sizes": []
+                },
+                "height": {
+                  "unit": "px",
+                  "size": 476,
+                  "sizes": []
+                },
+                "height_tablet": {
+                  "unit": "px",
+                  "size": 520,
+                  "sizes": []
+                },
+                "height_mobile": {
+                  "unit": "px",
+                  "size": 300,
+                  "sizes": []
+                },
+                "object-fit": "contain",
+                "link_to": "custom",
+                "link": {
+                  "url": "https://www.semzoneng.com/products/pelleting/feed-pellet-mill/",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "22",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [],
+              "widgetType": "image"
+            },
+            {
+              "id": "24e2ff4",
+              "elType": "widget",
+              "settings": {
+                "title": "Feed pellet mills",
+                "header_size": "h3",
+                "title_color": "#14152B",
+                "typography_typography": "custom",
+                "typography_font_family": "Bricolage Grotesque",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 29.75,
+                  "sizes": []
+                },
+                "typography_font_weight": "700",
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 25.6,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 19.1,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.45,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "62",
+                  "bottom": "6",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "link": {
+                  "url": "https://www.semzoneng.com/products/pelleting/feed-pellet-mill/",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "000d5dc",
+              "elType": "widget",
+              "settings": {
+                "title": "SZLH · Ø350–768 MM · 2–35 T/H",
+                "header_size": "div",
+                "title_color": "#4C4D60",
+                "typography_typography": "custom",
+                "typography_font_family": "JetBrains Mono",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 11.9,
+                  "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 11.3,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 10.3,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 0.24,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "62",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "24704c7",
+              "elType": "widget",
+              "settings": {
+                "selected_icon": {
+                  "value": "fas fa-arrow-right",
+                  "library": "fa-solid"
+                },
+                "view": "framed",
+                "shape": "circle",
+                "primary_color": "#D5CFEE",
+                "secondary_color": "#1C0863",
+                "size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "icon_padding": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "border_width": {
+                  "unit": "px",
+                  "top": "1.5",
+                  "right": "1.5",
+                  "bottom": "1.5",
+                  "left": "1.5",
+                  "isLinked": false
+                },
+                "link": {
+                  "url": "https://www.semzoneng.com/products/pelleting/feed-pellet-mill/",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "_position": "absolute",
+                "_offset_orientation_h": "end",
+                "_offset_x_end": {
+                  "unit": "px",
+                  "size": 44,
+                  "sizes": []
+                },
+                "_offset_orientation_v": "end",
+                "_offset_y_end": {
+                  "unit": "px",
+                  "size": 30,
+                  "sizes": []
+                },
+                "_offset_x_end_tablet": {
+                  "unit": "px",
+                  "size": 32,
+                  "sizes": []
+                },
+                "_offset_y_end_tablet": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "_offset_x_end_mobile": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                },
+                "_offset_y_end_mobile": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "icon"
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "02191ed",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": 50,
+            "_inline_size_tablet": 100
+          },
+          "elements": [
+            {
+              "id": "a7d8609",
+              "elType": "section",
+              "settings": {
+                "gap": "no",
+                "structure": "20"
+              },
+              "elements": [
+                {
+                  "id": "3bfd3d5",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 50,
+                    "_inline_size": 50,
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": false
+                    },
+                    "border_color": "#E4E6EB",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "16",
+                      "bottom": "16",
+                      "left": "16",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "14",
+                      "right": "14",
+                      "bottom": "14",
+                      "left": "14",
+                      "isLinked": false
+                    },
+                    "space_between_widgets": 0,
+                    "margin": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "14",
+                      "bottom": "28",
+                      "left": "14",
+                      "isLinked": false
+                    },
+                    "margin_tablet": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "10",
+                      "bottom": "20",
+                      "left": "10",
+                      "isLinked": false
+                    },
+                    "margin_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "6",
+                      "bottom": "12",
+                      "left": "6",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "c9efa96",
+                      "elType": "widget",
+                      "settings": {
+                        "image": {
+                          "url": "https://www.semzoneng.com/assets/img/grinding-hammer-mill-smsp-01.webp",
+                          "id": "",
+                          "size": ""
+                        },
+                        "image_size": "full",
+                        "align": "center",
+                        "width": {
+                          "unit": "%",
+                          "size": 80,
+                          "sizes": []
+                        },
+                        "height": {
+                          "unit": "px",
+                          "size": 191,
+                          "sizes": []
+                        },
+                        "height_tablet": {
+                          "unit": "px",
+                          "size": 254,
+                          "sizes": []
+                        },
+                        "height_mobile": {
+                          "unit": "px",
+                          "size": 214,
+                          "sizes": []
+                        },
+                        "object-fit": "contain",
+                        "link_to": "custom",
+                        "link": {
+                          "url": "https://www.semzoneng.com/products/grinding/hammer-mill/",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        },
+                        "_background_background": "classic",
+                        "_background_color": "#F6F7F9",
+                        "_padding": {
+                          "unit": "px",
+                          "top": "8",
+                          "right": "8",
+                          "bottom": "8",
+                          "left": "8",
+                          "isLinked": false
+                        },
+                        "_border_radius": {
+                          "unit": "px",
+                          "top": "12",
+                          "right": "12",
+                          "bottom": "12",
+                          "left": "12",
+                          "isLinked": true
+                        }
+                      },
+                      "elements": [],
+                      "widgetType": "image"
+                    },
+                    {
+                      "id": "80ca3a2",
+                      "elType": "widget",
+                      "settings": {
+                        "title": "Hammer mills",
+                        "header_size": "h3",
+                        "title_color": "#14152B",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Inter",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 16.6,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "700",
+                        "typography_font_size_tablet": {
+                          "unit": "px",
+                          "size": 15.8,
+                          "sizes": []
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 14.4,
+                          "sizes": []
+                        },
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.35,
+                          "sizes": []
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "4",
+                          "left": "0",
+                          "isLinked": false
+                        },
+                        "link": {
+                          "url": "https://www.semzoneng.com/products/grinding/hammer-mill/",
+                          "is_external": "",
+                          "nofollow": ""
+                        }
+                      },
+                      "elements": [],
+                      "widgetType": "heading"
+                    },
+                    {
+                      "id": "404d414",
+                      "elType": "widget",
+                      "settings": {
+                        "title": "SMSP · 2–35 T/H",
+                        "header_size": "div",
+                        "title_color": "#4C4D60",
+                        "typography_typography": "custom",
+                        "typography_font_family": "JetBrains Mono",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 11.9,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "400",
+                        "typography_font_size_tablet": {
+                          "unit": "px",
+                          "size": 11.3,
+                          "sizes": []
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 10.3,
+                          "sizes": []
+                        },
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.4,
+                          "sizes": []
+                        },
+                        "typography_letter_spacing": {
+                          "unit": "px",
+                          "size": 0.24,
+                          "sizes": []
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "0",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": [],
+                      "widgetType": "heading"
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "8dde7e1",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 50,
+                    "_inline_size": 50,
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": false
+                    },
+                    "border_color": "#E4E6EB",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "16",
+                      "bottom": "16",
+                      "left": "16",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "14",
+                      "right": "14",
+                      "bottom": "14",
+                      "left": "14",
+                      "isLinked": false
+                    },
+                    "space_between_widgets": 0,
+                    "margin": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "14",
+                      "bottom": "28",
+                      "left": "14",
+                      "isLinked": false
+                    },
+                    "margin_tablet": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "10",
+                      "bottom": "20",
+                      "left": "10",
+                      "isLinked": false
+                    },
+                    "margin_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "6",
+                      "bottom": "12",
+                      "left": "6",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "61b5f68",
+                      "elType": "widget",
+                      "settings": {
+                        "image": {
+                          "url": "https://www.semzoneng.com/assets/img/mixing-ribbon-mixer-smhy-01.webp",
+                          "id": "",
+                          "size": ""
+                        },
+                        "image_size": "full",
+                        "align": "center",
+                        "width": {
+                          "unit": "%",
+                          "size": 80,
+                          "sizes": []
+                        },
+                        "height": {
+                          "unit": "px",
+                          "size": 191,
+                          "sizes": []
+                        },
+                        "height_tablet": {
+                          "unit": "px",
+                          "size": 254,
+                          "sizes": []
+                        },
+                        "height_mobile": {
+                          "unit": "px",
+                          "size": 214,
+                          "sizes": []
+                        },
+                        "object-fit": "contain",
+                        "link_to": "custom",
+                        "link": {
+                          "url": "https://www.semzoneng.com/products/mixing/ribbon-mixer/",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        },
+                        "_background_background": "classic",
+                        "_background_color": "#F6F7F9",
+                        "_padding": {
+                          "unit": "px",
+                          "top": "8",
+                          "right": "8",
+                          "bottom": "8",
+                          "left": "8",
+                          "isLinked": false
+                        },
+                        "_border_radius": {
+                          "unit": "px",
+                          "top": "12",
+                          "right": "12",
+                          "bottom": "12",
+                          "left": "12",
+                          "isLinked": true
+                        }
+                      },
+                      "elements": [],
+                      "widgetType": "image"
+                    },
+                    {
+                      "id": "6500efd",
+                      "elType": "widget",
+                      "settings": {
+                        "title": "Mixers",
+                        "header_size": "h3",
+                        "title_color": "#14152B",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Inter",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 16.6,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "700",
+                        "typography_font_size_tablet": {
+                          "unit": "px",
+                          "size": 15.8,
+                          "sizes": []
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 14.4,
+                          "sizes": []
+                        },
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.35,
+                          "sizes": []
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "4",
+                          "left": "0",
+                          "isLinked": false
+                        },
+                        "link": {
+                          "url": "https://www.semzoneng.com/products/mixing/ribbon-mixer/",
+                          "is_external": "",
+                          "nofollow": ""
+                        }
+                      },
+                      "elements": [],
+                      "widgetType": "heading"
+                    },
+                    {
+                      "id": "aafd313",
+                      "elType": "widget",
+                      "settings": {
+                        "title": "SMHY · SMSJ · CV ≤ 5%",
+                        "header_size": "div",
+                        "title_color": "#4C4D60",
+                        "typography_typography": "custom",
+                        "typography_font_family": "JetBrains Mono",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 11.9,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "400",
+                        "typography_font_size_tablet": {
+                          "unit": "px",
+                          "size": 11.3,
+                          "sizes": []
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 10.3,
+                          "sizes": []
+                        },
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.4,
+                          "sizes": []
+                        },
+                        "typography_letter_spacing": {
+                          "unit": "px",
+                          "size": 0.24,
+                          "sizes": []
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "0",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": [],
+                      "widgetType": "heading"
+                    }
+                  ],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "a3bc381",
+              "elType": "section",
+              "settings": {
+                "gap": "no",
+                "structure": "20"
+              },
+              "elements": [
+                {
+                  "id": "55fd57f",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 50,
+                    "_inline_size": 50,
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": false
+                    },
+                    "border_color": "#E4E6EB",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "16",
+                      "bottom": "16",
+                      "left": "16",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "14",
+                      "right": "14",
+                      "bottom": "14",
+                      "left": "14",
+                      "isLinked": false
+                    },
+                    "space_between_widgets": 0,
+                    "margin": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "14",
+                      "bottom": "28",
+                      "left": "14",
+                      "isLinked": false
+                    },
+                    "margin_tablet": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "10",
+                      "bottom": "20",
+                      "left": "10",
+                      "isLinked": false
+                    },
+                    "margin_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "6",
+                      "bottom": "12",
+                      "left": "6",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "749071c",
+                      "elType": "widget",
+                      "settings": {
+                        "image": {
+                          "url": "https://www.semzoneng.com/assets/img/extrusion-fish-feed-extruder-smhs-01.webp",
+                          "id": "",
+                          "size": ""
+                        },
+                        "image_size": "full",
+                        "align": "center",
+                        "width": {
+                          "unit": "%",
+                          "size": 80,
+                          "sizes": []
+                        },
+                        "height": {
+                          "unit": "px",
+                          "size": 191,
+                          "sizes": []
+                        },
+                        "height_tablet": {
+                          "unit": "px",
+                          "size": 254,
+                          "sizes": []
+                        },
+                        "height_mobile": {
+                          "unit": "px",
+                          "size": 214,
+                          "sizes": []
+                        },
+                        "object-fit": "contain",
+                        "link_to": "custom",
+                        "link": {
+                          "url": "https://www.semzoneng.com/products/extrusion/fish-feed-extruder/",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        },
+                        "_background_background": "classic",
+                        "_background_color": "#F6F7F9",
+                        "_padding": {
+                          "unit": "px",
+                          "top": "8",
+                          "right": "8",
+                          "bottom": "8",
+                          "left": "8",
+                          "isLinked": false
+                        },
+                        "_border_radius": {
+                          "unit": "px",
+                          "top": "12",
+                          "right": "12",
+                          "bottom": "12",
+                          "left": "12",
+                          "isLinked": true
+                        }
+                      },
+                      "elements": [],
+                      "widgetType": "image"
+                    },
+                    {
+                      "id": "51cce59",
+                      "elType": "widget",
+                      "settings": {
+                        "title": "Extruders",
+                        "header_size": "h3",
+                        "title_color": "#14152B",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Inter",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 16.6,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "700",
+                        "typography_font_size_tablet": {
+                          "unit": "px",
+                          "size": 15.8,
+                          "sizes": []
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 14.4,
+                          "sizes": []
+                        },
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.35,
+                          "sizes": []
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "4",
+                          "left": "0",
+                          "isLinked": false
+                        },
+                        "link": {
+                          "url": "https://www.semzoneng.com/products/extrusion/fish-feed-extruder/",
+                          "is_external": "",
+                          "nofollow": ""
+                        }
+                      },
+                      "elements": [],
+                      "widgetType": "heading"
+                    },
+                    {
+                      "id": "1bc774b",
+                      "elType": "widget",
+                      "settings": {
+                        "title": "SMHS · SPHG",
+                        "header_size": "div",
+                        "title_color": "#4C4D60",
+                        "typography_typography": "custom",
+                        "typography_font_family": "JetBrains Mono",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 11.9,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "400",
+                        "typography_font_size_tablet": {
+                          "unit": "px",
+                          "size": 11.3,
+                          "sizes": []
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 10.3,
+                          "sizes": []
+                        },
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.4,
+                          "sizes": []
+                        },
+                        "typography_letter_spacing": {
+                          "unit": "px",
+                          "size": 0.24,
+                          "sizes": []
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "0",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": [],
+                      "widgetType": "heading"
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "b0638c6",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 50,
+                    "_inline_size": 50,
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": false
+                    },
+                    "border_color": "#E4E6EB",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "16",
+                      "bottom": "16",
+                      "left": "16",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "14",
+                      "right": "14",
+                      "bottom": "14",
+                      "left": "14",
+                      "isLinked": false
+                    },
+                    "space_between_widgets": 0,
+                    "margin": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "14",
+                      "bottom": "28",
+                      "left": "14",
+                      "isLinked": false
+                    },
+                    "margin_tablet": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "10",
+                      "bottom": "20",
+                      "left": "10",
+                      "isLinked": false
+                    },
+                    "margin_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "6",
+                      "bottom": "12",
+                      "left": "6",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "9b09ca0",
+                      "elType": "widget",
+                      "settings": {
+                        "image": {
+                          "url": "https://www.semzoneng.com/assets/img/cooling-counterflow-cooler-skln-01.webp",
+                          "id": "",
+                          "size": ""
+                        },
+                        "image_size": "full",
+                        "align": "center",
+                        "width": {
+                          "unit": "%",
+                          "size": 80,
+                          "sizes": []
+                        },
+                        "height": {
+                          "unit": "px",
+                          "size": 191,
+                          "sizes": []
+                        },
+                        "height_tablet": {
+                          "unit": "px",
+                          "size": 254,
+                          "sizes": []
+                        },
+                        "height_mobile": {
+                          "unit": "px",
+                          "size": 214,
+                          "sizes": []
+                        },
+                        "object-fit": "contain",
+                        "link_to": "custom",
+                        "link": {
+                          "url": "https://www.semzoneng.com/products/cooling-drying/counterflow-cooler/",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        },
+                        "_background_background": "classic",
+                        "_background_color": "#F6F7F9",
+                        "_padding": {
+                          "unit": "px",
+                          "top": "8",
+                          "right": "8",
+                          "bottom": "8",
+                          "left": "8",
+                          "isLinked": false
+                        },
+                        "_border_radius": {
+                          "unit": "px",
+                          "top": "12",
+                          "right": "12",
+                          "bottom": "12",
+                          "left": "12",
+                          "isLinked": true
+                        }
+                      },
+                      "elements": [],
+                      "widgetType": "image"
+                    },
+                    {
+                      "id": "0fffaf1",
+                      "elType": "widget",
+                      "settings": {
+                        "title": "Coolers & dryers",
+                        "header_size": "h3",
+                        "title_color": "#14152B",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Inter",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 16.6,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "700",
+                        "typography_font_size_tablet": {
+                          "unit": "px",
+                          "size": 15.8,
+                          "sizes": []
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 14.4,
+                          "sizes": []
+                        },
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.35,
+                          "sizes": []
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "4",
+                          "left": "0",
+                          "isLinked": false
+                        },
+                        "link": {
+                          "url": "https://www.semzoneng.com/products/cooling-drying/counterflow-cooler/",
+                          "is_external": "",
+                          "nofollow": ""
+                        }
+                      },
+                      "elements": [],
+                      "widgetType": "heading"
+                    },
+                    {
+                      "id": "a95b046",
+                      "elType": "widget",
+                      "settings": {
+                        "title": "SKLN · SHGW",
+                        "header_size": "div",
+                        "title_color": "#4C4D60",
+                        "typography_typography": "custom",
+                        "typography_font_family": "JetBrains Mono",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 11.9,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "400",
+                        "typography_font_size_tablet": {
+                          "unit": "px",
+                          "size": 11.3,
+                          "sizes": []
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 10.3,
+                          "sizes": []
+                        },
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.4,
+                          "sizes": []
+                        },
+                        "typography_letter_spacing": {
+                          "unit": "px",
+                          "size": 0.24,
+                          "sizes": []
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "0",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": [],
+                      "widgetType": "heading"
+                    }
+                  ],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "88452f8",
+      "elType": "section",
+      "settings": {
+        "gap": "no",
+        "structure": "30",
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1360
+        },
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "115",
+          "left": "0",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "0",
+          "right": "26",
+          "bottom": "72",
+          "left": "26",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "0",
+          "right": "14",
+          "bottom": "64",
+          "left": "14",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "41d64bc",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_inline_size": 25,
+            "background_background": "classic",
+            "background_color": "#FFFFFF",
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": false
+            },
+            "border_color": "#E4E6EB",
+            "border_radius": {
+              "unit": "px",
+              "top": "20",
+              "right": "20",
+              "bottom": "20",
+              "left": "20",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "14",
+              "right": "14",
+              "bottom": "14",
+              "left": "14",
+              "isLinked": false
+            },
+            "space_between_widgets": 0,
+            "margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "14",
+              "bottom": "28",
+              "left": "14",
+              "isLinked": false
+            },
+            "margin_tablet": {
+              "unit": "px",
+              "top": "0",
+              "right": "10",
+              "bottom": "20",
+              "left": "10",
+              "isLinked": false
+            },
+            "margin_mobile": {
+              "unit": "px",
+              "top": "0",
+              "right": "6",
+              "bottom": "12",
+              "left": "6",
+              "isLinked": false
+            },
+            "_inline_size_tablet": 50
+          },
+          "elements": [
+            {
+              "id": "91c7348",
+              "elType": "widget",
+              "settings": {
+                "image": {
+                  "url": "https://www.semzoneng.com/assets/img/screening-crumbler-sslg-01.webp",
+                  "id": "",
+                  "size": ""
+                },
+                "image_size": "full",
+                "align": "center",
+                "width": {
+                  "unit": "%",
+                  "size": 80,
+                  "sizes": []
+                },
+                "height": {
+                  "unit": "px",
+                  "size": 191,
+                  "sizes": []
+                },
+                "height_tablet": {
+                  "unit": "px",
+                  "size": 254,
+                  "sizes": []
+                },
+                "height_mobile": {
+                  "unit": "px",
+                  "size": 214,
+                  "sizes": []
+                },
+                "object-fit": "contain",
+                "link_to": "custom",
+                "link": {
+                  "url": "https://www.semzoneng.com/products/screening/crumbler/",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "12",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "_background_background": "classic",
+                "_background_color": "#F6F7F9",
+                "_padding": {
+                  "unit": "px",
+                  "top": "8",
+                  "right": "8",
+                  "bottom": "8",
+                  "left": "8",
+                  "isLinked": false
+                },
+                "_border_radius": {
+                  "unit": "px",
+                  "top": "12",
+                  "right": "12",
+                  "bottom": "12",
+                  "left": "12",
+                  "isLinked": true
+                }
+              },
+              "elements": [],
+              "widgetType": "image"
+            },
+            {
+              "id": "488fc3d",
+              "elType": "widget",
+              "settings": {
+                "title": "Crumblers & screeners",
+                "header_size": "h3",
+                "title_color": "#14152B",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16.6,
+                  "sizes": []
+                },
+                "typography_font_weight": "700",
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 15.8,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 14.4,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.35,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "4",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "link": {
+                  "url": "https://www.semzoneng.com/products/screening/crumbler/",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "59bc434",
+              "elType": "widget",
+              "settings": {
+                "title": "SSLG · SFJH",
+                "header_size": "div",
+                "title_color": "#4C4D60",
+                "typography_typography": "custom",
+                "typography_font_family": "JetBrains Mono",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 11.9,
+                  "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 11.3,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 10.3,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 0.24,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "4e7b4ca",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_inline_size": 25,
+            "background_background": "classic",
+            "background_color": "#FFFFFF",
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": false
+            },
+            "border_color": "#E4E6EB",
+            "border_radius": {
+              "unit": "px",
+              "top": "20",
+              "right": "20",
+              "bottom": "20",
+              "left": "20",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "14",
+              "right": "14",
+              "bottom": "14",
+              "left": "14",
+              "isLinked": false
+            },
+            "space_between_widgets": 0,
+            "margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "14",
+              "bottom": "28",
+              "left": "14",
+              "isLinked": false
+            },
+            "margin_tablet": {
+              "unit": "px",
+              "top": "0",
+              "right": "10",
+              "bottom": "20",
+              "left": "10",
+              "isLinked": false
+            },
+            "margin_mobile": {
+              "unit": "px",
+              "top": "0",
+              "right": "6",
+              "bottom": "12",
+              "left": "6",
+              "isLinked": false
+            },
+            "_inline_size_tablet": 50
+          },
+          "elements": [
+            {
+              "id": "74e3668",
+              "elType": "widget",
+              "settings": {
+                "image": {
+                  "url": "https://www.semzoneng.com/assets/img/conveying-bucket-elevator-01.webp",
+                  "id": "",
+                  "size": ""
+                },
+                "image_size": "full",
+                "align": "center",
+                "width": {
+                  "unit": "%",
+                  "size": 80,
+                  "sizes": []
+                },
+                "height": {
+                  "unit": "px",
+                  "size": 191,
+                  "sizes": []
+                },
+                "height_tablet": {
+                  "unit": "px",
+                  "size": 254,
+                  "sizes": []
+                },
+                "height_mobile": {
+                  "unit": "px",
+                  "size": 214,
+                  "sizes": []
+                },
+                "object-fit": "contain",
+                "link_to": "custom",
+                "link": {
+                  "url": "https://www.semzoneng.com/products/conveying/bucket-elevator/",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "12",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "_background_background": "classic",
+                "_background_color": "#F6F7F9",
+                "_padding": {
+                  "unit": "px",
+                  "top": "8",
+                  "right": "8",
+                  "bottom": "8",
+                  "left": "8",
+                  "isLinked": false
+                },
+                "_border_radius": {
+                  "unit": "px",
+                  "top": "12",
+                  "right": "12",
+                  "bottom": "12",
+                  "left": "12",
+                  "isLinked": true
+                }
+              },
+              "elements": [],
+              "widgetType": "image"
+            },
+            {
+              "id": "bdbbd67",
+              "elType": "widget",
+              "settings": {
+                "title": "Conveying & packing",
+                "header_size": "h3",
+                "title_color": "#14152B",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16.6,
+                  "sizes": []
+                },
+                "typography_font_weight": "700",
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 15.8,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 14.4,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.35,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "4",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "link": {
+                  "url": "https://www.semzoneng.com/products/conveying/bucket-elevator/",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "6428501",
+              "elType": "widget",
+              "settings": {
+                "title": "ELEVATORS · SCALES",
+                "header_size": "div",
+                "title_color": "#4C4D60",
+                "typography_typography": "custom",
+                "typography_font_family": "JetBrains Mono",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 11.9,
+                  "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 11.3,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 10.3,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 0.24,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "082f06a",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": 50,
+            "_inline_size_tablet": 100,
+            "background_background": "classic",
+            "background_image": {
+              "url": "https://www.semzoneng.com/assets/img/automation-plc-panel-01.webp",
+              "id": "",
+              "size": ""
+            },
+            "background_position": "center center",
+            "background_repeat": "no-repeat",
+            "background_size": "cover",
+            "border_radius": {
+              "unit": "px",
+              "top": "20",
+              "right": "20",
+              "bottom": "20",
+              "left": "20",
+              "isLinked": true
+            },
+            "link": {
+              "url": "https://www.semzoneng.com/products/automation/plc-control-panels/",
+              "is_external": "",
+              "nofollow": ""
+            },
+            "margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "14",
+              "bottom": "28",
+              "left": "14",
+              "isLinked": false
+            },
+            "margin_tablet": {
+              "unit": "px",
+              "top": "0",
+              "right": "10",
+              "bottom": "20",
+              "left": "10",
+              "isLinked": false
+            },
+            "margin_mobile": {
+              "unit": "px",
+              "top": "0",
+              "right": "6",
+              "bottom": "12",
+              "left": "6",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "6f63431",
+              "elType": "widget",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 190,
+                  "sizes": []
+                },
+                "space_mobile": {
+                  "unit": "px",
+                  "size": 190,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "12a70e6",
+              "elType": "widget",
+              "settings": {
+                "view": "inline",
+                "icon_list": [
+                  {
+                    "_id": "7cc7372",
+                    "text": "PLC & control panels",
+                    "selected_icon": {
+                      "value": "fas fa-circle",
+                      "library": "fa-solid"
+                    },
+                    "link": {
+                      "url": "https://www.semzoneng.com/products/automation/plc-control-panels/",
+                      "is_external": "",
+                      "nofollow": ""
+                    }
+                  }
+                ],
+                "icon_color": "#840C0C",
+                "icon_size": {
+                  "unit": "px",
+                  "size": 6,
+                  "sizes": []
+                },
+                "text_color": "#14152B",
+                "space_between": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
+                },
+                "_background_background": "classic",
+                "_background_color": "rgba(255,255,255,0.94)",
+                "_padding": {
+                  "unit": "px",
+                  "top": "9",
+                  "right": "15",
+                  "bottom": "9",
+                  "left": "15",
+                  "isLinked": false
+                },
+                "_border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": true
+                },
+                "_box_shadow_box_shadow_type": "yes",
+                "_box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 4,
+                  "blur": 18,
+                  "spread": 0,
+                  "color": "rgba(13,3,51,0.18)"
+                },
+                "_position": "absolute",
+                "_offset_orientation_h": "start",
+                "_offset_x": {
+                  "unit": "px",
+                  "size": 28,
+                  "sizes": []
+                },
+                "_offset_orientation_v": "end",
+                "_offset_y_end": {
+                  "unit": "px",
+                  "size": 28,
+                  "sizes": []
+                },
+                "_offset_x_mobile": {
+                  "unit": "px",
+                  "size": 20,
+                  "sizes": []
+                },
+                "_offset_y_end_mobile": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                },
+                "icon_typography_typography": "custom",
+                "icon_typography_font_family": "Inter",
+                "icon_typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "icon_typography_font_weight": "600",
+                "icon_typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 13.3,
+                  "sizes": []
+                },
+                "icon_typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 12.2,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "widgetType": "icon-list"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": []
+}
