@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SEMZON header preview</title>
+<!-- Exactly the stylesheet that ships to the client -->
+<link rel="stylesheet" href="semzon-header.css">
+<style>
+  /* Minimal stand-ins for Elementor's own structural CSS, so this preview
+     reproduces the real DOM the template will produce in WordPress. */
+  body { margin:0; font-family:"Inter",system-ui,sans-serif; }
+  .elementor-section { position:relative; }
+  .elementor-container { display:flex; margin-inline:auto; max-width:1800px; width:100%; }
+  .elementor-column { display:flex; position:relative; min-height:1px; }
+  .elementor-widget-wrap { display:flex; flex-wrap:wrap; align-content:center; width:100%; padding:10px; }
+  .elementor-widget { width:100%; }
+  .elementor-nav-menu { display:flex; list-style:none; margin:0; padding:0; align-items:center; }
+  .elementor-nav-menu li { position:relative; }
+  .elementor-nav-menu a { text-decoration:none; }
+  .sub-menu { list-style:none; margin:0; padding:0; position:absolute; top:100%; left:0;
+              opacity:0; visibility:hidden; transform:translateY(6px);
+              transition:opacity .2s, transform .2s, visibility .2s; }
+  li:hover > .sub-menu { opacity:1; visibility:visible; transform:none; }
+  .elementor-menu-toggle { cursor:pointer; }
+  .demo-body { padding:60px var(--sz-margin); font-family:"Inter",sans-serif; color:#4C4D60; }
+  .demo-body h1 { font-family:"Bricolage Grotesque",sans-serif; color:#14152B; font-size:clamp(2rem,5vw,3.4rem); margin:0 0 12px; }
+  @media (max-width:1023px){
+    .semzon-col-nav .elementor-nav-menu { display:none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ utility bar (matches template section 1) ============ -->
+<section class="elementor-section semzon-util">
+  <div class="elementor-container">
+    <div class="elementor-column" style="width:50%">
+      <div class="elementor-widget-wrap">
+        <div class="elementor-widget semzon-util-left">
+          <p><a href="tel:+923238845411">+92 323 8845411</a><a href="mailto:semzoneng@gmail.com">semzoneng@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="elementor-column" style="width:50%">
+      <div class="elementor-widget-wrap">
+        <div class="elementor-widget semzon-util-right" style="text-align:right">
+          <p>ISO 9001:2015 &middot; MANGA RAIWIND ROAD, LAHORE</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ header (matches template section 2) ============ -->
+<section class="elementor-section semzon-header">
+  <div class="elementor-container">
+
+    <div class="elementor-column semzon-col-logo" style="width:22%">
+      <div class="elementor-widget-wrap">
+        <div class="elementor-widget semzon-logo">
+          <!-- stands in for the image widget the client fills with their logo -->
+          <svg width="168" height="46" viewBox="0 0 168 46" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SEMZON">
+            <text x="0" y="32" font-family="Bricolage Grotesque, sans-serif" font-weight="800"
+                  font-size="30" letter-spacing="-0.5" fill="#1C0863">SEMZ<tspan fill="#9E1414">O</tspan>N</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="elementor-column semzon-col-nav" style="width:56%">
+      <div class="elementor-widget-wrap">
+        <div class="elementor-widget"><div class="elementor-widget-container">
+          <nav>
+            <ul class="elementor-nav-menu menu">
+              <li class="menu-item-has-children">
+                <a href="#">Products
+                  <svg width="11" height="11" viewBox="0 0 12 12" fill="none" style="margin-left:2px"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.6"/></svg>
+                </a>
+                <ul class="sub-menu">
+                  <li><a href="#">Hammer Mill — SMSP</a></li>
+                  <li><a href="#">Feed Pellet Mill — SZLH</a></li>
+                  <li><a href="#">Ribbon Mixer — SMHY</a></li>
+                  <li><a href="#">Counterflow Cooler — SKLN</a></li>
+                  <li><a href="#">All products</a></li>
+                </ul>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Solutions
+                  <svg width="11" height="11" viewBox="0 0 12 12" fill="none" style="margin-left:2px"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.6"/></svg>
+                </a>
+                <ul class="sub-menu">
+                  <li><a href="#">Poultry &amp; Livestock Feed</a></li>
+                  <li><a href="#">Aqua &amp; Pet Feed</a></li>
+                  <li><a href="#">Biomass Wood Pellet</a></li>
+                  <li><a href="#">SSP Fertilizer Plant</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Industries</a></li>
+              <li><a href="#">Services</a></li>
+              <li class="current-menu-item"><a href="#">About</a></li>
+            </ul>
+          </nav>
+          <div class="elementor-menu-toggle" aria-label="Menu">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </div>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="elementor-column semzon-col-cta" style="width:22%">
+      <div class="elementor-widget-wrap">
+        <div class="elementor-widget semzon-cta" style="text-align:right">
+          <a class="elementor-button" href="#">Start your project</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<main class="demo-body">
+  <h1>Page content sits under the header</h1>
+  <p>The dropdown must render <em>above</em> this text, not behind it — that is the z-index half of the fix.</p>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+{
+  "version": "0.4",
+  "title": "SEMZON — Footer",
+  "type": "section",
+  "content": [
+    {
+      "id": "1afa34a",
+      "elType": "section",
+      "settings": {
+        "structure": "40",
+        "css_classes": "footer"
+      },
+      "elements": [
+        {
+          "id": "4c56ff4",
+          "elType": "column",
+          "settings": {
+            "_column_size": 34,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "5ef0599",
+              "elType": "widget",
+              "settings": {
+                "image": {
+                  "url": "",
+                  "id": ""
+                },
+                "image_size": "full",
+                "css_classes": "f-logo"
+              },
+              "elements": [],
+              "widgetType": "image"
+            },
+            {
+              "id": "07e1cd7",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Custom industrial machinery and turnkey feed, biomass and fertilizer plants — engineered in Lahore since 1994.</p>"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "da4fb5c",
+              "elType": "widget",
+              "settings": {
+                "title": "QUALITY FIRST · SERVICE FIRST · PRICE REASONABLE",
+                "header_size": "div",
+                "css_classes": "mono"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "c8ffe9a",
+          "elType": "column",
+          "settings": {
+            "_column_size": 22,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "a0a080f",
+              "elType": "widget",
+              "settings": {
+                "title": "Products",
+                "header_size": "h5"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "202cb96",
+              "elType": "widget",
+              "settings": {
+                "title": "Products links — Loop Grid over the Product post type, or Elementor Pro's Nav Menu widget with a WordPress menu",
+                "header_size": "div",
+                "css_classes": "semzon-build-note"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "ec5decc",
+          "elType": "column",
+          "settings": {
+            "_column_size": 22,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "3def184",
+              "elType": "widget",
+              "settings": {
+                "title": "Solutions",
+                "header_size": "h5"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "069059b",
+              "elType": "widget",
+              "settings": {
+                "title": "Solutions links — Loop Grid over the Solution post type",
+                "header_size": "div",
+                "css_classes": "semzon-build-note"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "9b86192",
+          "elType": "column",
+          "settings": {
+            "_column_size": 22,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "76dc611",
+              "elType": "widget",
+              "settings": {
+                "title": "Contact",
+                "header_size": "h5"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "d1f491a",
+              "elType": "widget",
+              "settings": {
+                "editor": "<ul class='f-contact'><li><b>+92 323 8845411</b><span class='small'>Phone &amp; WhatsApp</span></li><li><b>semzoneng@gmail.com</b><span class='small'>Engineering enquiries</span></li><li><b>2.5 KM Manga Raiwind Road</b><span class='small'>Manga Mandi, Lahore, Pakistan</span></li></ul>"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": []
+}

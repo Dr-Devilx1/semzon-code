@@ -1,0 +1,170 @@
+{
+  "version": "0.4",
+  "title": "SEMZON — Projects Archive",
+  "type": "section",
+  "content": [
+    {
+      "id": "a97da62",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "css_classes": "page-hero"
+      },
+      "elements": [
+        {
+          "id": "f0935e4",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "c9e1074",
+              "elType": "widget",
+              "settings": {
+                "title": "Installed",
+                "header_size": "p",
+                "css_classes": "eyebrow rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "65b9eea",
+              "elType": "widget",
+              "settings": {
+                "title": "Plants running in the field.",
+                "header_size": "h1",
+                "css_classes": "display-1 rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "5f93f98",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "css_classes": "section section--tight"
+      },
+      "elements": [
+        {
+          "id": "2723d09",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "a3c65c2",
+              "elType": "widget",
+              "settings": {
+                "title": "Archive loop — Elementor Archive Posts or Loop Grid. Wrapper class: grid grid--3 · item class: card",
+                "header_size": "div",
+                "css_classes": "semzon-build-note"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "eb160de",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "css_classes": "band-wrap"
+      },
+      "elements": [
+        {
+          "id": "c45147d",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "698d51a",
+              "elType": "widget",
+              "settings": {
+                "title": "Start a conversation",
+                "header_size": "p",
+                "css_classes": "eyebrow eyebrow--plain rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "7f6ffaa",
+              "elType": "widget",
+              "settings": {
+                "title": "Discuss your plant with our engineers.",
+                "header_size": "h2",
+                "css_classes": "display-2 rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "73278a4",
+              "elType": "widget",
+              "settings": {
+                "title": "Send drawings, capacity targets, or just an idea. A SEMZON engineer replies within 24 hours — usually sooner.",
+                "header_size": "p",
+                "css_classes": "lead rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "5fd0b37",
+              "elType": "widget",
+              "settings": {
+                "text": "Start your project",
+                "link": {
+                  "url": "",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "css_classes": "btn btn--inverse"
+              },
+              "elements": [],
+              "widgetType": "button"
+            },
+            {
+              "id": "2b44928",
+              "elType": "widget",
+              "settings": {
+                "text": "WhatsApp +92 323 8845411",
+                "link": {
+                  "url": "",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "css_classes": "btn btn--ghost"
+              },
+              "elements": [],
+              "widgetType": "button"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": []
+}

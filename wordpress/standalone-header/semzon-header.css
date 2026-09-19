@@ -1,0 +1,350 @@
+/* ============================================================
+   SEMZON — Elementor header styles
+   Paste into: Appearance → Customize → Additional CSS
+   (works on any theme, no Elementor Pro needed)
+
+   Self-contained: defines its own tokens and loads its own fonts,
+   so it does not depend on the SEMZON theme being installed.
+
+   Styles the utility bar, the sticky glass header, the CTA, and the
+   navigation — including dropdowns — for all three nav widgets:
+   Ultimate Addons (UAE), Elementor Pro, and a plain WordPress menu.
+   Whichever you drop into the menu slot comes out identical.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --sz-ink-950:   #0D0333;
+  --sz-brand-800: #1C0863;
+  --sz-brand-600: #3A22A8;
+  --sz-brand-400: #8A79CC;
+  --sz-brand-200: #D5CFEE;
+  --sz-brand-050: #F5F4FB;
+  --sz-accent-700:#840C0C;
+  --sz-text-900:  #14152B;
+  --sz-text-700:  #2B2C42;
+  --sz-text-500:  #4C4D60;
+  --sz-inv-soft:  #C7C2E8;
+  --sz-line:      #E4E6EB;
+
+  --sz-font-display: "Bricolage Grotesque", Avenir, "Segoe UI", sans-serif;
+  --sz-font-body:    "Inter", "Segoe UI", system-ui, sans-serif;
+  --sz-font-mono:    "JetBrains Mono", Consolas, monospace;
+
+  --sz-header-h:  80px;
+  --sz-util-h:    38px;
+  --sz-margin:    clamp(20px, 4vw, 150px);
+  --sz-ease:      cubic-bezier(.22, 1, .36, 1);
+  --sz-dur:       280ms;
+}
+
+/* ------------------------------------------------------------------
+   1. UTILITY BAR — dark strip above the header, desktop only
+   ------------------------------------------------------------------ */
+.semzon-util {
+  background: var(--sz-ink-950);
+  min-height: var(--sz-util-h);
+  padding: 0 var(--sz-margin);
+  display: flex;
+  align-items: center;
+}
+.semzon-util > .elementor-container {
+  align-items: center;
+  min-height: var(--sz-util-h);
+}
+.semzon-util p { margin: 0; line-height: var(--sz-util-h); }
+
+.semzon-util-left p {
+  font-family: var(--sz-font-body);
+  font-size: .85rem;
+  color: var(--sz-inv-soft);
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+.semzon-util-left a { color: #fff; text-decoration: none; }
+.semzon-util-left a:hover { color: var(--sz-brand-400); }
+
+.semzon-util-right p {
+  font-family: var(--sz-font-mono);
+  font-size: .68rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--sz-brand-400);
+}
+
+/* The original hides the utility bar below 1024px. */
+@media (max-width: 1023px) {
+  .semzon-util { display: none !important; }
+}
+
+/* ------------------------------------------------------------------
+   2. HEADER — sticky glass bar with a luminous hairline
+   ------------------------------------------------------------------ */
+.semzon-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;                 /* above page content, below WP admin bar */
+  background: rgba(255, 255, 255, .72);
+  -webkit-backdrop-filter: saturate(160%) blur(14px);
+  backdrop-filter: saturate(160%) blur(14px);
+  padding: 0 var(--sz-margin);
+  border-bottom: 1px solid rgba(228, 230, 235, .9);
+}
+.semzon-header::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -1px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(108,79,224,.5), rgba(132,12,12,.35), transparent);
+  opacity: .7;
+  pointer-events: none;
+}
+.semzon-header > .elementor-container {
+  min-height: var(--sz-header-h);
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.admin-bar .semzon-header { top: 32px; }
+@media (max-width: 782px) { .admin-bar .semzon-header { top: 46px; } }
+
+/* Logo */
+.semzon-logo img {
+  width: 168px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: width var(--sz-dur) var(--sz-ease);
+}
+@media (max-width: 1023px) { .semzon-logo img { width: 140px; } }
+@media (max-width: 479px)  { .semzon-logo img { width: 120px; } }
+
+/* CTA button — gradient pill, matching .btn--primary in the original */
+.semzon-cta .elementor-button {
+  background: linear-gradient(120deg, #2A1080 0%, #3A22A8 46%, #6C4FE0 100%);
+  color: #fff;
+  font-family: var(--sz-font-body);
+  font-weight: 600;
+  font-size: .875rem;
+  min-height: 44px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 0;
+  box-shadow: 0 10px 30px -10px rgba(58,34,168,.6), inset 0 0 0 1px rgba(108,79,224,.25);
+  transition: filter var(--sz-dur) var(--sz-ease), box-shadow var(--sz-dur) var(--sz-ease);
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+.semzon-cta .elementor-button-text { text-decoration: none; }
+.semzon-cta .elementor-button:hover {
+  filter: brightness(1.07) saturate(1.05);
+  box-shadow: 0 16px 44px -12px rgba(58,34,168,.7);
+  color: #fff;
+}
+/* The CTA is hidden below 1024 in the original — the mobile menu carries it. */
+@media (max-width: 1023px) { .semzon-col-cta { display: none !important; } }
+
+/* ==================================================================
+   3. DROPDOWN FIX  — read this if your submenus were broken
+   ==================================================================
+   Three things break dropdowns in an Elementor header, and all three
+   are fixed here rather than left to chance:
+
+   a) Elementor gives sections, columns and widget wrappers
+      overflow:hidden in several skins, which CLIPS the submenu so it
+      appears to vanish. Everything in the header is forced visible.
+   b) The submenu's stacking context is below the page content, so it
+      renders BEHIND the hero. Explicit z-index on both the header and
+      the submenu fixes that.
+   c) position:sticky on the header creates a new stacking context, so
+      a submenu with z-index but no positioned ancestor lands wrong.
+      The submenu is explicitly positioned against the menu item.
+   ================================================================== */
+.semzon-header,
+.semzon-header .elementor-container,
+.semzon-header .elementor-row,
+.semzon-header .elementor-column,
+.semzon-header .elementor-column-wrap,
+.semzon-header .elementor-widget-wrap,
+.semzon-header .elementor-widget,
+.semzon-header .elementor-widget-container,
+.semzon-header nav,
+.semzon-header .menu,
+.semzon-header ul {
+  overflow: visible !important;
+}
+
+/* ------------------------------------------------------------------
+   4. NAVIGATION — one look across UAE, Elementor Pro and core menus
+   ------------------------------------------------------------------ */
+.semzon-col-nav .elementor-widget-wrap { justify-content: flex-end; align-content: center; }
+.semzon-col-nav nav,
+.semzon-col-nav .uael-nav-menu__layout-horizontal,
+.semzon-col-nav .elementor-nav-menu--main {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.semzon-col-nav ul.uael-nav-menu,
+.semzon-col-nav ul.elementor-nav-menu,
+.semzon-col-nav ul.menu {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+/* top-level items */
+.semzon-col-nav ul.uael-nav-menu > li > a,
+.semzon-col-nav ul.elementor-nav-menu > li > a,
+.semzon-col-nav ul.menu > li > a {
+  font-family: var(--sz-font-body) !important;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--sz-text-900) !important;
+  padding: 10px 14px !important;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none !important;
+  background: transparent;
+  white-space: nowrap;
+  transition: background var(--sz-dur) var(--sz-ease), color var(--sz-dur) var(--sz-ease);
+}
+.semzon-col-nav ul.uael-nav-menu > li > a:hover,
+.semzon-col-nav ul.elementor-nav-menu > li > a:hover,
+.semzon-col-nav ul.menu > li > a:hover,
+.semzon-col-nav li.current-menu-item > a,
+.semzon-col-nav li.current_page_item > a {
+  color: var(--sz-brand-800) !important;
+  background: var(--sz-brand-050) !important;
+}
+/* Elementor draws its own underline pointer; the design uses a pill only. */
+.semzon-col-nav .e--pointer-underline .elementor-item:after,
+.semzon-col-nav .e--pointer-double-line .elementor-item:before,
+.semzon-col-nav .e--pointer-double-line .elementor-item:after,
+.semzon-col-nav .e--pointer-framed .elementor-item:before,
+.semzon-col-nav .e--pointer-framed .elementor-item:after { display: none !important; }
+
+/* ---- the dropdown panel itself ---- */
+.semzon-col-nav li { position: relative; }
+
+.semzon-col-nav ul.sub-menu,
+.semzon-col-nav ul.uael-nav-submenu,
+.semzon-col-nav ul.elementor-nav-menu--dropdown {
+  background: #fff !important;
+  border: 1px solid var(--sz-line);
+  border-radius: 18px !important;
+  box-shadow: 0 1px 2px rgba(13,3,51,.05), 0 18px 40px -16px rgba(13,3,51,.28);
+  padding: 10px !important;
+  min-width: 250px;
+  z-index: 1000 !important;
+  overflow: hidden !important;   /* rounds the corners of the panel itself */
+}
+
+.semzon-col-nav ul.sub-menu li a,
+.semzon-col-nav ul.uael-nav-submenu li a,
+.semzon-col-nav ul.elementor-nav-menu--dropdown li a {
+  font-family: var(--sz-font-body) !important;
+  font-size: .92rem !important;
+  color: var(--sz-text-700) !important;
+  padding: 9px 14px !important;
+  border-radius: 12px;
+  display: block;
+  background: transparent !important;
+  transition: background var(--sz-dur) var(--sz-ease), color var(--sz-dur) var(--sz-ease);
+}
+.semzon-col-nav ul.sub-menu li a:hover,
+.semzon-col-nav ul.uael-nav-submenu li a:hover,
+.semzon-col-nav ul.elementor-nav-menu--dropdown li a:hover {
+  color: var(--sz-brand-800) !important;
+  background: var(--sz-brand-050) !important;
+}
+
+/* ------------------------------------------------------------------
+   5. MOBILE — hamburger and the off-canvas / dropdown panel
+   ------------------------------------------------------------------ */
+.semzon-col-nav .uael-nav-menu__toggle,
+.semzon-col-nav .elementor-menu-toggle { display: none !important; }
+
+@media (max-width: 1023px) {
+.semzon-col-nav .uael-nav-menu__toggle,
+.semzon-col-nav .elementor-menu-toggle {
+  display: grid !important;
+  color: var(--sz-text-900) !important;
+  background: transparent !important;
+  border: 1px solid var(--sz-line) !important;
+  border-radius: 999px !important;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  margin-left: auto;
+}
+}
+.semzon-col-nav .elementor-menu-toggle svg,
+.semzon-col-nav .uael-nav-menu__toggle svg { width: 20px; height: 20px; }
+
+/* The mobile panel gets the same card treatment as the desktop dropdown. */
+.semzon-col-nav .elementor-nav-menu--dropdown.elementor-nav-menu__container,
+.semzon-col-nav .uael-nav-menu__responsive {
+  background: #fff !important;
+  border: 1px solid var(--sz-line);
+  border-radius: 18px;
+  box-shadow: 0 18px 44px -16px rgba(13,3,51,.3);
+  padding: 8px !important;
+  margin-top: 10px;
+  z-index: 1000 !important;
+}
+.semzon-col-nav .elementor-nav-menu--dropdown a,
+.semzon-col-nav .uael-nav-menu__responsive a {
+  font-family: var(--sz-font-display) !important;
+  font-weight: 700;
+  font-size: 1.1rem !important;
+  color: var(--sz-text-900) !important;
+  padding: 14px 16px !important;
+  border-radius: 12px;
+}
+
+/* Below 1024 the nav column takes the row and pushes the toggle right. */
+@media (max-width: 1023px) {
+  .semzon-header > .elementor-container { min-height: 64px; }
+  .semzon-col-logo { width: 60% !important; }
+  .semzon-col-nav  { width: 40% !important; }
+  .semzon-col-nav .elementor-widget-wrap { justify-content: flex-end; }
+}
+
+/* ------------------------------------------------------------------
+   6. The build-note block in the imported template.
+   Visible while editing so you can see where the menu goes; never
+   shown to visitors, so a half-finished header degrades to a blank
+   slot rather than printing instructions on the live site.
+   ------------------------------------------------------------------ */
+.semzon-slot { display: none; }
+.elementor-editor-active .semzon-slot,
+.elementor-editor-preview .semzon-slot {
+  display: block;
+  font-family: var(--sz-font-mono);
+  font-size: .72rem;
+  line-height: 1.6;
+  color: #7A6BB8;
+  background: repeating-linear-gradient(45deg, #F5F4FB, #F5F4FB 8px, #EDEBF7 8px, #EDEBF7 16px);
+  border: 1px dashed var(--sz-brand-200);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+/* ------------------------------------------------------------------
+   7. Safety — nothing in the header may cause sideways scroll
+   ------------------------------------------------------------------ */
+.semzon-util, .semzon-header { max-width: 100vw; }
+@media (prefers-reduced-motion: reduce) {
+  .semzon-header *, .semzon-util * { transition-duration: .01ms !important; }
+}

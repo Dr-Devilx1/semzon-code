@@ -1,0 +1,315 @@
+{
+  "version": "0.4",
+  "title": "SEMZON — Single Product",
+  "type": "section",
+  "content": [
+    {
+      "id": "8f14e45",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "css_classes": "page-hero"
+      },
+      "elements": [
+        {
+          "id": "1679091",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "c4ca423",
+              "elType": "widget",
+              "settings": {
+                "title": "Breadcrumb — add Elementor Pro's Breadcrumbs widget here, class: crumb",
+                "header_size": "div",
+                "css_classes": "semzon-build-note"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "c81e728",
+              "elType": "widget",
+              "settings": {
+                "title": "{{ACF: eyebrow}}",
+                "header_size": "p",
+                "css_classes": "eyebrow rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "eccbc87",
+              "elType": "widget",
+              "settings": {
+                "title": "{{Post Title}}",
+                "header_size": "h1",
+                "css_classes": "display-1 rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "a87ff67",
+              "elType": "widget",
+              "settings": {
+                "title": "{{ACF: hero_lead}}",
+                "header_size": "p",
+                "css_classes": "lead rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "e4da3b7",
+              "elType": "widget",
+              "settings": {
+                "title": "Tag pills — Loop Grid over ACF repeater 'hero_tags'. Wrapper class: page-meta · item class: tag · text = tag_text",
+                "header_size": "div",
+                "css_classes": "semzon-build-note"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "9bf31c7",
+      "elType": "section",
+      "settings": {
+        "structure": "20",
+        "css_classes": "section section--tight page-grid"
+      },
+      "elements": [
+        {
+          "id": "6512bd4",
+          "elType": "column",
+          "settings": {
+            "_column_size": 55,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "c9f0f89",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>{{ACF: body_intro}}</p>",
+                "css_classes": "prose rv"
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "45c48cc",
+              "elType": "widget",
+              "settings": {
+                "title": "{{ACF: why_heading}}",
+                "header_size": "h3",
+                "css_classes": "h-min rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "d3d9446",
+              "elType": "widget",
+              "settings": {
+                "title": "Feature list — Icon List widget bound to ACF repeater 'features' (feature_text). Wrapper class: feat-list",
+                "header_size": "div",
+                "css_classes": "semzon-build-note"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "aab3238",
+          "elType": "column",
+          "settings": {
+            "_column_size": 45,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "c20ad4d",
+              "elType": "widget",
+              "settings": {
+                "image": {
+                  "url": "",
+                  "id": ""
+                },
+                "image_size": "semzon-render",
+                "css_classes": "rv"
+              },
+              "elements": [],
+              "widgetType": "image"
+            },
+            {
+              "id": "c51ce41",
+              "elType": "widget",
+              "settings": {
+                "title": "Spec table — Loop Grid over ACF repeater 'spec_table' (label + value). Wrapper class: spec-table",
+                "header_size": "div",
+                "css_classes": "semzon-build-note"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "98f1370",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "css_classes": "section section--tight"
+      },
+      "elements": [
+        {
+          "id": "1f0e3da",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "c74d97b",
+              "elType": "widget",
+              "settings": {
+                "title": "Works with",
+                "header_size": "p",
+                "css_classes": "eyebrow rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "70efdf2",
+              "elType": "widget",
+              "settings": {
+                "title": "Related machines in the line.",
+                "header_size": "h2",
+                "css_classes": "display-2 rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "6f4922f",
+              "elType": "widget",
+              "settings": {
+                "title": "Related tiles — Loop Grid over ACF relationship 'related_products'. Wrapper class: bento · item class: bx",
+                "header_size": "div",
+                "css_classes": "semzon-build-note"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "02e74f1",
+      "elType": "section",
+      "settings": {
+        "structure": "10",
+        "css_classes": "band-wrap"
+      },
+      "elements": [
+        {
+          "id": "4e732ce",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "3c59dc0",
+              "elType": "widget",
+              "settings": {
+                "title": "Start a conversation",
+                "header_size": "p",
+                "css_classes": "eyebrow eyebrow--plain rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "b6d767d",
+              "elType": "widget",
+              "settings": {
+                "title": "Discuss your plant with our engineers.",
+                "header_size": "h2",
+                "css_classes": "display-2 rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "37693cf",
+              "elType": "widget",
+              "settings": {
+                "title": "Send drawings, capacity targets, or just an idea. A SEMZON engineer replies within 24 hours — usually sooner.",
+                "header_size": "p",
+                "css_classes": "lead rv"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "1ff1de7",
+              "elType": "widget",
+              "settings": {
+                "text": "Start your project",
+                "link": {
+                  "url": "",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "css_classes": "btn btn--inverse"
+              },
+              "elements": [],
+              "widgetType": "button"
+            },
+            {
+              "id": "8e296a0",
+              "elType": "widget",
+              "settings": {
+                "text": "WhatsApp +92 323 8845411",
+                "link": {
+                  "url": "",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "css_classes": "btn btn--ghost"
+              },
+              "elements": [],
+              "widgetType": "button"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": []
+}

@@ -1,0 +1,109 @@
+[
+  {
+    "stage_number": "01",
+    "stage_title": "Intake & cleaning",
+    "stage_description": "Raw maize, soybean meal and wheat are received, weighed and cleaned of dust, stones, string and ferrous particles before they touch a machine.",
+    "machines": [
+      {
+        "machine_name": "Maize pre-cleaner",
+        "machine_spec": "CP SERIES",
+        "product_slug": "maize-pre-cleaner"
+      },
+      {
+        "machine_name": "Drum cleaner",
+        "machine_spec": "PRE-CLEANING",
+        "product_slug": "drum-cleaner"
+      }
+    ]
+  },
+  {
+    "stage_number": "02",
+    "stage_title": "Grinding",
+    "stage_description": "Cleaned grain is ground to 500–700 µm. Particle size decided here determines mixing accuracy and pellet durability three stages later.",
+    "machines": [
+      {
+        "machine_name": "Hammer mill",
+        "machine_spec": "SMSP · 2–35 T/H",
+        "product_slug": "hammer-mill"
+      }
+    ]
+  },
+  {
+    "stage_number": "03",
+    "stage_title": "Batching & mixing",
+    "stage_description": "Macro ingredients, micro-doses and liquids are weighed and blended to a coefficient of variation of 5% or better in a 90–120 second cycle.",
+    "machines": [
+      {
+        "machine_name": "Ribbon mixer",
+        "machine_spec": "SMHY · 250–2000 KG",
+        "product_slug": "ribbon-mixer"
+      },
+      {
+        "machine_name": "Paddle mixer",
+        "machine_spec": "SMSJ · CV ≤ 5%",
+        "product_slug": "paddle-mixer"
+      },
+      {
+        "machine_name": "Liquid adding system",
+        "machine_spec": "AUTO-DOSING",
+        "product_slug": "liquid-adding"
+      }
+    ]
+  },
+  {
+    "stage_number": "04",
+    "stage_title": "Conditioning & pelleting",
+    "stage_description": "Mash is steam-conditioned at 80–85 °C, then pressed through Ø350–768 mm ring dies — the heart of the plant.",
+    "machines": [
+      {
+        "machine_name": "Feed pellet mill",
+        "machine_spec": "SZLH · 2–35 T/H",
+        "product_slug": "feed-pellet-mill"
+      },
+      {
+        "machine_name": "Steam boiler",
+        "machine_spec": "SAT. STEAM",
+        "product_slug": "ancillary-equipment"
+      }
+    ]
+  },
+  {
+    "stage_number": "05",
+    "stage_title": "Cooling & screening",
+    "stage_description": "Hot pellets are cooled to within 3–5 °C of ambient, crumbled to crumb sizes where required, and screened so only uniform product moves on.",
+    "machines": [
+      {
+        "machine_name": "Counterflow cooler",
+        "machine_spec": "SKLN · 6–30 T/H",
+        "product_slug": "counterflow-cooler"
+      },
+      {
+        "machine_name": "Crumbler",
+        "machine_spec": "SSLG · 4-ROLL",
+        "product_slug": "crumbler"
+      },
+      {
+        "machine_name": "Vibration screener",
+        "machine_spec": "SFJH",
+        "product_slug": "vibration-screener"
+      }
+    ]
+  },
+  {
+    "stage_number": "06",
+    "stage_title": "Packing & loading",
+    "stage_description": "Finished feed is weighed into 25/50 kg bags, stitched, and conveyed to the dispatch bay — ready for the truck.",
+    "machines": [
+      {
+        "machine_name": "Packing scales",
+        "machine_spec": "25/50 KG BAGS",
+        "product_slug": "packing-scales"
+      },
+      {
+        "machine_name": "Bucket elevator",
+        "machine_spec": "TO DISPATCH",
+        "product_slug": "bucket-elevator"
+      }
+    ]
+  }
+]
